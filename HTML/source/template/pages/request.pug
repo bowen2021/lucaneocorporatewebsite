@@ -1,0 +1,135 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'request'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/request-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/request-bg.jpg' alt='img')
+
+		+hero-inner('Request Quote', 'TransX')
+
+	// sectio end
+
+	// section start
+
+	section.section.request-quote
+		.container
+			.row
+
+				.col-lg-8
+
+					form.form.quote-form(action="javascript:void(0);")
+
+						.row
+
+							.col-12
+
+								h6.quote-form__title Personal data
+
+							.col-md-4
+
+								input.form__field(type="text" name="name" placeholder="Full name")
+
+							.col-md-4
+
+								input.form__field(type="email" name="email" placeholder="Email")
+
+							.col-md-4
+
+								input.form__field(type="tel" name="phone-number" placeholder="Phone")
+
+							.col-12.top-20
+
+								h6.quote-form__title Shipment data
+
+							.col-sm-6.col-xl-4
+
+								select.form__select(name="freight")
+									option(data-display="Freight type") Freight type
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+
+							.col-sm-6.col-xl-4
+
+								input.form__field(type="text" name="delivery" placeholder="Delivery city")
+
+							.col-sm-6.col-xl-4
+
+								input.form__field(type="text" name="departure" placeholder="City of departure")
+
+							.col-sm-6.col-xl-4
+
+								select.form__select(name="incoterms")
+									option(data-display="Incoterms") Incoterms
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+
+							.col-sm-6.col-md-3.col-xl-2
+
+								input.form__field(type="number" name="weight" placeholder="Weight")
+
+							.col-sm-6.col-md-3.col-xl-2
+
+								input.form__field(type="number" name="height" placeholder="Height")
+
+							.col-sm-6.col-md-3.col-xl-2
+
+								input.form__field(type="number" name="width" placeholder="Width")
+
+							.col-sm-6.col-md-3.col-xl-2
+
+								input.form__field(type="number" name="lenght" placeholder="Lenght")
+
+							.col-12.top-20.offset-20
+
+								label.form__checkbox-label.bottom-20
+									span.form__label-text Fragile
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size L")
+									span.form__checkbox-mask
+
+								label.form__checkbox-label.bottom-20
+									span.form__label-text Express delivery
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+									span.form__checkbox-mask
+
+								label.form__radio-label.bottom-20
+									span.form__label-text Insurance
+									input.form__input-radio(type="radio" name="option-select" value="option-3" checked)
+									span.form__radio-mask
+
+								label.form__radio-label.bottom-20
+									span.form__label-text Packaging
+									input.form__input-radio(type="radio" name="option-select" value="option-4")
+									span.form__radio-mask
+
+							.col-12
+
+								button.quote-form__submit(type="submit") Request a quote
+
+				.col-lg-4.col-xl-3.offset-xl-1
+
+					.contact-trigger.contact-trigger--style-2
+						img.contact-trigger__img(src="img/contact_background.png", alt="img")
+						h4.contact-trigger__title How we can help you!
+
+						p.contact-trigger__text Ronquil coho salmon red snapper duckbill lungfish southern  angelfish
+
+						+button--white('#', 'Contact us')
+
+	// section end

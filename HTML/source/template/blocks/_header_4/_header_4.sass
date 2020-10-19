@@ -1,0 +1,55 @@
+/* page-header_4 start */
+
+.page-header_4
+	position: fixed
+	display: flex
+	flex-direction: column
+	justify-content: center
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 2
+	min-height: 70px
+	background: $white
+	transition: all .3s
+
++r1200
+
+	.page-header_4
+		padding: 7px 0 7px 25px
+
+.page-header_4
+	.button--filled
+		display: none
+		height: 60px
+		line-height: 60px
+		min-width: 190px
+		margin-right: -5px
+
+	+r768
+
+		.button--filled
+			display: inline-block
+
+	+r992
+
+		.button--filled
+			margin-right: 0
+
+	+r1200
+
+		.button--filled
+			height: 70px
+			line-height: 70px
+			min-width: 210px
+
+.page-header_4.page-header--fixed
+	box-shadow: 0 3px 10px 2px rgba(0,0,0,.04)
+	z-index: 5
+
++r1366
+
+	.page-header_4.page-header--fixed
+		padding: 0 0 0 25px
+
+/* page-header_4 end */

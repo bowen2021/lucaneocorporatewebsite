@@ -1,0 +1,141 @@
+/* tabs start */
+
+.tabs
+	.r-tabs-accordion-title
+		text-align: center
+	p:last-of-type
+		margin-bottom: 0
+	&__title
+		margin-bottom: 10px
+
+/* horizontal tabs */
+
+.horizontal-tabs
+	&__header a,
+	.r-tabs-anchor
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #C3C3C3
+		font-weight: 700
+		text-decoration: none
+		padding: 10px 20px
+	li.r-tabs-state-active
+		position: relative
+		border: 1px solid #D9E2E0
+		border-bottom: 1px solid #FFF
+
+	+r768
+
+		.r-tabs-anchor
+			display: inline-flex
+			padding: 13px 20px
+
+	.r-tabs-state-active a
+		background: #D9E2E0
+		color: $color-primary
+
+	+r768
+
+		.r-tabs-state-active a
+			background: none
+
+	li.r-tabs-state-active::before
+		content: ""
+		display: block
+		height: 2px
+		width: 100%
+		background: $green
+		position: absolute
+		top: 0
+		left: 0
+	.horizontal-tabs__header a
+		color: $color-primary
+		font-size: 14px
+		font-weight: 500
+	.r-tabs-panel
+		padding: 23px 15px
+
+	+r768
+
+		.r-tabs-panel
+			padding: 23px 30px
+
+	&__content
+		border: 1px solid #D9E2E0
+		margin-top: -1px
+
+/* vertical tabs */
+
+.vertical-tabs
+	display: flex
+
+.vertical-tabs
+
+	+r768
+
+		&__content
+			width: calc(100% - 170px)
+
+	&__header a,
+	.r-tabs-anchor
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #C3C3C3
+		font-weight: 700
+		text-decoration: none
+		padding: 10px 0
+		border-left: 3px solid transparent
+
+	.r-tabs-state-active a
+		background: #D9E2E0
+		color: $color-primary
+
+	+r768
+
+		.r-tabs-state-active a
+			background: none
+
+	+r768
+
+		.r-tabs-anchor
+			display: inline-flex
+			padding: 0 0 0 15px
+	
+	&__header a:hover,
+	.vertical-tabs__header .r-tabs-state-active a
+		color: #333333
+	.r-tabs-tab
+		display: block
+	.r-tabs-tab a
+		display: inline-block
+		padding: 15px 20px
+		width: 170px
+	li.r-tabs-state-active
+		position: relative
+		border: 1px solid #D9E2E0
+		border-right: 1px solid #FFF
+	li.r-tabs-state-active::before
+		content: ""
+		display: block
+		height: 100%
+		width: 2px
+		background: $green
+		position: absolute
+		top: 0
+		left: 0
+	.r-tabs-panel
+		padding: 23px 15px
+
+	+r768
+
+		.r-tabs-panel
+			padding: 23px 30px
+	&__content
+		border: 1px solid #D9E2E0
+		margin-left: -1px
+	.vertical-tabs__header a
+		color: $color-primary
+		font-size: 14px
+		font-weight: 500

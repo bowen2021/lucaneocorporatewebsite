@@ -1,0 +1,23 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'calculator'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/calculator.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/calculator.jpg' alt='img')
+
+		+hero-inner('Calculator', 'TransX')
+
+	// section end
+
+	include ../blocks/_calculator/_calculator

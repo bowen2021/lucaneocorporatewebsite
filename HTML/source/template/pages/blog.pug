@@ -1,0 +1,23 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'blog'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/blog.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/blog.jpg' alt='img')
+
+		+hero-inner('Blog', 'TransX')
+
+	// section end
+
+	include ../blocks/_blog/_blog

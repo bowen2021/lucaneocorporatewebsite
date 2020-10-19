@@ -1,0 +1,278 @@
+/* page header start */
+
+.page-header
+	position: fixed
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background: $white
+	top: 0px
+	left: 0px
+	min-height: 70px
+	width: 100%
+	z-index: 5
+	padding: 17px 0
+	transition: all .3s
+
++r768
+
+	.page-header
+		padding: 10px 0
+
++r1200
+
+	.page-header
+		width: calc(100% - 20px)
+		top: 10px
+		left: 10px
+
++r1366
+
+	.page-header
+		padding: 10px 5px 10px 25px
+
++r1600
+
+	.page-header
+		max-width: 1680px
+		left: 50%
+		transform: translateX(-50%)
+
+.page-header
+	&__phone
+		display: none
+		color: inherit
+		align-items: center
+		font-size: 14px
+		margin-right: 75px
+		font-weight: 500
+		text-decoration: none
+		transition: color .3s
+	&__phone:hover
+		color: $green
+	&__phone .icon
+		margin-right: 8px
+
+	+r1600
+
+		&__phone
+			display: inline-flex
+
+	&__logo
+		margin-left: 0px
+
+	+r768
+
+		&__logo
+			margin-left: 30px
+
+	+r1366
+
+		&__logo
+			margin-left: 50px
+
+	&__logo,
+	&__logo a,
+	&__logo img
+		display: inline-block
+	&__logo img
+		height: 30px
+		max-width: auto
+
+	+r1200
+
+		&__logo img
+			height: 32px
+
+	.button--filled
+		display: none
+		height: 60px
+		line-height: 60px
+		min-width: 190px
+		margin-right: -5px
+
+	+r768
+
+		.button--filled
+			display: inline-block
+
+	+r992
+
+		.button--filled
+			margin-right: 0
+
+	+r1200
+
+		.button--filled
+			height: 70px
+			line-height: 70px
+			min-width: 210px
+
+/* lang select */
+
+.lang-block
+	display: none
+	align-items: center
+
++r992
+
+	.lang-block
+		display: flex
+
+.lang-icon
+	display: none
+	position: relative
+	top: 2px
+	height: 25px
+	width: 25px
+	border-radius: 50%
+	overflow: hidden
+
++r1366
+
+	.lang-icon
+		display: initial
+
+.lang-select::before
+	display: none
+	position: relative
+	top: 2px
+	content: ""
+	height: 1px
+	width: 22px
+	margin-left: 20px
+	background: #d9e2e0
+
++r1366
+
+	.lang-select::before
+		display: initial
+
+.lang-select
+	display: inline-flex
+	align-items: center
+	padding: 0
+	margin: 0
+	list-style: none
+
+.lang-select
+	&__item--active
+		cursor: pointer
+		position: relative
+		transition: color .3s
+		padding: 12px 40px 10px 20px
+		min-width: 85px
+
+	+r1366
+
+		&__item--active
+			min-width: 100px
+
+	+r1366
+
+		&__item--active
+			min-width: 111px
+
+	&__item--active span
+		position: relative
+		display: inline-block
+		color: #333
+		font-size: 13px
+		font-weight: 500
+		text-transform: uppercase
+		transition: color .3s
+	&__item--active span::before,
+	&__item--active span::after
+		content: ""
+		display: block
+		width: 6px
+		height: 2px
+		background: #333
+		position: absolute
+		top: 8px
+		transition: all .3s
+		pointer-events: none
+	&__item--active span::before
+		right: -15px
+		transform: rotate(45deg)
+	&__item--active span::after
+		right: -18px
+		transform: rotate(-45deg)
+	&__item--active:hover span::after
+		transform: rotate(45deg)
+	&__item--active:hover span::before
+		transform: rotate(-45deg)
+	&__sub-list
+		margin: 0
+		padding: 12px 30px 18px 30px
+		list-style: none
+		background: $bg-dgray
+		position: absolute
+		top: 100%
+		left: -10px
+		transform: translateY(15px)
+		width: 126px
+		opacity: 0
+		visibility: hidden
+		transition: all .3s
+	&__sub-list::before
+		content: ""
+		display: inline-block
+		border: 15px solid transparent
+		position: absolute
+		top: -15px
+		right: 33px
+		transform: rotate(90deg)
+	&__sub-list li a
+		position: relative
+		display: inline-block
+		color: #FFF
+		font-size: 14px
+		line-height: 36px
+		font-weight: 400
+		text-decoration: none
+		transition: color .3s
+	&__sub-list li a:hover
+		color: #C4C4C4
+	&__item--active:hover &__sub-list
+		transform: translate(0)
+		opacity: 1
+		visibility: visible
+	&__sub-list li a::after
+		content: ""
+		display: block
+		width: 0%
+		height: 2px
+		background: $green
+		position: absolute
+		bottom: 0px
+		left: 0
+		transition: width .3s
+	&__sub-list li a:hover::after
+		width: 100%
+
+.lang-select--white
+	.lang-select__item--active span
+		color: $white
+
+.lang-select--white
+	.lang-select__item--active span::after,
+	.lang-select__item--active span::before
+		background: $white
+
+.page-header.page-header--fixed
+	top: 0
+	padding: 17px 0
+	box-shadow: 0 3px 10px 2px rgba(0,0,0,.04)
+
++r768
+
+	.page-header.page-header--fixed
+		padding: 6px 0
+
++r1366
+
+	.page-header.page-header--fixed
+		padding: 6px 0 6px 25px
+
+/* page header end */

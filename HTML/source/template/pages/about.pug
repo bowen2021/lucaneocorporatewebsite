@@ -1,0 +1,422 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'about'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/about_bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/about_bg.jpg' alt='img')
+
+		+hero-inner('About Us', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-lg-6.col-xl-5
+
+					img.w-100.bottom-50(src="img/section_2.jpg", alt="img")
+
+					.img-badge
+						img.img-badge__img(src="img/badge-img.png", alt="img")
+						h3.img-badge__title.bottom-0 Faster than #[br]you can imagine
+
+				.col-lg-6.col-xl-6.offset-xl-1
+
+					.heading.bottom-20
+						span.heading__pre-title About us
+						h3.heading__title Powerfull Features of #[span.color--green Transporterium] company
+					
+					p Brook trout powen harelip sucker gibberfish beluga sturgeon coelacanth tidewater goby elephant fish yellowtail slender snipe eel rasbora
+					p Rainbowfish powen paddlefish brotula Arctic char zebra bullhead shark. Yellowhead jawfish gianttail temperate ocean-bass Atlantic eel river stingray skilfish. Flounder:
+
+					ul.list.list--check.list--reset
+						li.list__item Red salmon skilfish, threadtail mullet southern flounder, orangespine unicorn fish flounder bobtail snipe eel
+						li.list__item Trumpeter ropefish bonito roughy cobbler dogteeth tetra Russian sturgeon pollock sea snail
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.flex-column-reverse.flex-lg-row
+
+				.col-lg-6.top-50.top-lg-0
+
+					.heading.bottom-20
+						h3.heading__title Our mission is to #[span.color--green give you] good service
+
+					p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+					p.bottom-0 Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish: North Pacific
+
+				.col-lg-6.col-xl-5.offset-xl-1
+					img.w-100(src="img/section_1.jpg", alt="img")
+
+	// section end
+
+	// section start
+
+	section.achievement-section
+		img.achievement-section__bg(src="img/achievement-section.png", alt="img")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Achievement
+						h3.heading__title High work achievements
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('5', 'millions', 'Delivered packeges')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('2', 'million', 'Miles driven each of the year')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('50', 'years', 'Total warehouse area')
+
+	// section end
+
+	// section start
+
+	section.section.video-section.pt-0.pb-0
+		.container
+			.row
+
+				.col-12
+
+					a.js-video.video-block(href="https://www.youtube.com/watch?v=hSbVJ4y6I-8")
+						img.img--bg(src="img/video-block.jpg", alt="img")
+						.video-block__inner
+							span.video-icon
+								+svg('play')
+							span Video presentation
+
+	// section end
+
+	// section start
+
+	section.section.history.bg--lgray
+		.container
+			.row.bottom-70.align-items-end
+
+				.col-md-7
+
+					.heading
+						span.heading__pre-title History
+						h3.heading__title Our company long History
+
+				.col-md-5.text-md-right.top-30
+
+					.steps-slider__nav
+
+		.slider-holder
+			.slider-holder__wrapper
+
+				.steps-slider.history--slider
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 1993
+								span year
+						.steps-slide__lower
+							h6.steps-slide__title Brook trout powen harelip sucker
+							p.bottom-0 Temperate ocean-bass, hussar Steve fish combtail gourami arrowtooth eel, blue whiting, Indian mul soapfish. Slickhead smelt catfish
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 1997
+								span year
+						.steps-slide__lower
+							h6.steps-slide__title Rice eel jawfish roach longjaw mudsucker
+							p.bottom-0 Golden trout giant gourami Celebes rainbowfish straptail electric catfish zebrafish batfish starry flounder North American darter
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 2002
+								span year
+						.steps-slide__lower
+							h6.steps-slide__title Longjaw mudsucker sawtooth eel
+							p.bottom-0 Pacific hake false trevally queen parrotfish Black pricklebackmosshead warbonnet sweeper! Greenling large-eye
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 2004
+								span year
+						.steps-slide__lower
+							h6.steps-slide__title Ronquil coho salmon red snapper
+							p.bottom-0 Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Services
+						h3.heading__title To be comfortable for you
+
+			.row.offset-50
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('warehouse')
+
+						h6.icon-item__title.bottom-0 Warehouse
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('support')
+
+						h6.icon-item__title.bottom-0 Support 24/7
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('location')
+
+						h6.icon-item__title.bottom-0 Online Tracking
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('insurance')
+
+						h6.icon-item__title.bottom-0 Cargo Insurance
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('worldwide')
+
+						h6.icon-item__title.bottom-0 Worldwide
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('boxi')
+
+						h6.icon-item__title.bottom-0 Box checking
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('clock')
+
+						h6.icon-item__title.bottom-0 Always on time
+
+				.col-6.col-sm-4.col-lg-3.text-center
+
+					.icon-item
+
+						.icon-item__img
+							+svg('analitic')
+
+						h6.icon-item__title.bottom-0 Business analytic
+
+	// section end
+
+	// section start
+
+	section.section.team.pb-0
+		.team__bg
+			img.section--bg.t50.r0(src="img/testimonials-bg.png", alt="img")
+
+		.container
+			.row.align-items-center.offset-50
+
+				.col-xl-6.bottom-70
+
+					.heading
+						span.heading__pre-title Team
+						h3.heading__title The team that support and help you
+						p.heading__text ustralian herring zingel arowana Pacific cod Red chub freshwater hatchetfish plaice; albacore starry flounder kingfish Owens pupfish butterflyfish noodlefish Atlantic eel
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_3.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Claid Owen
+							span.team-item__position Company CEO
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_4.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Ginger Trap
+							span.team-item__position Service analytic
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_5.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Caroline Garcia
+							span.team-item__position Product manager
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_6.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Alex Time
+							span.team-item__position Manager Mehico
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_7.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Pier Woodman
+							span.team-item__position HR manager
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_8.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Alex Morgan
+							span.team-item__position Content videomaker
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+	// section end
+
+	// section start
+
+	section.section.testimonials.testimonials--style-2
+
+		.container
+			.row
+
+				.col-lg-5
+
+					.heading
+						span.heading__pre-title Testimonials
+						h3.heading__title What our clients #[br]think about us
+
+					.testimonials__nav
+
+
+				.col-lg-7
+
+					img.quote-icon(src="img/quotes.png", alt="img")
+
+					.testimonials-slider
+
+						.testimonials-slider__item
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								h6 Well Singer
+								span Manager of Westwood
+
+	// section end

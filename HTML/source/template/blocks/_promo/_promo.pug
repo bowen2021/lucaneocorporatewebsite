@@ -1,0 +1,98 @@
+// promo start
+
+.promo
+
+	.promo-slider
+
+		.promo-slider__item
+
+			.promo-slider__layout
+
+			picture
+				source(srcset='img/promo_1.jpg', media='(min-width: 992px)')
+				img.img--bg(src='img/promo_1.jpg', alt='img')
+
+			.align-container
+				.align-container__item
+
+					.container
+						.row
+
+							.col-lg-9.col-xl-7
+
+								.promo-slider__wrapper-1
+									span.promo-slider__overlay TransX
+									h2.promo-slider__title Transportation Services around the World
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+								.promo-slider__wrapper-3
+									+button--promo('#', 'Explore more')
+
+		.promo-slider__item.text-center
+
+			.promo-slider__layout
+
+			picture
+				source(srcset='img/promo_2.jpg', media='(min-width: 992px)')
+				img.img--bg(src='img/promo_2.jpg', alt='img')
+
+			.align-container
+				.align-container__item
+
+					.container
+						.row
+
+							.col-12
+
+								.promo-slider__wrapper-1
+									span.promo-slider__overlay.position-center TransX
+									h2.promo-slider__title Worldwide Shipping
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle Roach yellowfin cutthroat trout zebra pleco ocean sunfish temperate bass pikehead elephant fish. Long-finned char northern pike bluegill temperate. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+								.promo-slider__wrapper-3
+									+button--promo('#', 'Explore more')
+
+		.promo-slider__item
+
+			.promo-slider__layout
+
+			picture
+				source(srcset='img/promo_3.jpg', media='(min-width: 992px)')
+				img.img--bg(src='img/promo_3.jpg', alt='img')
+
+			.align-container
+				.align-container__item
+
+					.container
+						.row
+
+							.col-lg-9.col-xl-7
+
+								.promo-slider__wrapper-1
+									span.promo-slider__overlay TransX
+									h2.promo-slider__title Deliver Packages #[br]in any Way
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+								.promo-slider__wrapper-3
+									+button--promo('#', 'Explore more')
+
+	.promo__lower
+		.container
+			.row.align-items-center
+
+				.col-md-5.col-lg-7.col-xl-8.d-flex.align-items-start
+
+					.promo-slider__nav
+					.promo-slider__count
+
+				.col-md-7.col-lg-5.col-xl-4.top-20.top-md-0
+
+					form.tracking-form(action="javascript:void(0);" autocomplete="off")
+
+						label.tracking-form__label
+							input.tracking-form__input(type="text" name="tracking" required)
+							span.tracking-form__placeholder Track your shippment
+
+						button.tracking-form__submit(type="submit") #[+svg('arrow')]
+
+// promo end

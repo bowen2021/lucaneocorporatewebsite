@@ -1,0 +1,70 @@
+/* dual slider start */
+
++r576
+
+	.dual-slider
+		display: flex
+		flex-direction: row-reverse
+		justify-content: space-between
+		align-items: flex-start
+
+	.main-slider
+		width: calc(100% - 100px)
+
+.main-slider
+	&__item
+		vertical-align: top
+	&__img
+		position: relative
+		border: 1px solid #E2E2E2
+		overflow: hidden
+	&__img img
+		z-index: 0
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(460/470)
+
+.nav-slider
+	margin-top: 10px
+
++r576
+
+	.nav-slider
+		margin-top: 0
+		width: 90px
+
+.nav-slider
+	.slick-list
+		margin: 0 -5px
+	.slick-slide
+		margin: 0 5px
+
+	+r576
+
+		.slick-slide
+			margin: 5px 0
+			cursor: pointer
+
+		.slick-list
+			margin: -5px 0
+
+	&__item
+		vertical-align: top
+		border: 1px solid #E2E2E2
+	&__img
+		position: relative
+		overflow: hidden
+	&__img img
+		z-index: 0
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(173/173)
+
+	+r576
+
+		&__img::before
+			padding-top: percentage(110/91)
+
+/* dual slider end */

@@ -1,0 +1,78 @@
+/* counters start */
+
+.counter
+	display: inline-block
+	font-weight: 700
+	margin-bottom: 50px
+	min-width: 230px
+
+.counter
+	&__top
+		font-weight: 700
+		line-height: 1.1
+	&__lower
+		text-align: left
+	&__count
+		font-size: 80px
+		margin-right: 20px
+
+	+r1200
+
+		&__count
+			font-size: 100px
+
+	&__subject
+		font-size: 42px
+
+	+r1200
+
+		&__subject
+			font-size: 50px
+
+	&__count,
+	&__subject
+		display: inline-block
+		letter-spacing: -0.050em
+
+.counter--filled
+	color: $white
+	background: $bg-blue
+	padding: 47px 30px 58px 30px
+	clip-path: polygon(90% 0, 100% 12%, 100% 100%, 0 100%, 0 0)
+	width: 100%
+
++r1200
+
+	.counter--filled
+		padding: 47px 50px 58px 50px
+
+.counter--filled
+	.counter__details
+		color: #427ccb
+
+.counter--white
+	.counter__top
+		color: #FFF
+		text-align: left
+	.counter__details
+		color: #767f7f
+
+.counter--blue
+	.counter__top
+		color: $bg-blue
+		text-align: left
+	.counter__details
+		color: #767f7f
+
+.counter--green
+	.counter__top
+		color: $green
+	.counter__subject
+		font-size: 60px
+
+	+r1200
+
+		.counter__subject
+			font-size: 100px
+
+/* counters end */

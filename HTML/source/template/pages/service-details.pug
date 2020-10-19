@@ -1,0 +1,123 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'service-details'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/service-details.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/service-details.jpg' alt='img')
+
+		+hero-inner('Service Details', 'TransX')
+
+	// section end
+
+	include ../blocks/_service-details/_service-details
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you, #[span.color--green whoever] you are
+
+			.row.offset-50
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--bordered.pricing-plan--small
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title One pack
+							.pricing-plan__price #[span 95] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item.item--disabled Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--bordered.pricing-plan--small
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Starter pack
+							.pricing-plan__price #[span 100] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item.item--disabled Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--bordered.pricing-plan--small
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Regular #[span.color--green pack]
+							.pricing-plan__price #[span 150] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--blue.pricing-plan--small
+
+						img.pricing-plan__bg(src="img/price_background.png", alt="img")
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Premium pack
+							.pricing-plan__price #[span 255] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item 100 freight shipments
+							+button--white('#', 'Get started')
+
+	// section end
+
+	include ../blocks/_testimonials/_testimonials
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+
+			.row
+
+				.col-12
+
+					include ../blocks/_logos-slider/_logos-slider
+
+	// section end

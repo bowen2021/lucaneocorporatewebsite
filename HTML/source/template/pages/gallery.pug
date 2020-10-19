@@ -1,0 +1,106 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'gallery'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/typography.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/typography.jpg' alt='img')
+
+		+hero-inner('Gallery Masonry', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					ul.filter-panel.list--reset
+						li.filter-panel__item.filter-panel__item--active(data-filter="*")
+							span All images
+						li.filter-panel__item(data-filter=".category_1")
+							span Freight
+						li.filter-panel__item(data-filter=".category_2")
+							span Train
+						li.filter-panel__item(data-filter=".category_3")
+							span Shipping
+
+		.js-gallery.gallery.gallery--tile.row.no-gutters
+
+			.js-gallery__item.category_1.col-md-6.col-lg-3
+
+				a.gallery__item.gallery__item--size-2(href="img/gal_2.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_2.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_1.col-md-6.col-lg-3
+
+				a.gallery__item.gallery__item--size-2(href="img/gal_3.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_3.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_2.col-md-6.col-lg-6
+
+				a.gallery__item.gallery__item--size-1(href="img/gal_1.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_1.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_2.col-md-6.col-lg-6
+
+				a.gallery__item.gallery__item--size-3(href="img/gal_5.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_5.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_3.col-md-6.col-lg-6
+
+				a.gallery__item.gallery__item--size-1(href="img/gal_8.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_8.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_3.col-md-6.col-lg-6
+
+				a.gallery__item.gallery__item--size-3(href="img/gal_7.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_7.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_1.col-md-6.col-lg-3
+
+				a.gallery__item.gallery__item--size-2(href="img/gal_4.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_4.jpg", alt="img")
+					span.gallery__description Sea port
+
+			.js-gallery__item.category_2.col-md-6.col-lg-3
+
+				a.gallery__item.gallery__item--size-2(href="img/gal_6.jpg" data-fancybox="gallery")
+					span.overlay
+					img.img--bg(src="img/gal_6.jpg", alt="img")
+					span.gallery__description Sea port
+
+		.container.top-40
+			.row
+		
+				.col-12.text-center
+		
+					+button--green('#', 'Show more')
+
+	// section end

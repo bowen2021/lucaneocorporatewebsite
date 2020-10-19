@@ -1,0 +1,101 @@
+/* gallery start */
+
++r992
+
+	section.front-gallery
+		padding-bottom: 0
+
+.gallery
+	&__item
+		display: block
+		position: relative
+		text-decoration: none
+		overflow: hidden
+		outline: none
+		transition: transform .6s
+	&__item img
+		transition: transform .6s
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background: rgba(0, 61, 144, 0.15)
+		z-index: 1
+		transition: background .6s
+	&__item::before
+		content: ""
+		display: block
+		padding-top: percentage(483/483)
+	&__description
+		display: inline-block
+		position: absolute
+		bottom: 0
+		left: 0
+		color: $white
+		font-size: 18px
+		font-weight: 700
+		background: $bg-blue
+		padding: 23px 30px 23px 30px
+		min-width: 230px
+		clip-path: polygon(90% 0, 100% 20%, 100% 100%, 0 100%, 0 0)
+		opacity: 0
+		z-index: 2
+		transition: opacity .6s
+	&__item:hover
+		transform: scale(0.93)
+	&__item:hover .overlay
+		background: rgba(0, 61, 144, 0.3)
+	&__item:hover &__description
+		opacity: 1
+	&__item:hover img
+		transform: scale(1.17)
+		z-index: -1
+
+.gallery--tile
+	width: calc(100% - 10px)
+	margin: 35px auto 0 auto
+
++r768
+
+	.gallery--tile
+		width: calc(100% - 30px)
+
+.gallery--tile
+	.gallery__item
+		border: 10px solid $white
+
+	+r768
+
+		.gallery__item
+			border: 15px solid $white
+
+.gallery--grid
+	margin: 35px -10px 0 -10px
+
++r768
+
+	.gallery--grid
+		margin: 35px -15px 0 -15px
+
+.gallery--grid
+	.gallery__item
+		border: 10px solid $white
+
++r768
+
+	.gallery--grid
+		.gallery__item
+			border: 15px solid $white
+
+.gallery__item--size-1::before
+	padding-top: percentage(819/955.5)
+
+.gallery__item--size-2::before
+	padding-top: percentage(400/475.75)
+
+.gallery__item--size-3::before
+	padding-top: percentage(400/951.5)
+
+/* gallery end */

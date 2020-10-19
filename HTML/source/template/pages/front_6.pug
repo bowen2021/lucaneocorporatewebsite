@@ -1,0 +1,652 @@
+extends ../layouts/front_6.pug
+
+block variables
+
+	-var page = 'front_6'
+
+	-var type = 'front'
+
+block main
+
+	// promo start
+
+	.promo.promo--f6
+
+		.promo-slider
+
+			.promo-slider__item
+
+				.promo-slider__layout
+
+				picture
+					source(srcset='img/promo_6.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/promo_6.jpg', alt='img')
+
+				.align-container
+					.align-container__item
+
+						.container
+							.row
+
+								.col-lg-10.offset-lg-1.text-center
+
+									.promo-slider__wrapper-1
+										h2.promo-slider__title Warehousing
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting.
+									.promo-slider__wrapper-3
+										+button--promo('#', 'Explore more')
+
+			.promo-slider__item
+
+				.promo-slider__layout
+
+				picture
+					source(srcset='img/promo_5.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/promo_5.jpg', alt='img')
+
+				.align-container
+					.align-container__item
+
+						.container
+							.row
+
+								.col-lg-10.offset-lg-1.text-center
+
+									.promo-slider__wrapper-1
+										h2.promo-slider__title Shipping Freight
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting.
+									.promo-slider__wrapper-3
+										+button--promo('#', 'Explore more')
+
+			.promo-slider__item
+
+				.promo-slider__layout
+
+				picture
+					source(srcset='img/promo_3.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/promo_3.jpg', alt='img')
+
+				.align-container
+					.align-container__item
+
+						.container
+							.row
+
+								.col-lg-10.offset-lg-1.text-center
+
+									.promo-slider__wrapper-1
+										h2.promo-slider__title Plane Freight
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting.
+									.promo-slider__wrapper-3
+										+button--promo('#', 'Explore more')
+
+		.promo-pannel
+			a.js-scroll.promo-pannel__down(href="#down") 
+				span Scroll Down
+			a.js-video.promo-pannel__video(href="https://www.youtube.com/watch?v=hSbVJ4y6I-8")
+				img.img--bg(src="img/promo_video.jpg", alt="img")
+				span.icon-holder
+					+svg('play')
+
+		.promo__lower
+			.container
+				.row
+
+					.col-12.d-flex.align-items-start.justify-content-sm-end
+
+						.promo-slider__nav
+						.promo-slider__count
+
+	// promo end
+
+	// section start
+
+	section#down.section.pb-0
+		.container
+			.row.bottom-60
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Services
+						h3.heading__title Warehouse Services
+						span.heading__layout Services
+
+			.row
+
+				.col-6.col-md-4.col-xl-3.text-center
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--big
+							img(src="img/pack_1/i10.svg", alt="icon")
+
+						h6.icon-item__title.bottom-0 Comfortable Warehouse
+
+				.col-6.col-md-4.col-xl-3.text-center
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--big
+							img(src="img/pack_1/i8.svg", alt="icon")
+
+						h6.icon-item__title.bottom-0 Modern Equipment
+
+				.col-6.col-md-4.col-xl-3.text-center
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--big
+							img(src="img/pack_1/i4.svg", alt="icon")
+
+						h6.icon-item__title.bottom-0 Convenient Shelving
+
+				.col-6.col-md-4.col-xl-3.text-center
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--big
+							img(src="img/pack_1/i7.svg", alt="icon")
+
+						h6.icon-item__title.bottom-0 Best Staff
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					img(src="img/map-transx_3.png", alt="img")
+
+	// section end
+
+	// section start
+
+	section.section.info-block.color--white
+
+		img.img--bg(src="img/info-bg.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-lg-7
+
+					.heading.heading--white
+						h3.heading__title Give you complete control #[br] #[span.color--green of your] warehouse
+
+					p Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. 
+					p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black
+
+					+button--white('#', 'More about')
+
+				.col-lg-4.offset-lg-1.top-50.top-lg-0
+
+					.row.offset-50
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 3000
+									span.counter__subject m #[sup 2]
+								.counter__lower
+									span.counter__details.color--lgray Total warehouse area
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 1200
+									span.counter__subject
+								.counter__lower
+									span.counter__details.color--lgray Created Jobs
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray.features-front_6
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading
+						span.heading__pre-title Features
+						h3.heading__title Powerfull Features #[br] of #[span.color--green TransX] Warehouse
+						span.heading__layout.layout--lgray Features
+
+			.row.offset-50
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('shape')
+						.info-item__details
+							strong 154, 900 sqft
+							span Size
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('calendar')
+						.info-item__details
+							strong 2015
+							span Year built
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('thermometer')
+						.info-item__details
+							strong Temperature range
+							span Ambient
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('entrance')
+						.info-item__details
+							strong 28
+							span Dock doors
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('box')
+						.info-item__details
+							strong 25 ft upringhts
+							span Racking height
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('shower')
+						.info-item__details
+							strong ESFR
+							span Spinkler system
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('cctv')
+						.info-item__details
+							strong A-Trap compliant
+							span Security
+
+				.col-sm-6.col-md-4.col-lg-3
+
+					.info-item
+						.info-item__img
+							+svg('clock')
+						.info-item__details
+							strong 5 am - 10:00 PM
+							span Hours of opening
+
+	// section end
+
+	// section start
+
+	section.section.pb-0
+		.container
+			.row.bottom-60
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Pricing
+						h3.heading__title The #[span.color--green Right Price] for you
+						span.heading__layout Pricing
+
+			.row
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title One Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse
+
+							.col-lg-2
+
+								.pricing-table__price #[span 95] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table.pricing-table--blue
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--white('#', 'Get started')
+
+	// section end
+
+	// section start
+
+	section.section.front-gallery
+		.container
+			.row.align-items-end.bottom-70
+
+				.col-lg-8
+
+					.heading
+						span.heading__pre-title Gallery
+						h3.heading__title Our stunning gallery
+						p.heading__text Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat.
+						span.heading__layout Gallery
+
+				.col-lg-4.text-right.d-none.d-lg-block
+
+					+button--green('#', 'View all gallery')
+
+		.gallery
+			.row.no-gutters
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_1.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_1.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_2.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_2.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_3.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_3.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_4.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_4.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_5.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_5.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_6.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_6.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_7.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_7.jpg", alt="img")
+						span.gallery__description Sea port
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					a.gallery__item(href="img/gallery_8.jpg" data-fancybox="gallery")
+						span.overlay
+						img.img--bg(src="img/gallery_8.jpg", alt="img")
+						span.gallery__description Sea port
+
+			.row.top-50.d-block.d-lg-none
+
+				.col-12.text-center
+
+					+button--green('#', 'View all gallery')
+
+	// section end
+
+	// section start
+
+	section.section.testimonials.bg--lgray
+		.testimonials__bg
+			img.section--bg.t50.r0(src="img/testimonials-bg.png", alt="img")
+
+		.container
+			.row
+
+				.col-lg-5
+
+					.heading.heading--white
+						span.heading__pre-title Testimonials
+						h3.heading__title Excellent company #[span.color--green quality] services
+						span.heading__layout.layout--dgray People
+
+					.testimonials__nav
+
+					img.testimonials__img(src="img/testimonials_img.png", alt="img")
+
+
+				.col-lg-6.offset-lg-1
+
+					.testimonials-slider
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+	// section end
+
+	include ../blocks/_front-blog/_front-blog
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+						span.heading__layout Partners
+
+			.row
+
+				.col-12
+
+					// logos slider start
+
+					.logos-slider.logos-slider--style-2
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+					.logos-slider__dots
+
+					// logos slider end
+
+	// section end
+
+	// section start
+
+	section.section.bg--dgray
+		img.bg--center(src="img/certifications-bg.png", alt="bg")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center.heading--white
+						h3.heading__title Certifications
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer1.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer2.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Tracking Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer3.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Analysis Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer4.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer3.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Analysis Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer2.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Tracking Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer4.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer1.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+	// section end

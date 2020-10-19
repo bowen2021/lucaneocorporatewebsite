@@ -1,0 +1,165 @@
+// cart start
+
+.cart
+
+	.cart__heading
+
+		.row
+
+			.col-lg-1
+
+			.col-lg-4.text-center.text-lg-left
+
+				h6.cart__title Products
+
+			.col-lg-2.d-none.d-lg-block
+
+				h6.cart__title Price
+
+			.col-lg-3.d-none.d-lg-block
+
+				h6.cart__title Count
+
+			.col-lg-2.d-none.d-lg-block
+
+				h6.cart__title Summary
+
+	.cart__body
+
+		.cart-item
+			.row.align-items-center
+
+				.col-lg-1.text-center.text-lg-right
+
+					span.cart-item__remove
+						+svg('remove')
+
+				.col-lg-4
+
+					.cart-item__product
+						.cart-item__product-img
+							img.img--contain(src="img/cart_1.jpg" alt="img")
+						.cart-item__product-name
+							a(href="shop-product.html") Delivery box small
+
+				.col-lg-2.text-center.text-lg-left
+
+					.cart-item__price 
+						span $14.00
+				.col-lg-3.text-center.text-lg-left
+
+					.cart-item__count
+						span.cart-item__minus
+						input.cart-item__input(type="number" value="1")
+						span.cart-item__plus
+
+				.col-lg-2.text-center.text-lg-left
+
+					.cart-item__summa
+						span $14.00
+
+		.cart-item
+			.row.align-items-center
+
+				.col-lg-1.text-center.text-lg-right
+
+					span.cart-item__remove
+						+svg('remove')
+
+				.col-lg-4
+
+					.cart-item__product
+						.cart-item__product-img
+							img.img--contain(src="img/cart_2.jpg" alt="img")
+						.cart-item__product-name
+							a(href="shop-product.html") Delivery box big
+
+				.col-lg-2.text-center.text-lg-left
+
+					.cart-item__price 
+						span $16.00
+				.col-lg-3.text-center.text-lg-left
+
+					.cart-item__count
+						span.cart-item__minus
+						input.cart-item__input(type="number" value="1")
+						span.cart-item__plus
+
+				.col-lg-2.text-center.text-lg-left
+
+					.cart-item__summa
+						span $16.00
+
+		.cart-item
+			.row.align-items-center
+
+				.col-lg-1.text-center.text-lg-right
+
+					span.cart-item__remove
+						+svg('remove')
+
+				.col-lg-4
+
+					.cart-item__product
+						.cart-item__product-img
+							img.img--contain(src="img/cart_3.jpg" alt="img")
+						.cart-item__product-name
+							a(href="shop-product.html") Delivery box big
+
+				.col-lg-2.text-center.text-lg-left
+
+					.cart-item__price 
+						span $18.00
+
+				.col-lg-3.text-center.text-lg-left
+
+					.cart-item__count
+						span.cart-item__minus
+						input.cart-item__input(type="number" value="1")
+						span.cart-item__plus
+
+				.col-lg-2.text-center.text-lg-left
+
+					.cart-item__summa
+						span $18.00
+
+		.cart__lower
+
+			.row
+
+				.col-md-8
+
+					.coupon-block
+
+						form.form.coupon-form(action="javascript: void(0);")
+
+							input.form__field(type="text" placeholder="Coupon code")
+							button.button.button--green(type="submit") #[span Apply Coupon] #[+svg('arrow')]
+
+				.col-md-4.text-lg-right
+
+					button.button.button--green(type="submit") #[span Refresh Cart] #[+svg('arrow')]
+
+			.row
+
+				.col-12.text-lg-right
+
+					.cart-totals
+
+						h6.cart__title Cart Totals
+
+						ul.cart-totals__list
+							li
+								span Subtotal:
+								span $68
+							li
+								span Sale:
+								span $0
+							li
+								span Total:
+								span $68
+
+						a.button.button--account(href="shop-checkout.html") #[span Proceed to checkout] #[+svg('arrow')]
+
+
+// cart end

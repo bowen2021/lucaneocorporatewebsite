@@ -1,0 +1,47 @@
+/* logos slider start */
+
+.logos-slider
+	.slick-list
+		margin: 0 -15px
+	.slick-slide
+		margin: 0 15px
+	.slick-dots
+		display: flex!important
+		margin-top: 40px
+		justify-content: center
+	&__item
+		position: relative
+		display: flex !important
+		justify-content: center
+		align-items: center
+		height: 150px
+	&__item::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: $white
+		transition: transform .6s
+	&__item:hover::before
+		transform: scale(0.86)
+	&__dots
+		text-align: center
+	&__dots .slick-dots
+		margin-top: 40px
+	&__item img
+		position: relative
+		z-index: 1
+		width: 80%
+		max-width: 150px
+		max-height: 110px
+		height: auto
+		transition: transform .8s
+
+.logos-slider--style-2
+	.logos-slider__item
+		border: 1px solid #E2E2E2
+
+/* logos slider end */

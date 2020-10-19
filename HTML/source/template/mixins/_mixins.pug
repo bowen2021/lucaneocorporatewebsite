@@ -1,0 +1,91 @@
+//- svg icon
+
+mixin svg(id)
+
+	svg.icon
+		use(xlink:href="#" + id)
+
+//- promo
+
+mixin hero-inner(title, overlay)
+
+	.hero-block__layout
+
+	.container
+		.row
+
+			.col-12
+
+				.align-container
+					.align-container__item
+
+						span.hero-block__overlay=overlay
+						h1.hero-block__title=title
+
+//- button--filled
+
+mixin button--filled(href,text)
+
+	a.button.button--filled(href="" + href)=text
+
+//- button--white
+
+mixin button--white(href,text)
+
+	a.button.button--white(href="" + href) #[span=text] #[+svg('arrow')]
+
+//- button--green
+
+mixin button--green(href,text)
+
+	a.button.button--green(href="" + href) #[span=text] #[+svg('arrow')]
+
+//- button--promo
+
+mixin button--promo(href,text)
+
+	a.button.button--promo(href="" + href) #[span=text] #[+svg('arrow')]
+
+//- counter--filled
+
+mixin counter--filled(count, subject, details)
+
+	.counter.counter--filled
+		.counter__top
+			span.js-counter.counter__count=count
+			span.counter__subject=subject
+		.counter__lower
+			span.counter__details=details
+
+//- counter--white
+
+mixin counter--white(count, subject, details)
+
+	.counter.counter--white
+		.counter__top
+			span.js-counter.counter__count=count
+			span.counter__subject=subject
+		.counter__lower
+			span.counter__details=details
+
+//- counter--blue
+
+mixin counter--blue(count, subject, details)
+
+	.counter.counter--blue
+		.counter__top
+			span.js-counter.counter__count=count
+			span.counter__subject=subject
+		.counter__lower
+			span.counter__details=details
+
+//- counter--green
+
+mixin counter--green(count, subject, details)
+
+	.counter.counter--green
+		.counter__lower
+			span.counter__details=details
+		.counter__top
+			span.js-counter.counter__count=count
+			span.counter__subject=subject

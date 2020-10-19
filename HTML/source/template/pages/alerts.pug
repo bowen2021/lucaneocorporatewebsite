@@ -1,0 +1,103 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'alerts'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Alerts', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-30
+
+				.col-xl-10.offset-xl-1
+
+					h3.bottom-0 Variant 1
+
+			.row
+
+				.col-xl-10.offset-xl-1
+
+					.alert.alert--success.alert--filled
+						.alert__icon
+							+svg('check')
+						p.alert__text #[strong Well done!] You successfully read this important alert message
+						span.alert__close
+							+svg('close')
+					.alert.alert--attention.alert--filled
+						.alert__icon
+							+svg('question')
+						p.alert__text #[strong Heads up!] This alert needs your attention, but it's not super important
+						span.alert__close
+							+svg('close')
+					.alert.alert--warning.alert--filled
+						.alert__icon
+							+svg('warning')
+						p.alert__text #[strong Warning!] Better check yourself, you're not looking too good
+						span.alert__close
+							+svg('close')
+					.alert.alert--error.alert--filled
+						.alert__icon
+							+svg('close')
+						p.alert__text #[strong Oh snap!] Change a few things up and try submitting again
+						span.alert__close
+							+svg('close')
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-30
+
+				.col-xl-10.offset-xl-1
+
+					h3.bottom-0 Variant 2
+
+			.row
+
+				.col-xl-10.offset-xl-1
+
+					.alert.alert--success.alert--transparent
+						.alert__icon
+							+svg('check')
+						p.alert__text #[strong Well done!] You successfully read this important alert message
+						span.alert__close
+							+svg('close')
+					.alert.alert--attention.alert--transparent
+						.alert__icon
+							+svg('question')
+						p.alert__text #[strong Heads up!] This alert needs your attention, but it's not super important
+						span.alert__close
+							+svg('close')
+					.alert.alert--warning.alert--transparent
+						.alert__icon
+							+svg('warning')
+						p.alert__text #[strong Warning!] Better check yourself, you're not looking too good
+						span.alert__close
+							+svg('close')
+					.alert.alert--error.alert--transparent
+						.alert__icon
+							+svg('close')
+						p.alert__text #[strong Oh snap!] Change a few things up and try submitting again
+						span.alert__close
+							+svg('close')
+
+	// section end

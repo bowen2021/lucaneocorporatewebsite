@@ -1,0 +1,118 @@
+/* blog post start */
+
+.blog-post
+	.text-filled
+		margin: 30px 0
+
+	+r768
+
+		.text-filled
+			margin: 54px 0 54px 0
+
+	&__img
+		margin-bottom: 57px
+	&__title
+		margin-bottom: 10px
+	&__subtitle
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin-bottom: 20px
+	&__date,
+	&__comments-count
+		color: #a9aeb3
+		font-size: 14px
+		font-weight: 500
+	&__comments-count:hover
+		color: #a9aeb3
+	&__author
+		padding: 20px 0 22px 0
+		border-top: 1px solid #E5E5E5
+		border-bottom: 1px solid #E5E5E5
+	&__author strong
+		display: inline-block
+		margin-bottom: 5px
+
+	+r768
+
+		&__author strong
+			margin-bottom: 0
+
+	&__author .socials
+		margin-top: 7px
+
+	+r768
+
+		&__author .socials
+			margin-top: 0
+
+.comments
+	&__title
+		margin-bottom: 41px
+	&__item
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item:not(:first-of-type)
+		margin-top: 50px
+	&__item--sub
+		padding-left: 30px
+
+	+r576
+
+		&__item--sub
+			padding-left: 50px
+
+	+r992
+
+		&__item--sub
+			padding-left: 100px
+
+	&__item-img
+		display: none
+		position: relative
+		height: 70px
+		width: 70px
+		border-radius: 50%
+		overflow: hidden
+
+	+r576
+
+		&__item-img
+			display: initial
+
+	&__item-description
+		width: 100%
+
+	+r576
+
+		&__item-description
+			width: calc(100% - 100px)
+
+	&__item-name
+		display: inline-block
+		font-weight: 700
+		letter-spacing: -0.050em
+		margin-bottom: 0
+	&__item-date
+		display: inline-block
+		color: #a9aeb3
+		font-size: 14px
+		font-weight: 500
+		margin-top: 7px
+	&__item-action
+		color: $bg-blue
+		cursor: pointer
+		transition: opacity .3s
+	&__item-action:hover
+		opacity: 0.7
+	&__item-text
+		margin-top: 10px
+	&__item-text p:last-of-type
+		margin-bottom: 0
+	.rate-count
+		display: inline-block
+		color: #777
+		margin-left: 10px
+
+/* blog post end */

@@ -1,0 +1,130 @@
+extends ../layouts/shop.pug
+
+block variables
+
+	-var page = 'account'
+
+	-var dest = 'shop'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/service-details.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/service-details.jpg' alt='img')
+
+		+hero-inner('Shop Account', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-md-6.col-lg-4.bottom-50.bottom-lg-0
+
+					form.form(action="javascript:void(0);" autocomplete="off")
+						h5.bottom-30 Sign In
+
+						.row.align-items-center
+
+							.col-12
+
+								input.form__field(type="text" name="name" placeholder="Full Name")
+
+							.col-12
+
+								label.form__label
+									input#password_1.form__field(type="password" name="password" placeholder="Password")
+									span.password-trigger(toggle="#password_1")
+										+svg('eye')
+
+							.col-xl-6
+
+								label.form__checkbox-label
+									span.form__label-text Remember me
+									input.form__input-checkbox(type="checkbox" checked)
+									span.form__checkbox-mask
+
+							.col-xl-6.text-xl-right.top-10.top-xl-0
+
+								span.form__text
+									a(href="#") I forgot my password
+
+							.col-12.top-30
+
+								button.button.button--green(type="submit") #[span Sign in] #[+svg('arrow')]
+
+							.col-12.top-20
+
+								span.form__text
+									a(href="#") Sign up if you don’t have an account
+
+				.col-md-6.col-lg-4.bottom-50.bottom-lg-0
+
+					form.form(action="javascript:void(0);" autocomplete="off")
+						h5.bottom-30 Sign Up
+
+						.row
+
+							.col-12
+
+								input.form__field(type="text" name="name" placeholder="User Name")
+
+							.col-12
+
+								input.form__field(type="email" name="email" placeholder="Email")
+
+							.col-12
+
+								label.form__label
+									input#password_2.form__field(type="password" name="password" placeholder="Password")
+									span.password-trigger(toggle="#password_2")
+										+svg('eye')
+
+							.col-12
+
+								label.form__label
+									input#password_3.form__field(type="password" name="confirm-password" placeholder="Confirm Password")
+									span.password-trigger(toggle="#password_3")
+										+svg('eye')
+
+							.col-12.bottom-30
+
+								span.form__text I agree with #[a(href="#") Term of Services]
+
+							.col-12
+
+								button.button.button--green(type="submit") #[span Sign up] #[+svg('arrow')]
+
+							.col-12.top-20
+
+								span.form__text
+									a(href="#") Sign up if you don’t have an account
+
+				.col-md-6.col-lg-4
+
+					form.form(action="javascript:void(0);" autocomplete="off")
+						h5.bottom-30 Password Recovery
+
+						.row
+
+							.col-12
+
+								input.form__field(type="email" name="email" placeholder="Email")
+
+							.col-12.bottom-30
+
+								span.form__text
+									a(href="#") Didn’t get email?
+
+							.col-12
+
+								button.button.button--green(type="submit") #[span Submit] #[+svg('arrow')]
+
+	// section end

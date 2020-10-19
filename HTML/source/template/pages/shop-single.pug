@@ -1,0 +1,168 @@
+extends ../layouts/shop.pug
+
+block variables
+
+	-var page = 'shop-single'
+
+	-var dest = 'shop'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/service-details.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/service-details.jpg' alt='img')
+
+		+hero-inner('Shop Single', 'TransX')
+
+	// section end
+
+	include ../blocks/_shop-product/_shop-product
+	 
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading
+						span.heading__pre-title best sellers
+						h3.heading__title Best sellers products
+
+			.row
+
+				.col-12
+
+					.bests-slider
+
+						.bests-slider__item
+
+							.shop-item.text-center
+								.shop-item__favorite
+									+svg('heart')
+								.shop-item__badge.badge--sale Sale
+								.shop-item__img
+									img.img--contain(src="img/shop_1.jpg", alt="img")
+								h6.shop-item__title
+									a(href="#") Delivery box small
+								.shop-item__price
+									s $16.00
+									span $14.00
+								ul.rating-list.justify-content-center
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item.rating-list__item--disabled
+										+svg('star')
+								a.button.button--green(href="#") #[span Add to cart] #[+svg('bag')]
+
+						.bests-slider__item
+
+							.shop-item.text-center
+								.shop-item__favorite
+									+svg('heart')
+								.shop-item__img
+									img.img--contain(src="img/shop_2.jpg", alt="img")
+								h6.shop-item__title
+									a(href="#") Delivery box big
+								.shop-item__price
+									span $16.00
+								ul.rating-list.justify-content-center
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item.rating-list__item--disabled
+										+svg('star')
+								a.button.button--green(href="#") #[span Add to cart] #[+svg('bag')]
+
+						.bests-slider__item
+
+							.shop-item.text-center
+								.shop-item__favorite
+									+svg('heart')
+								.shop-item__img
+									img.img--contain(src="img/shop_3.jpg", alt="img")
+								h6.shop-item__title
+									a(href="#") Delivery box
+								.shop-item__price
+									span $18.00
+								ul.rating-list.justify-content-center
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item.rating-list__item--disabled
+										+svg('star')
+								a.button.button--green(href="#") #[span Add to cart] #[+svg('bag')]
+
+						.bests-slider__item
+
+							.shop-item.text-center
+								.shop-item__favorite
+									+svg('heart')
+								.shop-item__img
+									img.img--contain(src="img/shop-5.jpg", alt="img")
+								h6.shop-item__title
+									a(href="#") Delivery box medium
+								.shop-item__price
+									span $18.00
+								ul.rating-list.justify-content-center
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item.rating-list__item--disabled
+										+svg('star')
+								a.button.button--green(href="#") #[span Add to cart] #[+svg('bag')]
+
+						.bests-slider__item
+
+							.shop-item.text-center
+								.shop-item__favorite
+									+svg('heart')
+								.shop-item__badge.badge--new New
+								.shop-item__img
+									img.img--contain(src="img/shop_4.jpg", alt="img")
+								h6.shop-item__title
+									a(href="#") Delivery box
+								.shop-item__price
+									span $16.00
+								ul.rating-list.justify-content-center
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item
+										+svg('star')
+									li.rating-list__item.rating-list__item--disabled
+										+svg('star')
+								a.button.button--green(href="#") #[span Add to cart] #[+svg('bag')]
+
+					.bests-slider__nav
+
+	// section end

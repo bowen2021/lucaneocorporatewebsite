@@ -1,0 +1,111 @@
+/* shop header start */
+
+.shop-header
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 100%
+	position: fixed
+	background: #FFF
+	z-index: 5
+	top: 0
+	left: 0
+	min-height: 70px
+	padding: 12px 0px 12px 0px
+	transition: all .3s
+
++r768
+
+	.shop-header
+		padding: 10px 0
+
++r1200
+
+	.shop-header
+		width: calc(100% - 20px)
+		top: 10px
+		left: 10px
+
++r1366
+
+	.shop-header
+		max-width: 1740px
+		padding: 12px 5px 12px 25px
+		left: 50%
+		transform: translateX(-50%)
+
+.shop-header
+	.button--filled
+		display: none
+		height: 60px
+		line-height: 60px
+		min-width: 190px
+		margin-right: -5px
+
+	+r768
+
+		.button--filled
+			display: inline-block
+
+	+r992
+
+		.button--filled
+			margin-right: 0
+
+	+r1200
+
+		.button--filled
+			height: 70px
+			line-height: 70px
+			min-width: 210px
+
+.cart-trigger
+	display: inline-block
+	position: relative
+	margin-right: 30px
+
++r1200
+
+	.cart-trigger
+		margin-right: 45px
+
+.cart-trigger
+	.icon
+		color: $color-primary
+		font-size: 24px
+		transition: color .3s
+	&__count
+		position: absolute
+		bottom: -8px
+		left: -8px
+		display: inline-block
+		color: #FFF
+		font-size: 10px
+		line-height: 20px
+		font-weight: 700
+		height: 20px
+		min-width: 20px
+		border-radius: 50%
+		background: $green
+		text-align: center
+
+.cart-trigger:hover
+	.icon
+		color: $green
+
+.shop-header.shop-header--fixed
+	top: 0
+	padding: 17px 0
+	box-shadow: 0 3px 10px 2px rgba(0,0,0,.04)
+
++r768
+
+	.shop-header.shop-header--fixed
+		padding: 6px 0
+
++r1366
+
+	.shop-header.shop-header--fixed
+		padding: 7px 0 7px 25px
+
+/* shop header end */

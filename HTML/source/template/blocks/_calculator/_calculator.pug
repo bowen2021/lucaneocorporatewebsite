@@ -1,0 +1,80 @@
+// section start
+
+section.section.calculator
+	.container
+		.row
+
+			.col-lg-8
+
+
+				form.form.calculator-form(action="javascript:void(0);")
+
+					h5.calculator-form__title Calculation form
+
+					.row.bottom-30
+
+						.col-sm-6
+
+							select.form__select(name="truckload")
+								option(data-display="Truckload type") Truckload type
+								option(value="value") Value 1
+								option(value="value2") Value 2
+								option(value="value3") Value 3
+								option(value="value3") Value 4
+								option(value="value3") Value 5
+
+						.col-sm-6
+
+							select.form__select(name="service")
+								option(data-display="Type of service") Type of service
+								option(value="value") Value 1
+								option(value="value2") Value 2
+								option(value="value3") Value 3
+								option(value="value3") Value 4
+								option(value="value3") Value 5
+
+						.col-sm-6.col-md-3
+	
+							input.form__field(type="number" name="weight" placeholder="Weight (kg)")
+	
+						.col-sm-6.col-md-3
+	
+							input.form__field(type="number" name="height" placeholder="Height (cm)")
+	
+						.col-sm-6.col-md-3
+	
+							input.form__field(type="number" name="width" placeholder="Width (cm)")
+	
+						.col-sm-6.col-md-3
+	
+							input.form__field(type="number" name="lenght" placeholder="Lenght (cm)")
+
+					h5.calculator-form__title.mb-0 Distance (km)
+
+					.row
+
+						.col-md-7.col-lg-6
+
+							.range-slider
+
+								input.js-range.range--calculator(type="text" name="price")
+
+						.col-md-5.col-lg-6.text-md-right
+
+							.calculator-form__total
+								span 2 322.89
+								span USD
+
+						.col-12.top-40
+
+							button.button.button--green(type="submit") #[span Calculate] #[+svg('arrow')]
+
+			.col-lg-4.col-xl-3.offset-xl-1
+
+				.contact-trigger.contact-trigger--style-2
+					img.contact-trigger__img(src="img/contact_background.png", alt="img")
+					h4.contact-trigger__title How we can help you!
+					p.contact-trigger__text Ronquil coho salmon red snapper duckbill lungfish southern  angelfish
+					+button--white('#', 'Contact us')
+
+// section end

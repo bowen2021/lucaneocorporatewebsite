@@ -1,0 +1,67 @@
+/* page-header_3 start */
+
+.page-header_3
+	position: fixed
+	display: flex
+	flex-direction: column
+	justify-content: center
+	top: 0
+	left: 0
+	width: 100%
+	max-width: 1400px
+	z-index: 2
+	min-height: 70px
+	padding: 8px 0
+	transition: all .3s
+
++r1366
+
+	.page-header_3
+		padding: 0
+		left: 50%
+		transform: translateX(-50%)
+
+.page-header_3
+	.logo--dark
+		display: none
+	.button--filled
+		display: none
+		height: 60px
+		line-height: 60px
+		min-width: 190px
+		margin-right: -5px
+
+	+r768
+
+		.button--filled
+			display: inline-block
+
+	+r992
+
+		.button--filled
+			margin-right: 0
+
+	+r1200
+
+		.button--filled
+			height: 70px
+			line-height: 70px
+			min-width: 210px
+
+.page-header_3.page-header--fixed
+	background: #FFF
+	box-shadow: 0 3px 10px 2px rgba(0,0,0,.04)
+	z-index: 5
+
++r1366
+
+	.page-header_3.page-header--fixed
+		padding: 6px 0 6px 25px
+
+.page-header_3.page-header--fixed
+	.logo--white
+		display: none
+	.logo--dark
+		display: initial
+
+/* page-header_3 end */

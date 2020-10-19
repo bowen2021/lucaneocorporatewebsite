@@ -1,0 +1,61 @@
+// header start
+
+header.page-header_4
+	.container-fluid
+		.row.align-items-center
+
+			.col-8.col-md-6.col-lg-3.d-flex.align-items-center
+
+				// menu-trigger start
+
+				.hamburger.d-none.d-md-inline-block(class=(style === "white" ? "hamburger--white" : undefined))
+					.hamburger-inner
+
+				// menu-trigger end
+
+				.page-header__logo
+					a(href="index.html")
+						img(src="img/logo_black.png", alt="logo")
+
+			.col-lg-4.d-none.d-lg-block
+
+				include ../_main-menu/_main-menu
+
+			.col-4.col-md-6.col-lg-5.d-flex.justify-content-end.align-items-center
+
+				a.page-header__phone(href="#")
+					+svg('phone')
+					span +31 85 964 47 20
+
+				.lang-block
+
+					.lang-icon
+						img.img--contain(src="img/gbr.png", alt="img")
+
+					// lang select start
+
+					ul.lang-select
+						li.lang-select__item.lang-select__item--active
+							span En
+							ul.lang-select__sub-list
+								li
+									a(href="#") French
+								li
+									a(href="#") Spanish
+								li
+									a(href="#") Deutsch
+								li
+									a(href="#") Russian
+
+					// lang select end
+
+				+button--filled("#", "Get a Quote")
+
+				// menu-trigger start
+
+				.hamburger.d-inline-block.d-md-none(class=(style === "white" ? "hamburger--white" : undefined))
+					.hamburger-inner
+
+				// menu-trigger end
+
+// header end

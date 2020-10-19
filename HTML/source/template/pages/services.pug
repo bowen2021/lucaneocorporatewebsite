@@ -1,0 +1,302 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'services'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/typography.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/typography.jpg' alt='img')
+
+		+hero-inner('Services', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.align-items-end.bottom-70
+
+				.col-xl-4
+
+					.heading
+						span.heading__pre-title Services
+						h3.heading__title Transporterium Services
+
+				.col-xl-8.top-20.top-xl-0
+
+					p.bottom-0 Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper!
+
+			.row.offset-50
+
+				.col-md-6.col-xl-3
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--small
+							img(src="img/road_freight.svg")
+
+						h6.icon-item__title Road Freight
+
+						p.icon-item__text Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback
+
+				.col-md-6.col-xl-3
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--small
+							img(src="img/shipping.svg")
+
+						h6.icon-item__title Shipping Freight
+
+						p.icon-item__text Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false 
+
+				.col-md-6.col-xl-3
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--small
+							img(src="img/plane.svg")
+
+						h6.icon-item__title Air Freight
+
+						p.icon-item__text Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat 
+
+				.col-md-6.col-xl-3
+
+					.icon-item
+
+						.icon-item__img.icon-item__img--small
+							img(src="img/train.svg")
+
+						h6.icon-item__title Train Freight
+
+						p.icon-item__text Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray.pb-0.services-inner
+		.container.bottom-70
+			.row
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Services
+						h3.heading__title We manage lead logistics for leadership
+
+		.container.container--wide
+			.row.offset-50
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_1.jpg", alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Truck Freight
+
+							.img-box__count 01
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_2.jpg", alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Train Freight
+
+							.img-box__count 02
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_3.jpg", alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Plane Freight
+
+							.img-box__count 03
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_4.jpg", alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Ship Freight
+
+							.img-box__count 04
+
+	// section end
+
+	// section start
+
+	section.section.bg--dgray
+
+		img.section--bg.t50.r0(src="img/testimonials-bg.png", alt="img")
+
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--white
+						span.heading__pre-title Steps for work
+						h3.heading__title How we works
+
+			.row.offset-50
+
+				.col-md-6.col-xl-3
+
+					.icon-item.icon-item--white
+
+						.icon-item__count
+							span 01
+
+						h6.icon-item__title Listening you
+
+						p.icon-item__text Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback
+
+				.col-md-6.col-xl-3
+
+					.icon-item.icon-item--white
+
+						.icon-item__count
+							span 02
+
+						h6.icon-item__title Lane pairing analysis
+
+						p.icon-item__text Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false
+
+				.col-md-6.col-xl-3
+
+					.icon-item.icon-item--white
+
+						.icon-item__count
+							span 03
+
+						h6.icon-item__title Check all details
+
+						p.icon-item__text Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat
+
+				.col-md-6.col-xl-3
+
+					.icon-item.icon-item--white
+
+						.icon-item__count
+							span 04
+
+						h6.icon-item__title Fast & efficient delivery
+
+						p.icon-item__text Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a
+
+	// section end
+
+	// section start
+
+	section.section.testimonials.testimonials--style-2
+
+		.container
+			.row
+
+				.col-lg-5
+
+					.heading
+						span.heading__pre-title Testimonials
+						h3.heading__title What our clients #[br]think about us
+
+					.testimonials__nav
+
+
+				.col-lg-7
+
+					img.quote-icon(src="img/quotes.png", alt="img")
+
+					.testimonials-slider
+
+						.testimonials-slider__item
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								h6 Well Singer
+								span Manager of Westwood
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+
+			.row
+
+				.col-12
+
+					include ../blocks/_logos-slider/_logos-slider
+
+	// section end

@@ -1,0 +1,195 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'careers'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/blog.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/blog.jpg' alt='img')
+
+		+hero-inner('Careers', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section.position.bg--lgray
+		.container
+			.row
+
+				.col-lg-6.col-xl-5
+
+					img(src="img/career.jpg", alt="img")
+
+
+				.col-lg-6.col-xl-6.offset-xl-1.top-50.top-lg-0
+
+					.heading.bottom-20
+						span.heading__pre-title Position
+						h3.heading__title Dedicated #[span.color--green Truck] driver
+
+					p Brook trout powen harelip sucker gibberfish beluga sturgeon coelacanth tidewater goby elephant fish yellowtail slender snipe eel rasbora
+					p Rainbowfish powen paddlefish brotula Arctic char zebra bullhead shark. Yellowhead jawfish gianttail temperate ocean-bass Atlantic eel river stingray skilfish flounder.
+
+					.position__details
+						strong 21 years or older
+						strong Must have Class A CDL License
+						strong Great Time – Daily or Weekly
+
+					.position__total
+						span $ 75.000
+						span annualy
+
+					+button--green('#', 'Apply now')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-lg-7
+
+					h4.bottom-20 Description
+
+					p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach." 
+					p.bottom-0 Dogfish warbonnet barramundi sharksucker elephant fish, striped burrfish, "Blobfish, wobbegong Atlantic herring shad crucian carp!" Bighead carp bar danio.
+
+				.col-lg-5.col-xl-4.offset-xl-1.top-50.top-lg-0
+
+					h4.bottom-20 Benefits
+
+					ul.list.list--check.list--reset
+						li.list__item Average $75,000 Annually!
+						li.list__item Ask about sign-on bonuses
+						li.list__item Great Benefits, Medical, Dental & Vision
+						li.list__item Advanced rate of pay for Veterans
+						li.list__item New great opportunities
+
+	// section end
+
+	// section start
+
+	section.section.action-section.pb-0
+		.action-section__bg
+			img.img--bg(src="img/action-section.jpg", alt="img")
+
+		.container
+			.row
+
+				.col-lg-6
+
+					.heading.bottom-40
+						h3.heading__title Every driver has a story. #[br]Let us help you write yours.
+
+					+button--white('#', 'More about')
+
+				.col-lg-6.top-40.top-lg-0
+
+					p.bottom-0 Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
+
+					a.js-video.action-section__video(href="https://www.youtube.com/watch?v=hSbVJ4y6I-8")
+						img.img--bg(src="img/video-trigger.jpg", alt="img")
+						span.video-icon
+							+svg('play')
+
+	// section end
+
+	// section start
+
+	section.section.positions-archive
+		.container
+			.row
+
+				.col-lg-8
+
+					h3.positions-archive__title Another positions
+
+					.accordion.position-accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Service manager
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+							ul.list.list--check.list--reset
+								li.list__item Average $75,000 Annually!
+								li.list__item Ask about sign-on bonuses
+								li.list__item Great Benefits, Medical, Dental & Vision
+								li.list__item Advanced rate of pay for Veterans
+								li.list__item New great opportunities
+								li.list__item Pet Policy
+
+							+button--green('#', 'Join us')
+
+					.accordion.position-accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Service manager
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+							ul.list.list--check.list--reset
+								li.list__item Average $75,000 Annually!
+								li.list__item Ask about sign-on bonuses
+								li.list__item Great Benefits, Medical, Dental & Vision
+								li.list__item Advanced rate of pay for Veterans
+								li.list__item New great opportunities
+								li.list__item Pet Policy
+
+							+button--green('#', 'Join us')
+
+					.accordion.position-accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Service analytic
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+							ul.list.list--check.list--reset
+								li.list__item Average $75,000 Annually!
+								li.list__item Ask about sign-on bonuses
+								li.list__item Great Benefits, Medical, Dental & Vision
+								li.list__item Advanced rate of pay for Veterans
+								li.list__item New great opportunities
+								li.list__item Pet Policy
+
+							+button--green('#', 'Join us')
+
+					.accordion.position-accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Ship captain
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+							ul.list.list--check.list--reset
+								li.list__item Average $75,000 Annually!
+								li.list__item Ask about sign-on bonuses
+								li.list__item Great Benefits, Medical, Dental & Vision
+								li.list__item Advanced rate of pay for Veterans
+								li.list__item New great opportunities
+								li.list__item Pet Policy
+
+							+button--green('#', 'Join us')
+
+				.col-lg-4.col-xl-3.offset-xl-1
+
+					.contact-trigger.contact-trigger--style-2
+						img.contact-trigger__img(src="img/contact_background.png", alt="img")
+						h4.contact-trigger__title How we can help you!
+						p.contact-trigger__text Ronquil coho salmon red snapper duckbill lungfish southern  angelfish
+						+button--white('#', 'Contact us')
+
+	// section end

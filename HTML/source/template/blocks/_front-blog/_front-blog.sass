@@ -1,0 +1,74 @@
+/* front blog start */
+
+.front-blog
+	.heading
+		margin-bottom: 33px
+
+	+r1200
+
+		.heading
+			margin-bottom: 43px
+
+
++r1200
+
+	.articles-slider-wrapper
+		margin-right: -85%
+
+.articles-slider
+	&__nav
+		margin-top: auto
+		margin-bottom: 30px
+
+	+r1200
+
+		&__nav
+			position: relative
+			top: 20px
+			margin-bottom: 0
+
+	.slick-list
+		margin: 0 -15px
+	.slick-slide
+		margin: 0 15px
+		vertical-align: top
+
+.article
+	background: #FFF
+	clip-path: polygon(92% 0, 100% 7%, 100% 100%, 0 100%, 0 0)
+
+.article
+	&__img
+		position: relative
+		padding-top: percentage(275/455)
+		overflow: hidden
+	&__img img
+		transition: transform 1s
+	&__img:hover img
+		transform: scale(1.2)
+	&__lower
+		padding: 22px 15px 25px 15px
+
+	+r576
+
+		&__lower
+			padding: 22px 30px 25px 30px
+
+	&__title
+		margin-bottom: 16px
+	&__title a
+		text-decoration: none
+		color: inherit
+		transition: color .3s
+	&__title a:hover
+		color: $green
+	&__text
+		margin-bottom: 0
+	&__details
+		margin-top: 20px
+		font-size: 14px
+		color: #767F7F
+		display: flex
+		justify-content: space-between
+
+/* front blog end */

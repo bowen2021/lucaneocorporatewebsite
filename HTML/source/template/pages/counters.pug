@@ -1,0 +1,104 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'counters'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Counters', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-30
+
+				.col-12
+
+					h3.bottom-0 Variant 1
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4
+
+					+counter--filled('5', 'millions', 'Delivered packeges')
+
+				.col-md-6.col-lg-4
+
+					+counter--filled('2', 'million', 'Miles driven each of the year')
+
+				.col-md-6.col-lg-4
+
+					+counter--filled('50', 'years', 'Total warehouse area')
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-30
+
+				.col-12
+
+					h3.bottom-0 Variant 2
+
+		section.section
+
+			img.img--bg(src="img/counter-bg.jpg", alt="img")
+
+			.container
+				.row.offset-50
+
+					.col-md-6.col-lg-4.text-center
+
+						+counter--white('5', 'millions', 'Delivered packeges')
+
+					.col-md-6.col-lg-4.text-center
+
+						+counter--white('2', 'million', 'Miles driven each of the year')
+
+					.col-md-6.col-lg-4.text-center
+
+						+counter--white('50', 'years', 'Total warehouse area')
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-30
+
+				.col-12
+
+					h3.bottom-0 Variant 3
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('5', 'millions', 'Delivered packeges')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('2', 'million', 'Miles driven each of the year')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('50', 'years', 'Total warehouse area')
+
+	// section end

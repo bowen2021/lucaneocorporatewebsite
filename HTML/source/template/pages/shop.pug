@@ -1,0 +1,25 @@
+extends ../layouts/shop.pug
+
+block variables
+
+	-var page = 'shop'
+
+	-var dest = 'shop'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/service-details.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/service-details.jpg' alt='img')
+
+		+hero-inner('Shop Category', 'TransX')
+
+	// section end
+
+	.shop__backdrop
+
+	include ../blocks/_catalog/_catalog

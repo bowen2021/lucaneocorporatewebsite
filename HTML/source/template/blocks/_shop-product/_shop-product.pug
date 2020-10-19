@@ -1,0 +1,174 @@
+// shop product start
+
+section.section.shop-product.pb-0
+	.container
+		.row
+
+			.col-md-8.offset-md-2.col-lg-6.offset-lg-0
+
+				include ../_dual-slider/_dual-slider
+
+			.col-lg-6
+
+				.shop-product__top
+
+					h3.shop-product__name Delivery box small
+
+					s.shop-product__old-price $16.00
+
+					span.shop-product__price $14.00
+
+					.shop-product__rating
+
+						ul.rating-list
+							li.rating-list__item
+								+svg('star')
+							li.rating-list__item
+								+svg('star')
+							li.rating-list__item
+								+svg('star')
+							li.rating-list__item
+								+svg('star')
+							li.rating-list__item
+								+svg('star')
+
+				.shop-product__description
+
+					p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose
+
+					ul.shop-product__list.list--reset
+						li #[span SKU:] #[span 68]
+						li #[span Category:] #[span Transport]
+						li #[span Tags:] #[a.tag(href="#") #Transport] #[a.tag(href="#") #Business] #[a.tag(href="#") #Warehouse]
+
+				form.form.product-form(action="javascript:void(0);" autocomplete="off")
+
+					.form__count
+						span.form__minus
+						input.form__field(type="number" value="1")
+						span.form__plus
+					.product-form__favorite
+						+svg('heart')
+					button.button.button--green(type="submit") #[span Purchase] #[+svg('arrow')]
+
+		.row
+
+			.col-lg-10.col-xl-9
+
+				.tabs.horizontal-tabs.shop-product__tabs
+					ul.horizontal-tabs__header
+						li
+							a(href="#horizontal-tabs__item-1")
+								span Description
+						li
+							a(href="#horizontal-tabs__item-2")
+								span Reviews #[span (1)]
+
+					.horizontal-tabs__content
+						#horizontal-tabs__item-1.horizontal-tabs__item
+							p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+							p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+						#horizontal-tabs__item-2.horizontal-tabs__item
+							h5.tabs__title 1 Review for Delivery box small
+
+							.comments.top-20
+
+								.comments__item
+									.comments__item-img
+										img.img--bg(src="img/author_1.png", alt="img")
+									.comments__item-description
+										.row.align-items-center
+
+											.col-12.bottom-10
+
+												ul.rating-list
+													li.rating-list__item
+														+svg('star')
+													li.rating-list__item
+														+svg('star')
+													li.rating-list__item
+														+svg('star')
+													li.rating-list__item
+														+svg('star')
+													li.rating-list__item
+														+svg('star')
+
+											.col-6
+
+												span.comments__item-name Stevie Wonder
+
+											.col-6.text-right
+
+												span.comments__item-action
+													+svg('previous')
+
+											.col-12
+
+												.comments__item-text
+													p Grande perch speckled trout! Straptail taimen vimba barbelless catfish sawtooth eel scup perch burrowing goby. Siamese fighting fish Devario dogfish
+													span.comments__item-date 2 December 2019
+
+							form.form.comments-form(action="javascript:void(0);")
+								.row
+
+									.col-12
+
+										h5.comments-form__title Your comment
+
+									.col-12
+
+										.form__rating
+
+											input#rate_0.form__rating-input(type="radio" name="rating" value="0" disabled)
+
+											label(for="rate_1").form__rating-label
+												+svg('star')
+
+											input#rate_1.form__rating-input(type="radio" name="rating" value="1" checked)
+
+											label(for="rate_2").form__rating-label
+												+svg('star')
+
+											input#rate_2.form__rating-input(type="radio" name="rating" value="2")
+
+											label(for="rate_3").form__rating-label
+												+svg('star')
+
+											input#rate_3.form__rating-input(type="radio" name="rating" value="3")
+
+											label(for="rate_4").form__rating-label
+												+svg('star')
+
+											input#rate_4.form__rating-input(type="radio" name="rating" value="4")
+
+											label(for="rate_5").form__rating-label
+												+svg('star')
+
+											input#rate_5.form__rating-input(type="radio" name="rating" value="5")
+
+									.col-12
+
+										textarea.form__field.form__message(name="message" placeholder="Message")
+
+									.col-md-6
+
+										input.form__field(type="text" name="name" placeholder="Your Name")
+
+
+									.col-md-6
+
+										input.form__field(type="email" name="email" placeholder="Your Email")
+
+									.col-12.bottom-40
+
+										label.form__checkbox-label
+											span.form__label-text Save my name, email, and website in this browser for the next time I comment.
+											input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+											span.form__checkbox-mask
+
+									.col-12
+
+										button.button.button--green(type="submit") #[span Submit] #[+svg('arrow')]
+
+
+// shop product end

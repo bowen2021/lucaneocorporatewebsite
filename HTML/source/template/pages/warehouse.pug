@@ -1,0 +1,102 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'warehouse'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/warehouse.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/warehouse.jpg' alt='img')
+
+		+hero-inner('Warehouse', 'TransX')
+
+	// sectio end
+
+	include ../blocks/_warehouse/_warehouse
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you, #[span.color--green whoever] you are
+
+			.row
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title One Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse
+
+							.col-lg-2
+
+								.pricing-table__price #[span 95] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table.pricing-table--blue
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--white('#', 'Get started')
+
+	// section end

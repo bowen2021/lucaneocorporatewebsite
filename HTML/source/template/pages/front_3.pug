@@ -1,0 +1,649 @@
+extends ../layouts/front_3.pug
+
+block variables
+
+	-var page = 'front_3'
+
+	-var type = 'front'
+
+	-var style = 'white'
+
+block main
+
+	// promo start
+
+	.promo.promo--f3
+
+		.promo-slider
+
+			.promo-slider__item
+
+				.promo-slider__layout
+
+				picture
+					source(srcset='img/promo_3.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/promo_3.jpg', alt='img')
+
+				.align-container
+					.align-container__item
+
+						.container
+							.row
+
+							.col-lg-9.col-xl-8
+
+									.promo-slider__wrapper-1
+										span.promo-slider__overlay TransX
+										h2.promo-slider__title Deliver Packages #[br]in any Way
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+									.promo-slider__wrapper-3
+										+button--promo('#', 'Explore more')
+
+			.promo-slider__item
+
+				.promo-slider__layout
+
+				picture
+					source(srcset='img/promo_2.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/promo_2.jpg', alt='img')
+
+				.align-container
+					.align-container__item
+
+						.container
+							.row
+
+								.col-12.text-center
+
+									.promo-slider__wrapper-1
+										span.promo-slider__overlay.position-center TransX
+										h2.promo-slider__title Worldwide Shipping
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Roach yellowfin cutthroat trout zebra pleco ocean sunfish temperate bass pikehead elephant fish. Long-finned char northern pike bluegill temperate. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+									.promo-slider__wrapper-3
+										+button--promo('#', 'Explore more')
+
+			.promo-slider__item
+
+				.promo-slider__layout
+
+				picture
+					source(srcset='img/promo_1.jpg', media='(min-width: 992px)')
+					img.img--bg(src='img/promo_1.jpg', alt='img')
+
+				.align-container
+					.align-container__item
+
+						.container
+							.row
+
+							.col-lg-9.col-xl-8
+
+									.promo-slider__wrapper-1
+										span.promo-slider__overlay TransX
+										h2.promo-slider__title Transportation Services around the World
+									.promo-slider__wrapper-2
+										p.promo-slider__subtitle Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+									.promo-slider__wrapper-3
+										+button--promo('#', 'Explore more')
+
+		.promo-pannel
+			a.js-video.promo-pannel__video(href="https://www.youtube.com/watch?v=hSbVJ4y6I-8")
+				img.img--bg(src="img/promo_video.jpg", alt="img")
+				span.icon-holder
+					+svg('play')
+			.promo-pannel__inner
+				.row
+
+					.col-6
+
+						h6.promo-pannel__title Phone
+						a.promo-pannel__link(href="tel:+31859644720")
+							+svg('phone')
+							span +31 85 964 47 20
+
+					.col-6
+
+						h6.promo-pannel__title Email
+						a.promo-pannel__link(href="mailto:transx@mail.co")
+							+svg('mail')
+							span transx@mail.co
+
+		.promo__lower
+			.container
+				.row
+
+					.col-12.d-flex.align-items-start.justify-content-sm-end
+
+						.promo-slider__nav
+						.promo-slider__count
+
+	// promo end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-60
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Services
+						h3.heading__title TransX Services
+						span.heading__layout Services
+
+			.row.offset-50
+
+				.col-sm-6.col-xl-4
+
+					.count-item
+
+						.count-item__img.icon-item__img--small.justify-content-center
+							img(src="img/road_freight.svg", alt="icon")
+
+						h6.count-item__title #[span.count-item__count 01] #[span Road Freight]
+						p.count-item__text Goblin shark zingel, bleak Quillfish kingfish dorado molly labyrinth fish yellowtail horse
+						.count-item__inner.text-center
+							+button--green('#', 'Read more')
+
+				.col-sm-6.col-xl-4
+
+					.count-item
+
+						.count-item__img.icon-item__img--small.justify-content-center
+							img(src="img/shipping.svg", alt="icon")
+
+						h6.count-item__title #[span.count-item__count 02] #[span Shipping Freight]
+						p.count-item__text Black triggerfish, armored searobin deepwater cardinalfish tiger barb brown.
+						.count-item__inner.text-center
+							+button--green('#', 'Read more')
+
+				.col-sm-6.col-xl-4
+
+					.count-item
+
+						.count-item__img.icon-item__img--small.justify-content-center
+							img(src="img/plane.svg", alt="icon")
+
+						h6.count-item__title #[span.count-item__count 03] #[span Air Freight]
+						p.count-item__text Longfin escolar tiger shovelnose catfish half-gill clown triggerfish trench Moorish idol thresher.
+						.count-item__inner.text-center
+							+button--green('#', 'Read more')
+
+	// section end
+
+	include ../blocks/_front-features/_front-features
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading
+						span.heading__pre-title How we work
+						h3.heading__title Steps of Сooperatoin
+						span.heading__layout Steps
+
+		.slider-holder
+			.slider-holder__wrapper
+
+				.steps-slider.cooperation--slider
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 01
+								span /06
+						.steps-slide__lower
+							h6.steps-slide__title Thinking strategy
+							p.bottom-0 Siamese fighting fish aruana combfish, scythe butterfish warbonnet, catalufa trout cod.
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 02
+								span /06
+						.steps-slide__lower
+							h6.steps-slide__title Choice of solutions
+							p.bottom-0 Boarfish sandroller Rattail daggertooth pike conger gudgeon sabertooth croaker tonguefish kelp
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 03
+								span /06
+						.steps-slide__lower
+							h6.steps-slide__title Analysis of selected solutions
+							p.bottom-0 Sea dragon bristlenose catfish Russian sturgeon yellowtail clownfish kelp perch, tube-eye 
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 04
+								span /06
+						.steps-slide__lower
+							h6.steps-slide__title Route building
+							p.bottom-0 Old World knifefish crestfish, jellynose fish; algae eater swordtail, carp atka mackerel grass
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 05
+								span /06
+						.steps-slide__lower
+							h6.steps-slide__title Cargo preparation
+							p.bottom-0 Temperate ocean-bass, hussar Steve fish combtail gourami eel, blue whiting smelt catfish.
+					.steps-slide
+						.steps-slide__top
+							.steps-slide__date
+								span 06
+								span /06
+						.steps-slide__lower
+							h6.steps-slide__title Analysis of selected solutions
+							p.bottom-0 Sea dragon bristlenose catfish Russian sturgeon yellowtail clownfish kelp perch, tube-eye 
+
+	// section end
+
+	// section start
+
+	section.section.quote-section.quote-section--style-2.pb-0
+		.quote-section__bg
+			img.img--bg(src="img/calculator_2.jpg", alt="img")
+		.container
+			.row.flex-column-reverse.flex-lg-row
+
+				.col-lg-6.col-xl-6.top-50.top-lg-0
+
+					.form-wrapper.is--bordered
+
+						form.form.quote-form(action="javascript:void(0);")
+
+							h6.quote-form__title Personal data
+
+							.row
+
+								.col-sm-6
+
+									input.form__field(type="text" name="name" placeholder="Full name")
+
+								.col-sm-6
+
+									input.form__field(type="email" name="email" placeholder="Email")
+
+								.col-sm-6
+
+									input.form__field(type="tel" name="phone-number" placeholder="Phone")
+
+								.col-sm-6
+
+									input.form__field(type="text" name="subject" placeholder="Subject")
+
+							h6.quote-form__title.top-20 Shipment data
+
+							.row
+
+								.col-sm-6
+
+									input.form__field(type="text" name="delivery" placeholder="Delivery city")
+
+								.col-sm-6
+
+									input.form__field(type="text" name="departure" placeholder="City of departure")
+
+								.col-sm-6
+
+									select.form__select(name="freight")
+										option(data-display="Freight type") Freight type
+										option(value="value") Value 1
+										option(value="value2") Value 2
+										option(value="value3") Value 3
+										option(value="value3") Value 4
+										option(value="value3") Value 5
+
+								.col-sm-6
+
+									select.form__select(name="incoterms")
+										option(data-display="Incoterms") Incoterms
+										option(value="value") Value 1
+										option(value="value2") Value 2
+										option(value="value3") Value 3
+										option(value="value3") Value 4
+										option(value="value3") Value 5
+
+								.col-md-3.col-lg-6.col-xl-3
+
+									input.form__field(type="number" name="weight" placeholder="Weight")
+
+								.col-md-3.col-lg-6.col-xl-3
+
+									input.form__field(type="number" name="height" placeholder="Height")
+
+								.col-md-3.col-lg-6.col-xl-3
+
+									input.form__field(type="number" name="width" placeholder="Width")
+
+								.col-md-3.col-lg-6.col-xl-3
+
+									input.form__field(type="number" name="lenght" placeholder="Lenght")
+
+								.col-12.offset-20
+
+									label.form__checkbox-label.bottom-20
+										span.form__label-text Fragile
+										input.form__input-checkbox(type="checkbox" name="size-select" value="Size L")
+										span.form__checkbox-mask
+
+									label.form__checkbox-label.bottom-20
+										span.form__label-text Express
+										input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+										span.form__checkbox-mask
+
+									label.form__radio-label.bottom-20
+										span.form__label-text Insurance
+										input.form__input-radio(type="radio" name="option-select" value="option-3" checked)
+										span.form__radio-mask
+
+									label.form__radio-label.bottom-20
+										span.form__label-text Packaging
+										input.form__input-radio(type="radio" name="option-select" value="option-4")
+										span.form__radio-mask
+
+								.col-12
+
+									button.quote-form__submit(type="submit") Request a quote
+
+				.col-lg-6.col-xl-5.offset-xl-1
+
+					.heading.heading--white
+						span.heading__pre-title Calculator
+						h3.heading__title You can know the Price for your Transportation in Advance
+						p.heading__text.color--white Brook trout powen harelip sucker gibberfish beluga sturgeon coelacanth tidewater goby elephant fish yellowtail slender snipe eel rasboraRainbowfish powen paddlefish brotula Arctic char zebra bullhead shark. Yellowhead jawfish gianttail temperate ocean-bass Atlantic eel river stingray skilfish.
+
+					.row.top-50.offset-50
+
+						.col-6.col-sm-4
+
+							.icon-item.text-center
+
+								.icon-item__img
+									+svg('support')
+
+								h6.icon-item__title Support 24/7
+
+						.col-6.col-sm-4
+
+							.icon-item.text-center
+
+								.icon-item__img
+									+svg('location')
+
+								h6.icon-item__title Tracking
+
+						.col-6.col-sm-4
+
+							.icon-item.text-center
+
+								.icon-item__img
+									+svg('insurance')
+
+								h6.icon-item__title Insurance
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title What we do
+						h3.heading__title We Provide Future of Delivery
+						span.heading__layout Features
+
+			.row.offset-70
+
+				.col-lg-4
+
+					.advantages-item.text-center
+						.advantages-item__img
+							img(src="img/pack_4/i8.svg", alt="icon")
+						h2.advantages-item__title 5 million
+						h6.advantages-item__subtitle Delivered packages
+						p.advantages-item__text Old World knifefish crestfish, jellynose fish; algaee eater swordtail, carp atka mackerel graess carped yellowfin
+
+				.col-lg-4
+
+					.advantages-item.text-center
+						.advantages-item__img
+							img(src="img/pack_4/i15.svg", alt="icon")
+						h2.advantages-item__title 12 million
+						h6.advantages-item__subtitle Miles driven
+						p.advantages-item__text Combfish armorhead catfish medaka-snubnose parasitic eel Black scabbardfish cownose ryolden shiner tunfir
+
+				.col-lg-4
+
+					.advantages-item.text-center
+						.advantages-item__img
+							img(src="img/pack_4/i12.svg", alt="icon")
+						h2.advantages-item__title 2 million
+						h6.advantages-item__subtitle Stored in stock
+						p.advantages-item__text Noodlefish, dwarf gourami lake whitefish Jack Dempsey yellow bass monkeyface prickleback Pacific viperfish
+
+	// section end
+
+	// section start
+
+	section.section.info-block.color--white
+
+		img.img--bg(src="img/info-bg_3.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-xl-7
+
+					.heading.heading--white
+						h3.heading__title Give you complete control #[br] #[span.color--green of your] warehouse
+
+					p Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+					+button--white('#', 'More about')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-50
+
+				.col-xl-4.bottom-70
+
+					.heading
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you
+						p.heading__text Pacific hake false trevally queen Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper! Owens pupfish large-eye
+						span.heading__layout Price
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--bordered
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Regular #[span.color--green pack]
+							.pricing-plan__price #[span 150] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments / month
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--blue
+					
+						img.pricing-plan__bg(src="img/price_background.png", alt="img")
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Premium pack
+							.pricing-plan__price #[span 255] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item 100 freight shipments / month
+							+button--white('#', 'Get started')
+
+	// section end
+
+	include ../blocks/_front-blog/_front-blog
+
+	// section start
+
+	section.section.bg--dgray
+		img.section--bg.t50.r0(src="img/map-bg.png", alt="img")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center.heading--white
+						span.heading__pre-title Testimonials
+						h3.heading__title What People Says #[span.color--green About] us
+						span.heading__layout.layout--dgray People
+
+			.row
+
+				.col-xl-8.offset-xl-2
+
+					.testimonials-slider.testimonials-slider--white
+
+						.testimonials-slider__item.text-center
+
+							p Dogteeth tetra; sea catfish jack, golden trout. Marblefish spotted dogfish, mako shark anglerfish, "sharksucker swordtail northern pike." Shell-ear mud minnow Blobfish, candlefish; plownose chimaera bala shark southern sandfish lungfish longfin smelt. limbing perch sea bream bleak seascolar Cherubfish pleco jewelfish threadfin, bala shark crocodile shark bleak Asian carps trout cod. Chubsucker lighthousefish prickly shark mackerel shark golden loach plunderfish; stingfish midshipman golden loach dragon goby sculpin. California halibutscup.
+
+							.testimonials-slider__author.text-center.text-sm-left
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item.text-center
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author.text-center.text-sm-left
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item.text-center
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author.text-center.text-sm-left
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+					.testimonials__nav
+
+	// section end
+
+	// section start
+
+	section.section.app-section
+		.container
+			.row
+
+				.col-lg-5.col-xl-4.offset-xl-1.d-none.d-lg-block
+
+					img(src="img/phone-img.png", alt="img")
+
+				.col-lg-6.offset-lg-1.col-xl-5
+
+					.heading.bottom-20
+						span.heading__pre-title Mobile
+						h3.heading__title Awesome app which works for you
+						span.heading__layout Mobile
+
+					p Ghost flathead coolie loach haddock duckbilled barracudina blackchin; dace European minnow dragon. Sauger Chinook salmon, inanga, milkfish whitefish.
+
+					.app-download
+						a.app-download__link(href="#")
+							img(src="img/mobile/apple.svg", alt="apple")
+						a.app-download__link(href="#")
+							img(src="img/mobile/google.svg", alt="google")
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+						span.heading__layout.layout--lgray Partners
+
+			.row
+
+				.col-12
+
+					include ../blocks/_logos-slider/_logos-slider
+
+	// section end
+
+	// section start
+
+	section.section.front-contacts.bg--dgray.color--white
+		img.section--bg.t50.r0(src="img/map_markers.png", alt="bg")
+		.container
+			.row.align-items-center
+
+				.col-lg-7
+
+					.heading.heading--white.bottom-30
+						h3.heading__title Contact us if you have any #[span.color--green query] about our service
+						span.heading__layout.layout--dgray Contacts
+					
+					p.bottom-40 Bramble shark slickhead archerfish Black angelfish marblefish bigeye walleye fire bar danio silver driftfish pelagic cod. Wolf-herring spaghetti eel, ocean sunfish, sergeant major codling naked-back knifefish peamouth snubnose parasitic.
+
+					+button--white('#', 'Contact us')
+
+				.col-lg-5.col-xl-4.offset-xl-1.top-50.top-lg-0
+
+					.row.offset-30
+
+						.col-md-6.col-lg-12
+
+							.office-item
+								h6.office-item__title USA office
+								.office-item__details
+									p #[strong Location:] #[span av. Washington 165, NY CA 54003]
+									p #[strong Phone:] #[a(href="tel:+31859644725") +31 85 964 47 25] #[a(href="tel:+31859644725") +31 65 792 63 11]
+									p #[strong Email:] #[a(href="mailto:info@transx.com") info@transx.com]
+									p #[strong Openning hours:] #[span 9:00 AM - 5:00 PM]
+						.col-md-6.col-lg-12
+
+							.office-item
+								h6.office-item__title Germany office
+								.office-item__details
+									p #[strong Location:] #[span av. Washington 165, NY CA 54003]
+									p #[strong Phone:] #[a(href="tel:+31859644725") +31 85 964 47 25] #[a(href="tel:+31859644725") +31 65 792 63 11]
+									p #[strong Email:] #[a(href="mailto:info@transx.com") info@transx.com]
+									p #[strong Openning hours:] #[span 9:00 AM - 5:00 PM]
+
+	// section end

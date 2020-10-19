@@ -1,0 +1,227 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'documents'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/typography.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/typography.jpg' alt='img')
+
+		+hero-inner('Documents and Sertifications', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section.pb-0
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Downloads
+						h3.heading__title Important downloads
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4
+
+					.downloads
+						h4.downloads__title Commercial claim form
+						a.downloads__icon(href="#" download)
+							+svg('download')
+						p.downloads__text An Export Packing List, similarly to the commercial invoice
+						.downloads__details PDF, November 2019
+
+				.col-md-6.col-lg-4
+
+					.downloads
+						h4.downloads__title Bills of landing #[br]terms
+						a.downloads__icon(href="#" download)
+							+svg('download')
+						p.downloads__text New bills of terms for our customers, that include new privacy policy
+						.downloads__details docx, November 2019
+
+				.col-md-6.col-lg-4
+
+					.downloads
+						h4.downloads__title Application for credit form
+						a.downloads__icon(href="#" download)
+							+svg('download')
+						p.downloads__text The Bill is a document, issued to a exporter by a carrie
+						.downloads__details PDF, October 2019
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-40
+
+				.col-md-6.col-xl-4
+
+					.document.document--style-2
+						.document__img
+							img(src="img/pdf.svg", alt="img")
+						.document__details
+							h6.document__title Company report 2019
+							span.document__date November 2019
+						a.document__icon(href="#" download)
+							+svg('download')
+
+				.col-md-6.col-xl-4
+
+					.document.document--style-2
+						.document__img
+							img(src="img/docx.svg", alt="img")
+						.document__details
+							h6.document__title Event presentation
+							span.document__date October 2019
+						a.document__icon(href="#" download)
+							+svg('download')
+
+				.col-md-6.col-xl-4
+
+					.document.document--style-2
+						.document__img
+							img(src="img/pdf.svg", alt="img")
+						.document__details
+							h6.document__title Freight claim of form
+							span.document__date November 2019
+						a.document__icon(href="#" download)
+							+svg('download')
+
+				.col-md-6.col-xl-4
+
+					.document.document--style-2
+						.document__img
+							img(src="img/docx.svg", alt="img")
+						.document__details
+							h6.document__title Bill of landing terms
+							span.document__date December 2019
+						a.document__icon(href="#" download)
+							+svg('download')
+
+				.col-md-6.col-xl-4
+
+					.document.document--style-2
+						.document__img
+							img(src="img/file.svg", alt="img")
+						.document__details
+							h6.document__title Certificate of origin
+							span.document__date November 2019
+						a.document__icon(href="#" download)
+							+svg('download')
+
+				.col-md-6.col-xl-4
+
+					.document.document--style-2
+						.document__img
+							img(src="img/pdf.svg", alt="img")
+						.document__details
+							h6.document__title Customs invoice
+							span.document__date October 2019
+						a.document__icon(href="#" download)
+							+svg('download')
+
+	// section end
+
+	// section start
+
+	section.section.bg--dgray
+		img.bg--center(src="img/certifications-bg.png", alt="bg")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center.heading--white
+						h3.heading__title Certifications
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer1.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer2.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Tracking Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer3.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Analysis Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer4.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer3.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Analysis Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer2.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Tracking Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer4.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+				.col-md-6.col-lg-4.col-xl-3
+
+					.certificate
+						.certificate__img
+							img(src="img/certificates/cer1.svg", alt="certificate")
+						h6.certificate__title
+							a(href="#") Delivery Certificate
+						p Sherubfish lookdown catfish? Airbreathing catfish gurnard northern clingfish.
+
+	// section end

@@ -1,0 +1,59 @@
+/* menu-trigger */
+
+.hamburger
+	position: relative
+	top: 2px
+	display: inline-block
+	height: 16px
+	width: 30px
+	cursor: pointer
+	transition: opacity 0.3s
+
+.hamburger:hover
+	opacity: 0.7
+
+.hamburger-inner
+	display: block
+	top: 9px
+	margin-top: -2px
+	width: 24px
+
+.hamburger-inner::before
+	width: 30px
+
+.hamburger-inner::after
+	width: 19px
+	right: -4px
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after
+	height: 2px
+	background-color: #333
+	position: absolute
+	transform: rotate(0deg)
+	transform-origin: 50% 50%
+	transition: all 0.3s
+
+.hamburger-inner::before,
+.hamburger-inner::after
+	content: ""
+	display: block
+
+.hamburger-inner::before
+	top: -6px
+
+.hamburger-inner::after
+	bottom: -6px
+
+.hamburger.hamburger--active
+	.hamburger-inner
+		width: 30px
+	.hamburger-inner::after
+		right: 0px
+		width: 30px
+.hamburger--white
+	.hamburger-inner,
+	.hamburger-inner::before,
+	.hamburger-inner::after
+		background: $white

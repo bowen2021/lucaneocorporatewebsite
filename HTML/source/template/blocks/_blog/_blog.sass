@@ -1,0 +1,117 @@
+/* blog start */
+
+.blog
+	.pagination
+		margin-top: 44px
+	&__title
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin-bottom: 20px
+
+.blog-item
+	margin-bottom: 50px
+
+.blog-item
+	&__category
+		display: inline-block
+		margin-bottom: 7px
+		color: $bg-blue
+		font-size: 12px
+		text-transform: uppercase
+		font-weight: 700
+	&__img
+		position: relative
+		margin-bottom: 11px
+		overflow: hidden
+		clip-path: polygon(90% 0, 100% 12%, 100% 100%, 0 100%, 0 0)
+	&__img img
+		transition: transform 1s
+	&__img:hover img
+		transform: scale(1.2)
+	&__img::before
+		content: ""
+		display: block
+		padding-top: percentage(220/270)
+	&__title
+		margin-bottom: 5px
+	&__title a
+		color: inherit
+		text-decoration: none
+		transition: color .3s
+	&__title a:hover
+		color: $green
+	&__details
+		display: flex
+		justify-content: space-between
+		color: #a9aeb3
+		font-size: 14px
+		font-weight: 500
+		margin-top: 19px
+
+.latest-item
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.latest-item:not(:last-of-type)
+	margin-bottom: 30px
+
+.latest-item
+	&__img
+		height: 56px
+		width: 56px
+		position: relative
+	&__title
+		font-size: 16px
+		margin-bottom: 3px
+	&__title a
+		color: inherit
+		text-decoration: none
+		transition: color .3s
+	&__title a:hover
+		color: $green
+	&__details
+		width: calc(100% - 80px)
+	&__date
+		color: #a9aeb3
+		font-size: 14px
+		font-weight: 500
+
+.instagram
+	display: flex
+	flex-wrap: wrap
+	margin: 0 -4px
+
+.instagram
+	&__item
+		width: calc(33.333% - 8px)
+		margin: 4px
+	&__img
+		overflow: hidden
+		position: relative
+		z-index: 2
+	&__img::before
+		content: ""
+		position: relative
+		display: block
+		padding-top: percentage(84.65/84.65)
+		transition: background .3s
+		z-index: 2
+	.img--bg
+		z-index: 0
+	&__item:hover &__img::before
+		background: rgba(0, 61, 144, 0.3)
+
+.tag
+	display: inline-block
+	color: inherit
+	line-height: 30px
+	font-weight: 700
+	text-decoration: none
+	transition: color .3s
+
+.tag:not(:last-of-type)
+	margin-right: 20px
+
+/* blog end */

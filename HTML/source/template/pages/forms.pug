@@ -1,0 +1,119 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'forms'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Form', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-30
+
+				.col-12
+
+					h3.bottom-0 Variant 1
+
+			.row(style="pointer-events: none;")
+
+				.col-md-8.col-lg-4.col-xl-3
+
+					h6.bottom-20 Input disable
+
+					input.bottom-50.form__field(type="text" name="text" placeholder="Text" disabled)
+
+					h6.bottom-20 Input focus
+
+					input.bottom-50.form__field.input--focus(type="text" name="text" placeholder="Text" disabled)
+
+					h6.bottom-20 Input error
+
+					input.bottom-50.form__field.input--error(type="text" name="text" placeholder="Text" disabled)
+
+					h6.bottom-20 Textarea disabled
+
+					textarea.form__field.form__message(name="message" placeholder="Text" disabled)
+
+				.col-md-8.col-lg-5.offset-lg-1.col-xl-4.offset-xl-1
+
+					h6.bottom-20.radio-title Radio
+
+					.row.bottom-50
+						
+						.col-12.bottom-20
+
+							label.form__radio-label
+								span.form__label-text Radio Checked
+								input.form__input-radio(type="radio" checked)
+								span.form__radio-mask
+
+						.col-12.bottom-20
+
+							label.form__radio-label
+								span.form__label-text Radio Unchecked
+								input.form__input-radio(type="radio")
+								span.form__radio-mask
+
+						.col-12.bottom-20
+
+							label.form__radio-label
+								span.form__label-text Radio Checked Disabled
+								input.form__input-radio(type="radio" checked disabled)
+								span.form__radio-mask
+
+						.col-12
+
+							label.form__radio-label
+								span.form__label-text Radio Unchecked Disabled
+								input.form__input-radio(type="radio" disabled)
+								span.form__radio-mask
+
+					h6.bottom-20 Checkbox
+
+					.row
+
+						.col-12.bottom-20
+
+							label.form__checkbox-label
+								span.form__label-text Checkbox Checked
+								input.form__input-checkbox(type="checkbox" name="size-select" checked)
+								span.form__checkbox-mask
+
+						.col-12.bottom-20
+
+							label.form__checkbox-label
+								span.form__label-text Checkbox Unchecked
+								input.form__input-checkbox(type="checkbox" name="size-select")
+								span.form__checkbox-mask
+
+						.col-12.bottom-20
+
+							label.form__checkbox-label
+								span.form__label-text Checkbox Checked Disabled
+								input.form__input-checkbox(type="checkbox" name="size-select" checked disabled)
+								span.form__checkbox-mask
+
+						.col-12
+
+							label.form__checkbox-label
+								span.form__label-text Checkbox Unchecked Disabled
+								input.form__input-checkbox(type="checkbox" name="size-select" disabled)
+								span.form__checkbox-mask
+
+	// section end

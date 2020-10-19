@@ -1,0 +1,51 @@
+// contact form start
+
+form#ajax-form.form.contact-form(action="javascript:void(0);" method="post" autocomplete="off")
+
+	.row
+
+		.col-12
+
+			h3.contact-form__title Get in Touch
+
+		.col-md-6
+
+			input.form__field(type="text" name="name" placeholder="Your Name")
+
+		.col-md-6
+
+			input.form__field(type="email" name="email" placeholder="Your Email")
+
+		.col-md-6
+
+			input.form__field(type="tel" name="phone" placeholder="Your Phone")
+
+		.col-md-6
+
+			input.form__field(type="text" name="subject" placeholder="Subject")
+
+		.col-12
+
+			textarea.form__field.form__message(name="message" placeholder="Text")
+
+		.col-12
+
+			button.button.button--green(type="submit") #[span Send message] #[+svg('arrow')]
+
+		.col-12
+
+			.alert.alert--success.alert--filled
+				.alert__icon
+					+svg('check')
+				p.alert__text #[strong Well done!] Your form has been sent
+				span.alert__close
+					+svg('close')
+
+			.alert.alert--error.alert--filled
+				.alert__icon
+					+svg('close')
+				p.alert__text #[strong Oh snap!] Your form has not been sent
+				span.alert__close
+					+svg('close')
+
+// contact form end

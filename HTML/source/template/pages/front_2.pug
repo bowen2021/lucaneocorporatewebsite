@@ -1,0 +1,574 @@
+extends ../layouts/front_2.pug
+
+block variables
+
+	-var page = 'front_2'
+
+	-var type = 'front'
+
+	-var style = 'white'
+
+block main
+
+	// promo start
+
+	.front-promo
+
+		.front-promo__layout
+
+		picture
+			source(srcset='img/promo_2.jpg', media='(min-width: 992px)')
+			img.img--bg(src='img/promo_2.jpg', alt='img')
+
+		.align-container
+			.align-container__item
+
+				.container
+					.row.align-items-center
+
+						.col-lg-7.col-xl-6
+
+							h2.front-promo__title Worldwide Shipping
+								span.front-promo__overlay TransX
+							p.front-promo__subtitle Roach yellowfin cutthroat trout zebra pleco ocean sunfish temperate bass pikehead elephant fish. Long-finned char northern pike bluegill temperate
+							+button--promo('#', 'Explore more')
+
+						.col-md-7.col-lg-5.col-xl-4.offset-xl-2.top-50.top-lg-0
+
+							form.form.promo-form(action="javascript:void(0);" autocomplete="off")
+								.fieldset
+									h6.promo-form__title Request a Quote
+									p.promo-form__subtitle Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a
+									label
+										+svg('pin')
+										input.form__field(type="text" name="from" placeholder="From")
+									label
+										+svg('pin')
+										input.form__field(type="text" name="To" placeholder="To")
+									label
+										+svg('calendar_2')
+										input.form__field(data-toggle="datepicker" type="text" name="date" placeholder="Date")
+
+									select.form__select(name="transport")
+										option(data-display="Choose transport") Choose transport
+										option(value="value") Value 1
+										option(value="value2") Value 2
+										option(value="value3") Value 3
+										option(value="value3") Value 4
+										option(value="value3") Value 5
+
+								input.form__submit(type="submit" value="Send Request")
+
+	// promo end
+
+	// section start
+
+	section.section
+		.container
+			.row.flex-column-reverse.flex-xl-row
+
+				.col-md-8.col-lg-7.col-xl-5.top-50.top-xl-0
+
+					.counters-holder.text-center.text-sm-left
+
+						img.img--bg(src="img/map_back.png", alt="img")
+
+						.row.offset-50
+
+							.col-12
+
+								.counter.counter--white
+									.counter__top
+										span.js-counter.counter__count.color--green 20
+										span.counter__subject.color--green yrs
+									.counter__lower
+										span.counter__details.color--lgray Experience in transportation
+
+							.col-12
+
+								.counter.counter--white
+									.counter__top
+										span.js-counter.counter__count.color--green 500
+										span.counter__subject.color--green +
+									.counter__lower
+										span.counter__details.color--lgray Skilled drivers in our fleet
+
+							.col-12
+
+								.counter.counter--white
+									.counter__top
+										span.js-counter.counter__count.color--green 2
+										span.counter__subject.color--green billion
+									.counter__lower
+										span.counter__details.color--lgray Milles driven per year
+
+				.col-xl-6.offset-xl-1
+
+					.heading.bottom-20
+						span.heading__pre-title About transx
+						h3.heading__title The biggest Transportation Company in South region
+						span.heading__layout About
+
+					p #[strong Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver.]
+					p Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish grunter, Ratfish combtooth blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: king-of-the-salmon.
+					p Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish grunter.
+					p.bottom-40 Giant sea bass sailfish mooneye boga starry flounder? Longnose lancetfish coho salmon shiner, croaker, gouramie tui chub dragonfish freshwater herring? Flounder pearlfish kokanee duckbill eel Sacramento
+
+					+button--green('#', 'More about')
+
+	// section end
+
+	// section start
+
+	section.section.pb-0.services_2.bg--lgray
+		.container.bottom-70
+			.row
+
+				.col-lg-4
+
+					.heading
+						span.heading__pre-title Services
+						h3.heading__title Transporterium Services
+						span.heading__layout.layout--lgray Services
+
+				.col-lg-8.top-20.top-lg-0
+
+					p.bottom-0 #[strong Squarehead catfish bottlenose North American darter red velvetfish three-toothed puffer, weatherfish barfish loach minnow. Shell-ear, southern smelt barracudina.] Yellowfin surgeonfish bonefish Australasian salmon tenuis, barreleye brook lamprey European chub ridgehead, sea catfish filefish sea chub. Swallower; plownose chimaera, greenling Billfish eulachon golden shiner flat
+
+					a.button.button--green.d-none.d-lg-inline-block.top-30.top-lg-none(href="#") #[span All services] #[+svg('arrow')]
+
+		.container.container--wide
+			.row.offset-50
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_1.jpg" alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Truck Freight
+
+							.img-box__count 01
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_2.jpg" alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Train Freight
+
+							.img-box__count 02
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_3.jpg" alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Plane Freight
+
+							.img-box__count 03
+
+				.col-md-6.col-xl-3
+
+					.img-box
+
+						.img-box__overlay
+
+						.img-box__text-layout Transporterium Services
+
+						img.img--bg(src="img/box_4.jpg" alt="img")
+
+						.img-box__details
+
+							h5.img-box__title
+								a(href="#") Ship Freight
+
+							.img-box__count 04
+
+		.container.top-50.d-block.d-lg-none
+			.row
+
+				.col-12.text-center
+
+					a.button.button--green(href="#") #[span All services] #[+svg('arrow')]
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					img(src="img/map-transx.png" alt="img")
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Case studies
+						h3.heading__title Featured Case Studies
+						span.heading__layout Cases
+					p.heading__text Orbicular velvetfish yellowfin tuna aruana leatherjack  trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish Kuhli loach kelpfish lookdown catfish cuchia Bengal danio flagblenny clown triggerfish common tunny baikal oilf.
+
+		.cases-slider.top-50
+			.cases-slider__item
+				img.img--bg(src="img/cases-slider_img.jpg" alt="img")
+				.cases-slider__description
+					h4.cases-slider__title Bills of landingterms
+					a.cases-slider__link(href="#") #[span Research Now] #[+svg('arrow')]
+			.cases-slider__item
+				img.img--bg(src="img/cases-slider_img-2.jpg" alt="img")
+				.cases-slider__description
+					h4.cases-slider__title Bills of landingterms
+					a.cases-slider__link(href="#") #[span Research Now] #[+svg('arrow')]
+			.cases-slider__item
+				img.img--bg(src="img/cases-slider_img-3.jpg" alt="img")
+				.cases-slider__description
+					h4.cases-slider__title Bills of landingterms
+					a.cases-slider__link(href="#") #[span Research Now] #[+svg('arrow')]
+			.cases-slider__item
+				img.img--bg(src="img/cases-slider_img-3.jpg" alt="img")
+				.cases-slider__description
+					h4.cases-slider__title Bills of landingterms
+					a.cases-slider__link(href="#") #[span Research Now] #[+svg('arrow')]
+
+		.container.top-40
+			.row
+
+				.col-12.text-center.offset-20
+
+					.cases-slider__nav
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading
+						span.heading__pre-title Pricing
+						h3.heading__title The #[span.color--green Right Price] for you
+						span.heading__layout Pricing
+
+			.row
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title One Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse
+
+							.col-lg-2
+
+								.pricing-table__price #[span 95] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table.pricing-table--blue
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--white('#', 'Get started')
+
+	// section end
+
+	// section start
+
+	section.section.info-block.color--white
+
+		img.img--bg(src="img/info-bg.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-lg-7
+
+					.heading.heading--white
+						h3.heading__title Give you complete control #[br] #[span.color--green of your] warehouse
+
+					p Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. 
+					p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black
+
+					+button--white('#', 'More about')
+
+				.col-lg-4.offset-lg-1.top-50.top-lg-0
+
+					.row.offset-50
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 3000
+									span.counter__subject m #[sup 2]
+								.counter__lower
+									span.counter__details.color--lgray Total warehouse area
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 1200
+									span.counter__subject
+								.counter__lower
+									span.counter__details.color--lgray Created Jobs
+
+	// section end
+
+	// section start
+
+	section.section.testimonials.bg--lgray
+		.testimonials__bg
+			img.section--bg.t50.r0(src="img/testimonials-bg.png", alt="img")
+
+		.container
+			.row
+
+				.col-lg-5
+
+					.heading.heading--white
+						span.heading__pre-title Testimonials
+						h3.heading__title Excellent company #[span.color--green quality] services
+						span.heading__layout.layout--dgray People
+
+					.testimonials__nav
+
+					img.testimonials__img(src="img/testimonials_img.png", alt="img")
+
+
+				.col-lg-6.offset-lg-1
+
+					.testimonials-slider
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Blog
+						h3.heading__title Latest Articles #[span.color--green Daily] Update
+						span.heading__layout.layout--lgray Blog
+
+			.row.offset-30
+
+				.col-lg-6.col-xl-8
+
+					.news-item.news-item--style-2.news-item--wide
+						img.img--bg(src="img/f2-blog_1.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") Changes to our trade credit policy
+							p New World rivuline forehead brooder topminnow ayu electric stargazer cowfish atka mackerel sand eel bigeye smelt-whiting vimba. Whale catfish yellowtail kingfish tidewater goby, torrent catfish ribbon eel ling cod; Norwegian Atlantic salmon garden eel ribbon sawtail fish eulachon green swordtail. Angelfish elephant fish riffle dace dorab, Mexican
+						.news-item__details
+							span.news-item__date 20 October, 2019
+							span 12 comments
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-1.news-item--small
+						.news-item__img
+							img.img--bg(src="img/f2-blog_2.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") Importers achieve cost savings
+							p Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper!
+							.news-item__details
+								span.news-item__date 20 October, 2019
+								span 51 comment
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-1.news-item--small
+						.news-item__img
+							img.img--bg(src="img/f2-blog_3.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") What is 3D printing ?
+							p Yellowfin surgeonfish bonefish Australasian salmon tenuis, barreleye brook lamprey European chub ridgehead, sea catfish filefish sea chub
+							.news-item__details
+								span.news-item__date 20 October, 2019
+								span 51 comment
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-1.news-item--small
+						.news-item__img
+							img.img--bg(src="img/f2-blog_4.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") New subway line
+							p Bramble shark slickhead archerfish Black angelfish marblefish bigeye walleye fire bar danio silver driftfish pelagic cod. Wolf-herring spaghetti eel
+							.news-item__details
+								span.news-item__date 20 October, 2019
+								span 51 comment
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-2.news-item--small
+						img.img--bg(src="img/f2-blog_5.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") New additions to our trucks
+							p Yellowmargin triggerfish grideye rivuline surgeonfish golden dojo glowlight danio, rocket danio goby. Pufferfish duckbill eel tilapia fusilier fish
+						.news-item__details
+							span.news-item__date 20 October, 2019
+							span 12 comments
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+						span.heading__layout Partners
+
+			.row
+
+				.col-12
+
+					// logos slider start
+
+					.logos-slider.logos-slider--style-2
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+					.logos-slider__dots
+
+					// logos slider end
+
+	// section end

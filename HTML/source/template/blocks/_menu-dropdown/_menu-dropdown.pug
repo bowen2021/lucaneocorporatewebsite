@@ -1,0 +1,197 @@
+// menu dropdown start
+
+.menu-dropdown
+
+	.menu-dropdown__inner(data-value="start")
+
+		.screen.screen--start
+
+			.menu-dropdown__close
+				+svg('close')
+
+			.d-block.d-lg-none.bottom-20
+				.screen__item.screen--trigger(data-category="screen-one" class=(type === "front" ? "item--active" : undefined))
+					span Home
+					span #[+svg('chevron-right')]
+				.screen__item.screen--trigger(data-category="screen-two" class=(dest === "pages" ? "item--active" : undefined))
+					span Pages
+					span #[+svg('chevron-right')]
+				.screen__item.screen--trigger(data-category="screen-three")
+					span Services
+					span #[+svg('chevron-right')]
+				.screen__item.screen--trigger(data-category="screen-five" class=(dest === "shop" ? "item--active" : undefined))
+					span Shop
+					span #[+svg('chevron-right')]
+				.screen__item.screen--trigger(data-category="screen-four" class=(dest === "elements" ? "item--active" : undefined))
+					span Elements
+					span #[+svg('chevron-right')]
+
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Documents
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Information
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Additional docs
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Pricing
+			.screen__item
+				a.screen__link(href="javascript:void(0);") Downloads
+
+			.screen__item.screen--trigger.d-flex.d-lg-none(data-category="screen-six")
+				span Language
+				span #[+svg('chevron-right')]
+
+			.menu-dropdown__block.top-50
+				span.block__title Email
+				a.screen__link(href="mailto:support@helpo.org") support@helpo.org
+
+			.menu-dropdown__block.top-20
+				span.block__title Phone numbers
+				a.screen__link(href="tel:+180012345678") + 1800 - 123 456 78
+				a.screen__link(href="tel:+18009756511") + 1800 - 975 65 11
+
+			.menu-dropdown__block
+				ul.socials.list--reset
+					li.socials__item
+						a.socials__link(href="#") #[+svg('youtube')]
+					li.socials__item
+						a.socials__link(href="#") #[+svg('facebook')]
+					li.socials__item
+						a.socials__link(href="#") #[+svg('twitter')]
+					li.socials__item
+						a.socials__link(href="#") #[+svg('linkedin')]
+					li.socials__item
+						a.socials__link(href="#") #[+svg('inst')]
+
+			.menu-dropdown__block.top-50
+				+button--filled("#", "Get a Quote")
+
+	.menu-dropdown__inner(data-value="screen-one")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Home]
+			.screen__item(class=(page === "index" ? "item--active" : undefined))
+				a.screen__link(href="index.html") Home 1
+			.screen__item(class=(page === "front_2" ? "item--active" : undefined))
+				a.screen__link(href="front_2.html") Home 2
+			.screen__item(class=(page === "front_3" ? "item--active" : undefined))
+				a.screen__link(href="front_3.html") Home 3
+			.screen__item(class=(page === "front_4" ? "item--active" : undefined))
+				a.screen__link(href="front_4.html") Home 4
+			.screen__item(class=(page === "front_5" ? "item--active" : undefined))
+				a.screen__link(href="front_5.html") Home 5
+			.screen__item(class=(page === "front_6" ? "item--active" : undefined))
+				a.screen__link(href="front_6.html") Home 6
+
+	.menu-dropdown__inner(data-value="screen-two")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Pages]
+			.screen__item(class=(page === "about" ? "item--active" : undefined))
+				a.screen__link(href="about.html") About
+			.screen__item(class=(page === "team" ? "item--active" : undefined))
+				a.screen__link(href="team.html") Team
+			.screen__item(class=(page === "services" ? "item--active" : undefined))
+				a.screen__link(href="services.html") Services
+			.screen__item(class=(page === "service-details" ? "item--active" : undefined))
+				a.screen__link(href="service-details.html") Service Details
+			.screen__item(class=(page === "careers" ? "item--active" : undefined))
+				a.screen__link(href="careers.html") Сareers
+			.screen__item(class=(page === "warehouse" ? "item--active" : undefined))
+				a.screen__link(href="warehouse.html") Warehouse
+			.screen__item(class=(page === "request" ? "item--active" : undefined))
+				a.screen__link(href="request.html") Request Quote
+			.screen__item(class=(page === "calculator" ? "item--active" : undefined))
+				a.screen__link(href="calculator.html") Calculator
+			.screen__item(class=(page === "documents" ? "item--active" : undefined))
+				a.screen__link(href="documents.html") Documents
+			.screen__item(class=(page === "trucks" ? "item--active" : undefined))
+				a.screen__link(href="trucks.html") Trucks
+			.screen__item(class=(page === "locations" ? "item--active" : undefined))
+				a.screen__link(href="locations.html") Locations
+			.screen__item(class=(page === "contacts" ? "item--active" : undefined))
+				a.screen__link(href="contacts.html") Contacts
+			.screen__item(class=(page === "gallery" ? "item--active" : undefined))
+				a.screen__link(href="gallery.html") Gallery Masonry
+			.screen__item(class=(page === "gallery_2" ? "item--active" : undefined))
+				a.screen__link(href="gallery_2.html") Gallery Grid
+			.screen__item(class=(page === "blog" ? "item--active" : undefined))
+				a.screen__link(href="blog.html") Blog
+			.screen__item(class=(page === "blog-post" ? "item--active" : undefined))
+				a.screen__link(href="blog-post.html") Blog Post
+			.screen__item(class=(page === "faq" ? "item--active" : undefined))
+				a.screen__link(href="faq.html") F.A.Q
+			.screen__item(class=(page === "404" ? "item--active" : undefined))
+				a.screen__link(href="404.html") 404
+			.screen__item(class=(page === "typography" ? "item--active" : undefined))
+				a.screen__link(href="typography.html") Typography
+
+	.menu-dropdown__inner(data-value="screen-three")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Services]
+			.screen__item(class=(page === "locations" ? "item--active" : undefined))
+				a.screen__link(href="service-details.html") Truck Freight
+			.screen__item(class=(page === "locations" ? "item--active" : undefined))
+				a.screen__link(href="service-details.html") Ship Freight
+			.screen__item(class=(page === "locations" ? "item--active" : undefined))
+				a.screen__link(href="service-details.html") Plane Freight
+			.screen__item(class=(page === "locations" ? "item--active" : undefined))
+				a.screen__link(href="service-details.html") Train Freight
+
+	.menu-dropdown__inner(data-value="screen-four")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Elements]
+			.screen__item(class=(page === "accordion" ? "item--active" : undefined))
+				a.screen__link(href="accordion.html") Accordion
+			.screen__item(class=(page === "alerts" ? "item--active" : undefined))
+				a.screen__link(href="alerts.html") Alerts
+			.screen__item(class=(page === "counters" ? "item--active" : undefined))
+				a.screen__link(href="counters.html") Counters
+			.screen__item(class=(page === "tabs" ? "item--active" : undefined))
+				a.screen__link(href="tabs.html") Tabs
+			.screen__item(class=(page === "pricing" ? "item--active" : undefined))
+				a.screen__link(href="pricing.html") Pricing
+			.screen__item(class=(page === "tables" ? "item--active" : undefined))
+				a.screen__link(href="tables.html") Tables
+			.screen__item(class=(page === "forms" ? "item--active" : undefined))
+				a.screen__link(href="forms.html") Forms
+			.screen__item(class=(page === "infos" ? "item--active" : undefined))
+				a.screen__link(href="info-blocks.html") Info Blocks
+			.screen__item(class=(page === "icons" ? "item--active" : undefined))
+				a.screen__link(href="icons.html") Icons
+
+	.menu-dropdown__inner(data-value="screen-five")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Shop]
+			.screen__item(class=(page === "shop" ? "item--active" : undefined))
+				a.screen__link(href="shop.html") Shop
+			.screen__item(class=(page === "shop-single" ? "item--active" : undefined))
+				a.screen__link(href="shop-single.html") Shop Single
+			.screen__item(class=(page === "cart" ? "item--active" : undefined))
+				a.screen__link(href="shop-cart.html") Shop Cart
+			.screen__item(class=(page === "checkout" ? "item--active" : undefined))
+				a.screen__link(href="shop-checkout.html") Shop Checkout
+			.screen__item(class=(page === "account" ? "item--active" : undefined))
+				a.screen__link(href="shop-account.html") Shop Account
+
+	.menu-dropdown__inner(data-value="screen-six")
+
+		.screen.screen--sub
+			.screen__heading
+				h6.screen__back #[+svg('chevron-left')] #[span Language]
+			.screen__item(class=(page === "" ? "item--active" : undefined))
+				a.screen__link(href="javascript:void(0);") English
+			.screen__item(class=(page === "" ? "item--active" : undefined))
+				a.screen__link(href="javascript:void(0);") Deutsch
+			.screen__item(class=(page === "" ? "item--active" : undefined))
+				a.screen__link(href="javascript:void(0);") Ukrainian
+
+// menu dropdown end

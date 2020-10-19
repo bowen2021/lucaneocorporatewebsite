@@ -1,0 +1,139 @@
+/* pricing start */
+
+.pricing-plan
+	position: relative
+	overflow: hidden
+	margin-bottom: 50px
+
+.pricing-plan
+	&__bg
+		position: absolute
+		bottom: 0
+		right: 0
+		width: calc(100% - 50px)
+		height: auto
+	&__price
+		line-height: 45px
+		font-weight: 700
+		letter-spacing: -0.050em
+		margin: 41px 0 21px 0
+
+	+r992
+
+		&__price
+			margin: 51px 0 31px 0
+
+	&__price span
+		display: inline-block
+	&__price span:first-of-type
+		font-size: 80px
+		margin-right: 10px
+
+	+r992
+
+		&__price span:first-of-type
+			font-size: 100px
+
+	&__price span:last-of-type
+		font-size: 30px
+		text-transform: uppercase
+	.button
+		position: relative
+		z-index: 2
+		margin-top: 45px
+	.list--check
+		padding-left: 22px
+	.list--check .list__item::after
+		display: none
+	.list--check .list__item::before
+		left: -18px
+
+.pricing-plan--bordered
+	background: #E2E2E2
+	padding: 1px
+	clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0)
+
+.pricing-plan--bordered
+	.pricing-plan__inner
+		padding: 33px 30px 50px 30px
+		background: $white
+		clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0)
+
+.pricing-plan--blue
+	color: #FFF
+	clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0)
+	background: $bg-blue
+
+.pricing-plan--blue
+	.pricing-plan__inner
+		padding: 33px 30px 50px 30px
+
+.pricing-plan--small
+	padding: 0
+
+.pricing-plan--small
+	.pricing-plan__price
+		margin: 24px 0 10px 0
+	.pricing-plan__price span:first-of-type
+		font-size: 50px
+	.button
+		margin-top: 35px
+	.pricing-plan__inner
+		padding: 33px 30px 40px 30px
+
+.pricing-table
+	padding: 20px 15px 30px 15px
+	border-top: 1px solid #E2E2E2
+	text-align: center
+
++r992
+
+	.pricing-table
+		text-align: left
+		padding: 20px 15px 19px 15px
+
+.pricing-table
+	&__title
+		margin-bottom: 10px
+
+	+r1200
+
+		&__title
+			margin-bottom: 0
+
+	&__price
+		letter-spacing: -0.050em
+		font-weight: 700
+		margin: 5px 0
+
+	+r1200
+
+		&__price
+			margin: 0
+
+	&__price span
+		display: inline-block
+	&__price span:first-of-type
+		font-size: 36px
+		margin-right: 10px
+
+	+r1200
+
+		&__price span:first-of-type
+			font-size: 50px
+
+	&__price span:last-of-type
+		font-size: 20px
+		text-transform: uppercase
+
+	+r1200
+
+		&__price span:last-of-type
+			font-size: 30px
+
+.pricing-table--blue
+	color: $white
+	background: $bg-blue
+	border: none
+
+/* pricing end */

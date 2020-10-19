@@ -1,0 +1,173 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'locations'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/typography.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/typography.jpg' alt='img')
+
+		+hero-inner('Locations', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-50
+
+				.col-lg-6
+
+					.location-item
+						.location-item__img
+							img.img--bg(src="img/loc_1.jpg", alt="img")
+						.location-item__lower
+							h4.location-item__title
+								a(href="#") Inland Empire warehousing
+							span.location-item__details 10359 Nobel Court, Jurupa Valley, CA
+							h6.location-item__subtitle Features
+							ul.list.list--check.list--reset
+								li.list__item Spearfish, salamander
+								li.list__item Ridgehead morwong
+								li.list__item Featherfin knifefish
+								li.list__item Tadpole fish hairtail
+
+							.row.top-30
+
+								.col-sm-6
+
+									h6.location-item__subtitle Office hours
+									ul.list.location-list.list--reset
+										li.list__item #[strong 7am - 4pm] #[span Monday - Friday]
+										li.list__item #[strong 7am - 11am] #[span Saturday]
+
+								.col-sm-6.top-30.top-sm-0
+
+									h6.location-item__subtitle Phone
+									ul.list.location-list.list--reset
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+
+				.col-lg-6
+
+					.location-item
+						.location-item__img
+							img.img--bg(src="img/loc_2.jpg", alt="img")
+						.location-item__lower
+							h4.location-item__title
+								a(href="#") Inland Empire warehousing
+							span.location-item__details 10359 Nobel Court, Jurupa Valley, CA
+							h6.location-item__subtitle Features
+							ul.list.list--check.list--reset
+								li.list__item Spearfish, salamander
+								li.list__item Ridgehead morwong
+								li.list__item Featherfin knifefish
+								li.list__item Tadpole fish hairtail
+
+							.row.top-30
+
+								.col-sm-6
+
+									h6.location-item__subtitle Office hours
+									ul.list.location-list.list--reset
+										li.list__item #[strong 7am - 4pm] #[span Monday - Friday]
+										li.list__item #[strong 7am - 11am] #[span Saturday]
+
+								.col-sm-6.top-30.top-sm-0
+
+									h6.location-item__subtitle Phone
+									ul.list.location-list.list--reset
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+
+				.col-lg-6
+
+					.location-item
+						.location-item__img
+							img.img--bg(src="img/loc_3.jpg", alt="img")
+						.location-item__lower
+							h4.location-item__title
+								a(href="#") Inland Empire warehousing
+							span.location-item__details 10359 Nobel Court, Jurupa Valley, CA
+							h6.location-item__subtitle Features
+							ul.list.list--check.list--reset
+								li.list__item Spearfish, salamander
+								li.list__item Ridgehead morwong
+								li.list__item Featherfin knifefish
+								li.list__item Tadpole fish hairtail
+
+							.row.top-30
+
+								.col-sm-6
+
+									h6.location-item__subtitle Office hours
+									ul.list.location-list.list--reset
+										li.list__item #[strong 7am - 4pm] #[span Monday - Friday]
+										li.list__item #[strong 7am - 11am] #[span Saturday]
+
+								.col-sm-6.top-30.top-sm-0
+
+									h6.location-item__subtitle Phone
+									ul.list.location-list.list--reset
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+
+				.col-lg-6
+
+					.location-item
+						.location-item__img
+							img.img--bg(src="img/loc_4.jpg", alt="img")
+						.location-item__lower
+							h4.location-item__title
+								a(href="#") Inland Empire warehousing
+							span.location-item__details 10359 Nobel Court, Jurupa Valley, CA
+							h6.location-item__subtitle Features
+							ul.list.list--check.list--reset
+								li.list__item Spearfish, salamander
+								li.list__item Ridgehead morwong
+								li.list__item Featherfin knifefish
+								li.list__item Tadpole fish hairtail
+
+							.row.top-30
+
+								.col-sm-6
+
+									h6.location-item__subtitle Office hours
+									ul.list.location-list.list--reset
+										li.list__item #[strong 7am - 4pm] #[span Monday - Friday]
+										li.list__item #[strong 7am - 11am] #[span Saturday]
+
+								.col-sm-6.top-30.top-sm-0
+
+									h6.location-item__subtitle Phone
+									ul.list.location-list.list--reset
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+										li.list__item
+											a(href="tel:+13223422122") + 1 (322)-34-221-22
+
+	// section end
+
+	// map start
+
+	section.locations-section
+
+		.locations-map(data-api-key="AIzaSyD5ES8GFHrarPhIVpDhFDea6fPtga0Wy4Y" data-marker="img/placeholder_2.png")
+
+	// map end

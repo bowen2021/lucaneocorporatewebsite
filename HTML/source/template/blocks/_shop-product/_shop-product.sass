@@ -1,0 +1,140 @@
+/* shop product start */
+
+.shop-product
+	&__name
+		font-size: 32px
+
+	+r768
+
+		&__name
+			font-size: 40px
+
+	&__top
+		margin-top: 50px
+
+	+r992
+		
+		&__top
+			margin-top: 0
+
+	&__old-price
+		color: #a9aeb3
+		font-size: 18px
+		font-weight: 500
+		display: inline-block
+		margin-right: 10px
+	&__price
+		color: #003d90
+		font-size: 18px
+	&__rating
+		margin-top: 10px
+	&__list
+		font-size: 12px
+		font-weight: 700
+		text-transform: uppercase
+		margin-top: 29px
+	&__list li span:first-of-type
+		color: #A9AEB3
+	&__list li:not(:last-of-type)
+		margin-bottom: 20px
+	&__list .tag
+		font-size: 14px
+		text-transform: none
+	&__list .tag:not(:last-of-type)
+		margin-right: 15px
+	&__list .tag:first-of-type
+		margin-left: 5px
+	&__description
+		margin-top: 32px
+	&__description p:last-of-type
+		margin-bottom: 0
+	.product-form
+		margin-top: 30px
+	&__tabs .r-tabs-accordion-title
+		display: none
+	&__tabs .r-tabs-state-active a
+		background: none
+	&__tabs
+		margin-top: 55px
+
+	+r576
+
+		&__tabs
+			margin-top: 75px
+
+	&__tabs .horizontal-tabs__content
+		border: none
+		margin-top: 40px
+
+	+r768
+
+		&__tabs .horizontal-tabs__content
+			margin-top: 60px
+
+	&__tabs .r-tabs-panel
+		padding: 0
+	&__tabs .horizontal-tabs__header a
+		font-size: 12px
+		font-weight: 500
+	&__tabs li.r-tabs-state-active::before
+		display: none
+	&__tabs .r-tabs-anchor
+		padding: 0
+		height: 50px
+		width: 150px
+		border: 2px solid #E2E2E2
+	&__tabs .r-tabs-tab:not(:first-of-type)
+		margin-left: -2px
+	&__tabs li.r-tabs-state-active
+		border: none
+	&__tabs li.r-tabs-state-active .r-tabs-anchor
+		border: 2px solid $green
+	&__tabs .r-tabs-nav
+		display: inline-flex
+	.comments-form
+		margin-top: 55px
+
+/* product form */
+
+.product-form
+	display: inline-flex
+	flex-wrap: wrap
+
+.product-form
+	.form__count
+		margin-bottom: 35px
+	&__favorite
+		cursor: pointer
+		height: 50px
+		width: 50px
+		border: 1px solid #E2E2E2
+		text-align: center
+		line-height: 48px
+		margin: 0 10px
+	&__favorite .icon
+		color: $green
+		font-size: 18px
+	.form__plus,
+	.form__minus
+		height: 48px
+	.form__minus
+		border-right: 1px solid #E2E2E2
+	.form__plus
+		border-left: 1px solid #E2E2E2
+	.form__field
+		margin-bottom: 0
+		border: none
+		width: 50px
+		height: 48px
+
+/* comments form */
+
+.comments-form
+	&__title
+		margin-bottom: 0
+	.form__message
+		height: 190px
+	.form__rating
+		margin: 15px 0 20px 0
+
+/* shop product end */

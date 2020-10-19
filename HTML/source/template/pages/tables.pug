@@ -1,0 +1,131 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'tables'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Tables', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-30
+
+				.col-12
+
+					h3.bottom-0 Variant 1
+
+			.row
+
+				.col-xl-9
+
+					.table.table--lgray
+						.table__header
+							.table__row
+								.table__cell #[strong Elements]
+								.table__cell #[strong One pack]
+								.table__cell #[strong Starter pack]
+								.table__cell #[strong Premium pack]
+						.table__body
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 10.00$]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-30
+
+				.col-12
+
+					h3.bottom-0 Variant 2
+
+			.row
+
+				.col-xl-9
+
+					.table.table--dgray
+						.table__header
+							.table__row
+								.table__cell #[strong Elements]
+								.table__cell #[strong One pack]
+								.table__cell #[strong Starter pack]
+								.table__cell #[strong Premium pack]
+						.table__body
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 10.00$]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+							.table__row
+								.table__cell(data-label="Title") #[span #[strong Item]]
+								.table__cell(data-label="One pack") #[span 95 USD]
+								.table__cell(data-label="Starter pack") #[span 155 USD]
+								.table__cell(data-label="Premium pack") #[span 255 USD]
+
+	// section end

@@ -1,0 +1,112 @@
+/* page-header_2 start */
+
+.page-header_2
+	display: flex
+	flex-direction: column
+	justify-content: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	max-width: 1350px
+	z-index: 2
+	min-height: 70px
+	transition: all .3s
+
++r1366
+
+	.page-header_2
+		left: 50%
+		transform: translateX(-50%)
+
+.page-header_2
+	.logo--dark
+		display: none
+	.page-header__top
+		position: relative
+		padding: 9px 0 8px 0
+		color: $white
+		font-size: 14px
+		min-height: 42px
+		width: 100%
+	.page-header__top a
+		color: $white
+		text-decoration: none
+		transition: opacity .3s
+	.page-header__top a:hover
+		opacity: 0.7
+	.page-header__top span
+		display: inline-flex
+		align-items: center
+	.page-header__top span:not(:last-of-type),
+	.page-header__top span a:not(:last-of-type)
+		margin-right: 20px
+	.page-header__top span .icon
+		font-size: 15px
+		margin-right: 8px
+	.page-header__top::after
+		content: ""
+		display: block
+		height: 1px
+		width: calc(100% - 30px)
+		position: absolute
+		bottom: 0
+		left: 15px
+		background: rgba(255,255,255, 0.2)
+	.socials__link
+		font-size: 15px
+	.page-header__lower
+		padding: 8px 0
+		width: 100%
+
+	+r1366
+
+		.page-header__lower
+			padding: 0
+
+	.button--filled
+		display: none
+		height: 60px
+		line-height: 60px
+		min-width: 190px
+		margin-right: -5px
+
+	+r768
+
+		.button--filled
+			display: inline-block
+
+	+r992
+
+		.button--filled
+			margin-right: 0
+
+	+r1200
+
+		.button--filled
+			height: 70px
+			line-height: 70px
+			min-width: 210px
+
+.page-header_2.page-header--fixed
+	background: #FFF
+	box-shadow: 0 3px 10px 2px rgba(0,0,0,.04)
+	z-index: 5
+
++r1200
+
+	.page-header_2.page-header--fixed
+		top: -42px
+
++r1366
+
+	.page-header_2.page-header--fixed
+		padding: 6px 0 6px 25px
+
+.page-header_2.page-header--fixed
+	.logo--white
+		display: none
+	.logo--dark
+		display: initial
+
+/* page-header_2 end */

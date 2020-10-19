@@ -1,0 +1,284 @@
+/* typography start */
+
+*::selection
+	color: $dgray
+	background-color: #99d6cb
+
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+
+button
+	background: none
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	letter-spacing: -0.030em
+
+h1
+	font-size: 60px
+
+h2
+	font-size: 50px
+
+h3
+	font-size: 40px
+
+h4
+	font-size: 30px
+
+h5
+	font-size: 20px
+	letter-spacing: 0
+
+h6
+	font-size: 18px
+	letter-spacing: 0
+
+a
+	color: $green
+	text-decoration: underline
+
+a:hover
+	color: $green
+	text-decoration: none
+
+mark
+	background: #99d6cb
+	padding: 0 5px
+
+p
+	margin-bottom: 1.5rem
+
+/* text filled */
+
+.text-filled
+	color: $white
+	font-size: 16px
+	font-weight: 500
+	background-color: $bg-blue
+	padding: 15px 20px
+	margin-bottom: 0
+
++r768
+
+	.text-filled
+		font-size: 18px
+		font-weight: 700
+		padding: 30px 40px 34px 40px
+
++r992
+
+	.text-filled
+		padding: 63px 70px 63px 70px
+
+/* blockquote */
+
+.blockquote
+	padding: 0
+	position: relative
+
+.blockquote
+	&__icon
+		display: none
+		position: absolute
+		top: 6px
+		left: 0
+
+	+r768
+
+		&__icon
+			display: initial
+
+	&__text
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 0
+		padding-left: 30px
+		border-left: 4px solid $green
+
+	+r768
+
+		&__text
+			border: none
+			font-size: 18px
+			padding-left: 100px
+
+/* column text */
+
+.columns
+	p
+		margin-bottom: 0
+
+.two-columns
+	column-count: 1
+
++r576
+
+	.two-columns
+		column-count: 2
+
+.three-columns
+	column-count: 1
+
++r576
+
+	.three-columns
+		column-count: 2
+
++r992
+	
+	.three-columns
+		column-count: 3
+
+.four-columns
+	column-count: 1
+
++r576
+
+	.four-columns
+		column-count: 2
+
++r992
+	
+	.four-columns
+		column-count: 3
+
++r1200
+
+	.four-columns
+		column-count: 4
+
+
++r1200
+	
+	section.typography
+		padding: 120px 0
+
+.typography
+	.ordered-list
+		margin-top: 50px
+
+	+r768
+
+		.ordered-list
+			margin-top: 0
+
+/* cta block */
+
+.cta-block
+	position: relative
+	background: $bg-blue
+	color: #FFF
+	padding: 50px 0
+
++r992
+
+	.cta-block
+		padding: 65px 0
+
+.cta-block
+	&__bg
+		position: absolute
+		height: 100%
+		width: auto
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		object-fit: cover
+	&__title
+		text-transform: uppercase
+	&__title span
+		font-weight: 300
+	&__text
+		margin-bottom: 0
+	&__text:not(:last-of-type)
+		margin-bottom: 20px
+	&__button
+		display: inline-block
+		color: inherit
+		font-weight: 700
+		background: #FFF
+		padding: 18px 55px
+		margin-top: 30px
+		transition: all .3s
+
+	+r992
+
+		&__button
+			margin-top: 0
+
+	&__button:hover
+		color: #FFF
+		background: #282F34
+
+.cta-block.cta-block--style-2
+	padding: 70px 0
+	background: none
+
++r768
+
+	.cta-block.cta-block--style-2
+		padding: 80px 0
+
++r992
+
+	.cta-block.cta-block--style-2
+		padding: 90px 0
+
++r1200
+
+	.cta-block.cta-block--style-2
+		padding: 95px 0
+
+.cta-block.cta-block--style-2
+	.button
+		margin-top: 43px
+
+	+r992
+
+		.button
+			margin-top: 0
+
+/* cta form */
+
+.cta-form
+	display: flex
+	flex-direction: column
+	align-items: baseline
+	margin-top: 30px
+
++r576
+
+	.cta-form
+		flex-direction: row
+
++r992
+
+	.cta-form
+		margin-top: 0
+
+.cta-form
+	.form__field
+		margin: 0 0 30px 0
+		background: transparent
+		border: 2px solid #333
+
+	+r576
+
+		.form__field
+			margin: 0 30px 0 0
+
+	.form__field::placeholder
+		color: #333
+	.form__submit
+		border: none
+		background: #333
+		color: #FFF
+		padding: 18px 50px
+	.form__submit:hover
+		background: #FFF
+		color: #333
+
+/* typography end */

@@ -1,0 +1,79 @@
+// header start
+
+header.page-header_6
+	.page-header__top.d-none.d-xl-block
+		.container-fluid
+			.row.align-items-center
+				.col-xl-8
+
+					span #[+svg('pin')] Elliott Ave, Parkville VIC 3052, Melbourne
+					span #[+svg('phone')]
+						a(href="tel:+31859644720") +31 85 964 47 20
+					span #[+svg('mail')]
+						a(href="mailto:transport@mail.com") transport@mail.com
+
+				.col-xl-4.text-right
+
+					ul.additional-menu.list--reset
+						li.additional-menu__item
+							a.additional-menu__link(href="#") Delivery
+						li.additional-menu__item
+							a.additional-menu__link(href="#") Pricing list
+						li.additional-menu__item
+							a.additional-menu__link(href="#") Calculator
+
+	.page-header__lower
+		.container-fluid
+			.row.align-items-center
+
+				.col-8.col-md-6.col-lg-3.d-flex.align-items-center
+
+					// menu-trigger start
+
+					.hamburger.d-none.d-md-inline-block(class=(style === "white" ? "hamburger--white" : undefined))
+						.hamburger-inner
+
+					// menu-trigger end
+
+					.page-header__logo
+						a(href="index.html")
+							img(src="img/logo_black.png", alt="logo")
+
+				.col-lg-5.d-none.d-lg-flex.justify-content-center
+
+					include ../_main-menu/_main-menu
+
+				.col-4.col-md-6.col-lg-4.d-flex.justify-content-end.align-items-center
+
+					.lang-block
+
+						.lang-icon
+							img.img--contain(src="img/gbr.png", alt="img")
+
+						// lang select start
+
+						ul.lang-select
+							li.lang-select__item.lang-select__item--active
+								span En
+								ul.lang-select__sub-list
+									li
+										a(href="#") French
+									li
+										a(href="#") Spanish
+									li
+										a(href="#") Deutsch
+									li
+										a(href="#") Russian
+
+						// lang select end
+
+					+button--filled("#", "Get a Quote")
+
+					// menu-trigger start
+
+					.hamburger.d-inline-block.d-md-none(class=(style === "white" ? "hamburger--white" : undefined))
+						.hamburger-inner
+
+					// menu-trigger end
+
+// header end

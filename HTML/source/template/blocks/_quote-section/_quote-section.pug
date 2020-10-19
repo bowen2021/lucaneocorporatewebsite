@@ -1,0 +1,121 @@
+// section start
+
+section.section.qoute-section.bg--lgray.pb-0
+
+	.quote-section__bg
+		img.img--bg(src="img/quote-bg.jpg", alt="bg")
+
+	.container
+		.row
+
+			.col-lg-5.d-flex.flex-column.justify-content-between
+
+				.heading.heading--white
+					span.heading__pre-title Quote
+					h3.heading__title Provide quick Tracking your cargo
+					span.heading__layout.layout--white Quote
+					p.heading__text.color--white Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver.
+
+				.contact-trigger.top-50.top-lg-0
+					img.contact-trigger__img(src="img/contact_background.png", alt="img")
+					h4.contact-trigger__title How we can help you!
+
+					+button--white('#', 'Contact us')
+
+			.col-lg-7.top-50.top-lg-0
+
+				.form-wrapper
+
+					form.form.quote-form(action="javascript:void(0);")
+	
+						h6.quote-form__title Request a quote
+	
+						.row
+	
+							.col-sm-6
+	
+								input.form__field(type="text" name="name" placeholder="Full name")
+	
+							.col-sm-6
+	
+								input.form__field(type="email" name="email" placeholder="Email")
+	
+							.col-sm-6
+	
+								input.form__field(type="tel" name="phone-number" placeholder="Phone")
+	
+							.col-sm-6
+	
+								input.form__field(type="text" name="subject" placeholder="Subject")
+	
+							.col-sm-6
+	
+								input.form__field(type="text" name="delivery" placeholder="Delivery city")
+	
+							.col-sm-6
+	
+								input.form__field(type="text" name="departure" placeholder="City of departure")
+	
+							.col-sm-6
+	
+								select.form__select(name="freight")
+									option(data-display="Freight type") Freight type
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+	
+							.col-sm-6
+	
+								select.form__select(name="incoterms")
+									option(data-display="Incoterms") Incoterms
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+	
+							.col-6.col-sm-3
+	
+								input.form__field(type="number" name="weight" placeholder="Weight")
+	
+							.col-6.col-sm-3
+	
+								input.form__field(type="number" name="height" placeholder="Height")
+	
+							.col-6.col-sm-3
+	
+								input.form__field(type="number" name="width" placeholder="Width")
+	
+							.col-6.col-sm-3
+	
+								input.form__field(type="number" name="lenght" placeholder="Lenght")
+							
+							.col-12.offset-20
+	
+								label.form__checkbox-label.bottom-20
+									span.form__label-text Fragile
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size L")
+									span.form__checkbox-mask
+		
+								label.form__checkbox-label.bottom-20
+									span.form__label-text Express delivery
+									input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+									span.form__checkbox-mask
+	
+								label.form__radio-label.bottom-20
+									span.form__label-text Insurance
+									input.form__input-radio(type="radio" name="option-select" value="option-3" checked)
+									span.form__radio-mask
+	
+								label.form__radio-label.bottom-20
+									span.form__label-text Packaging
+									input.form__input-radio(type="radio" name="option-select" value="option-4")
+									span.form__radio-mask
+							
+							.col-12
+	
+								button.quote-form__submit(type="submit") Request a quote
+
+// section end

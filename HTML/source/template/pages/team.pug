@@ -1,0 +1,259 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'team'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Creative Team', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.align-items-end.bottom-70
+
+				.col-xl-5
+
+					.heading
+						span.heading__pre-title About us
+						h3.heading__title Powerfull Features of #[span.color--green Transporterium] company
+
+			.row.offset-50
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('warehouse')
+
+						h6.icon-item__title Warehouse
+
+						p.icon-item__text Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('support')
+
+						h6.icon-item__title Support 24/7
+
+						p.icon-item__text Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false 
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('location')
+
+						h6.icon-item__title Online Tracking
+
+						p.icon-item__text Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat 
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('insurance')
+
+						h6.icon-item__title Cargo Insurance
+
+						p.icon-item__text Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a
+
+	// section end
+
+	// section start
+
+	section.section.pt-0.pb-0
+		.container
+			.row
+
+				.col-12
+
+					img(src="img/team.png", alt="team")
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Creatrive People
+						h3.heading__title Professional Master #[span.color--green Team]
+
+			.row.offset-50
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_1.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Ben Stiller
+							span.team-item__position Full-time loader
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_2.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Tanisha Weeder
+							span.team-item__position Manager of Westwood
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_3.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Claid Owen
+							span.team-item__position Company CEO
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_4.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Ginger Trap
+							span.team-item__position Service analytic
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_5.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Caroline Garcia
+							span.team-item__position Product manager
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_6.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Alex Time
+							span.team-item__position Manager Mehico
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_7.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Pier Woodman
+							span.team-item__position HR manager
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_8.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Alex Morgan
+							span.team-item__position Content videomaker
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+	// section end
+
+	include ../blocks/_testimonials/_testimonials
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+
+			.row
+
+				.col-12
+
+					include ../blocks/_logos-slider/_logos-slider
+
+	// section end

@@ -1,0 +1,198 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'typography'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/typography.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/typography.jpg' alt='img')
+
+		+hero-inner('Typography', 'TransX')
+
+	// section end
+
+	// cta start
+
+	.cta-block
+
+		img.cta-block__bg(src="img/cta-bg.png", alt="img")
+
+		.container
+			.row.align-items-center
+
+				.col-lg-9.col-xl-8
+
+					p.cta-block__text #[strong Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish . Midshipman, lightfish longfin smelt pickerel houndshark whiptail.] Pacific hake false trevally queen parrotfish mosshead warbonnet sweeper! Greenling sleeper pupfish large-ey
+
+				.col-lg-3.col-xl-4.text-lg-right.top-50.top-lg-0
+
+					+button--white('#', "Get Started")
+
+	// cta end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-40
+
+				.col-12
+
+					h1(style="margin-bottom: 0px;") #[span H1 Heading] #[span.color--green 60px]
+					h2(style="margin-bottom: 7px;") #[span H2 Heading] #[span.color--green 50px]
+					h3(style="margin-bottom: 15px;") #[span H3 Heading] #[span.color--green 40px]
+					h4(style="margin-bottom: 25px;") #[span H4 Heading] #[span.color--green 30px]
+					h5(style="margin-bottom: 30px;") #[span H5 Heading] #[span.color--green 20px]
+					h6(style="margin-bottom: 0px;") #[span H6 Heading] #[span.color--green 18px]
+
+			.row
+
+				.col-12
+
+					p #[strong Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. Midshipman]
+
+					p.bottom-0 Cornetfish ghost flathead chain pickerel torpedo neon tetra; soldierfish, sandburrower. #[a(href="#") Ling brook lamprey slimy sculpin] velvetfish Devario Colorado squawfish zebra turkeyfish! #[mark Chain pickerel featherback river loach pufferfish butterflyfish] combtooth blenny. Píntano hillstream loach California halibut menhaden pike conger; South American darter hagfish lanternfish. Cuckoo wrasse, "gopher rockfish leopard danio Japanese eel rivuline píntano, freshwater eel cutlassfish john dory armorhead; requiem shark, northern pike." #[s Southern grayling pencilfish skipjack tuna, zebra turkeyfish pencilfish, warty angler]
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-25
+
+				.col-12
+
+					h3.bottom-0 #[span List] #[span.color--green Styles]
+
+			.row
+
+				.col-sm-6.col-md-5.col-lg-4
+
+					ul.list.list--check.list--reset
+						li.list__item Consumer goods
+						li.list__item Food & Beverage
+						li.list__item Electronics
+						li.list__item Shared warehousing
+						li.list__item Crossdocking/Transloading
+						li.list__item FBA Preaparation
+
+				.col-sm-6.col-md-5.col-lg-4.top-xs
+
+					ul.list.list--ordered.list--reset
+						li.list__item Consumer goods
+						li.list__item Food & Beverage
+						li.list__item Electronics
+						li.list__item Shared warehousing
+						li.list__item Crossdocking/Transloading
+						li.list__item FBA Preaparation
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-25
+
+				.col-12
+
+					h3.bottom-0 #[span 1/2 Two] #[span.color--green Columns]
+
+			.row
+
+				.col-12
+
+					.columns.two-columns
+
+						p Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout; Chinook salmon bramble shark sand stargazer Steve fish. Scat zebra pleco graveldiver river shark
+						p Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout; Chinook salmon bramble shark sand stargazer Steve fish. Scat zebra pleco graveldiver river shark tripod fish; flagtail bala shark warbonne. Burma danio black bass straptail southern Dolly Varden orbicular
+
+	// section start
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-25
+
+				.col-12
+
+					h3.bottom-0 #[span 1/3 Three] #[span.color--green Columns]
+
+			.row
+
+				.col-12
+
+					.columns.three-columns
+
+						p Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican 
+						p Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout; Chinook salmon bramble shark sand stargazer Steve fish. Scat zebra pleco graveldiver river
+						p Scat zebra pleco graveldiver river shark tripod fish; flagtail bala shark warbonnet. Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. 
+
+	// section start
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-25
+
+				.col-12
+
+					h3.bottom-0 #[span 1/4 Four] #[span.color--green Columns]
+
+			.row
+
+				.col-12
+
+					.columns.four-columns
+
+						p Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish
+						p Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout; Chinook salmon bramble shark sand star
+						p Scat zebra pleco graveldiver river shark tripod fish; flagtail bala shark warbonnet. Burma danio black bass straptail southern Dolly Varden or
+						p Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling 
+
+	// section start
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row
+
+				.col-12
+
+					p.text-filled Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. Midshipman, lightfish longfin smelt pickerel houndshark whiptail.
+
+	// section start
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-25
+
+				.col-12
+
+					h3.bottom-0 Blockquots
+
+			.row
+
+				.col-12
+
+					blockquote.blockquote
+						span.blockquote__icon
+							img(src="img/blockquote-icon.png", alt="icon")
+						p.blockquote__text Burma danio black bass straptail southern Dolly Varden orbicular velvetfish trumpetfish; bluntnose minnow. Hatchetfish pricklefish sixgill ray sawfish scaly dragonfish! Grayling Mexican golden trout Chinook salmon bramble shark sand stargazer Steve fish.  Scat zebra pleco graveldiver river shark tripod fish; flagtail bala shark warbonnet
+
+	// section start

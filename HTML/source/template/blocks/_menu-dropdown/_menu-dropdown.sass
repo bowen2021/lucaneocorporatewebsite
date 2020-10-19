@@ -1,0 +1,182 @@
+/* menu dropdown start */
+
+.menu-dropdown
+	display: initial
+	position: fixed
+	width: 100%
+	height: 100%
+	opacity: 0
+	visibility: hidden
+	z-index: 6
+	background: rgba(0, 0, 0, 0.3)
+	transition: all .3s
+
+.menu-dropdown
+	&__close
+		position: absolute
+		top: 40px
+		left: 45px
+		color: $white
+		cursor: pointer
+		transition: opacity .3s
+	&__close:hover
+		opacity: 0.7
+	&__inner
+		position: fixed
+		width: auto
+		height: 100%
+		overflow-y: auto
+		transform: translateX(-100%)
+		visibility: hidden
+		transition: all .3s
+	.socials
+		margin-top: 45px
+	.socials__link
+		font-size: 18px
+
+.menu-dropdown__block
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+.menu-dropdown__block
+	.block__title
+		color: #A9AEB3
+		font-size: 11px
+		line-height: 25px
+		text-transform: uppercase
+	.screen__link
+		font-size: 14px
+		line-height: 25px
+		font-weight: 500
+		text-decoration: none
+		transition: color .3s
+	.screen__link:hover
+		color: #BFBFBF
+
+.menu-dropdown--active
+	visibility: visible
+	opacity: 1
+
+.menu-dropdown--active
+	.menu-dropdown__inner:first-of-type,
+	.menu-dropdown__inner--active
+		visibility: visible
+		transform: translateX(0)
+
+.screen
+	position: relative
+	width: 320px
+	min-height: 100%
+	padding: 145px 60px 120px 60px
+	background: $bg-dgray
+
+.screen--start
+	filter: grayscale(0)
+	transition: filter .3s
+
+.screen--inactive
+	filter: grayscale(1)
+
+.screen.screen--sub
+	padding: 70px 15px 120px 15px
+
+.screen.screen--sub
+	.screen__item
+		margin-left: 45px
+		margin-right: 45px
+
+.screen
+	&__heading
+		position: relative
+		color: rgba(255, 255, 255, 0.87)
+		padding-bottom: 12px
+		margin-bottom: 27px
+		user-select: none
+	&__heading::after
+		content: ""
+		display: block
+		height: 1px
+		width: calc(100% + 30px)
+		background: #303D48
+		position: absolute
+		bottom: 0
+		left: -15px
+	&__back
+		color: rgba(255, 255, 255, 0.87)
+		font-size: 20px
+		line-height: 27px
+		font-weight: 500
+		margin-bottom: 0
+		padding: 5px 45px
+		cursor: pointer
+		position: relative
+	&__back .icon
+		font-size: 14px
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+	&__item
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		font-size: 14px
+		line-height: 20px
+		font-weight: 500
+	&__item::after
+		content: ""
+		display: block
+		height: 2px
+		width: 0px
+		background: $green
+		position: absolute
+		bottom: -6px
+		left: 0
+		transition: width .3s
+	&__item.item--active::after,
+	&__item:hover::after
+		width: 30px
+	&__item.item--active &__link,
+	&__item.item--active span,
+	&__item:hover &__link,
+	&__item:hover span
+		color: #BFBFBF
+	&__link
+		position: relative
+		font-size: 14px
+		text-decoration: none
+		transition: color .3s
+	&__item,
+	&__link
+		color: rgba(255, 255, 255, 0.87)
+	&__item span
+		transition: color .3s
+	&__item span:first-of-type
+		width: 80%
+	&__item span:nth-of-type(2)
+		font-size: 12px
+	&__item:not(:last-of-type)
+		margin-bottom: 20px
+
+.menu-dropdown--intro
+	.screen__item::after
+		display: none
+	.screen__link::after
+		content: ""
+		display: block
+		height: 2px
+		width: 0px
+		background: $green
+		position: absolute
+		bottom: -6px
+		left: 0
+		transition: width .3s
+	.js-scroll--highlighted::after
+		width: 30px
+	.js-scroll--highlighted
+		color: #BFBFBF
+
+/* menu dropdown end */

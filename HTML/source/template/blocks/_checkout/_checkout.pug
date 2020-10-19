@@ -1,0 +1,229 @@
+// checkout start
+
+form.form.checkout-form(action="javascript:void(0);")
+	.row
+
+		.col-lg-7.col-xl-8
+
+			h6.form__title Billing Details
+
+			.row.offset-20
+
+				.col-md-6
+
+					input.form__field(type="text" name="full-name" placeholder="Full Name")
+
+				.col-md-6
+
+					input.form__field(type="text" name="last-name" placeholder="Your Last Name")
+
+				.col-md-6
+
+					input.form__field(type="tel" name="phone-number" placeholder="Phone*")
+
+				.col-md-6
+
+					input.form__field(type="email" name="email" placeholder="Email address*")
+
+				.col-12
+
+					input.form__field(type="text" name="company-name" placeholder="Your company name (optional)")
+
+				.col-12
+
+					input.form__field(type="text" name="street-address" placeholder="Street address*")
+
+				.col-12
+
+					input.form__field(type="text" name="appartment" placeholder="Apartment, suite, unit etc. (optional)")
+
+				.col-md-6
+
+					select.form__select(name="country-select")
+						option(value="value") Country
+						option(value="value2") Value 2
+						option(value="value3") Value 3
+
+				.col-md-6
+
+					input.form__field(type="text" name="city" placeholder="Town / City *")
+
+				.col-md-6
+
+					input.form__field(type="text" name="state" placeholder="State *")
+
+				.col-md-6
+
+					input.form__field(type="text" name="postcode" placeholder="Postcode / ZIP *")
+
+				.col-12
+
+					label.form__checkbox-label.top-20.bottom-20
+						span.form__label-text Save my name, email, and website in this browser for the next time I comment.
+						input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+						span.form__checkbox-mask
+
+				.col-12
+
+					input.form__field(type="text" name="note" placeholder="Order notes (optional)")
+
+			h6.form__title.top-50 Shipping Method
+
+			.row.offset-20
+
+				.col-12
+
+					select.form__select(name="shipping-select")
+						option(value="value") Choose shipping method
+						option(value="value2") Value 2
+						option(value="value3") Value 3
+
+			h6.form__title.top-50 Payment Method
+
+			.row.offset-20
+
+				.col-12
+
+					.form__payments
+
+						label.form__radio-label
+							img.form__label-img(src="img/paypal.png" alt="paypal")
+							input.form__input-radio(type="radio" name="method-select" value="paypal")
+							span.form__radio-mask.form__radio-mask
+
+						label.form__radio-label
+							img.form__label-img(src="img/visa.png" alt="visa")
+							input.form__input-radio(type="radio" name="method-select" value="visa")
+							span.form__radio-mask.form__radio-mask
+
+				.col-md-6
+
+					input.form__field(type="text" name="full-name" placeholder="Full Name")
+
+				.col-md-6
+
+					input.form__field(type="text" name="last-name" placeholder="Your Last Name")
+
+				.col-md-4
+
+					select.form__select(name="month-select")
+						option(value="value") MM
+						option(value="value2") Value 2
+						option(value="value3") Value 3
+						option(value="value3") Value 4
+						option(value="value3") Value 5
+
+				.col-md-4
+
+					select.form__select(name="year-select")
+						option(value="value") YY
+						option(value="value2") Value 2
+						option(value="value3") Value 3
+						option(value="value3") Value 4
+						option(value="value3") Value 5
+
+
+				.col-md-4
+
+					input.form__field(type="text" name="cvv" placeholder="CVV")
+
+		.col-lg-5.col-xl-4
+
+			h6.form__title Order Summary
+
+			.order-item
+				.row.no-gutters.align-items-center
+
+					.col-3
+
+						.order-item__img
+							img.img--contain(src="img/order_1.jpg" alt="img")
+
+					.col-6
+
+						.order-item__description
+							a.order-item__link(href="shop-product.html") Delivery box small
+							.order-item__count 
+								span $14
+								span x 1
+
+					.col-2
+
+						span.order-item__price $14.00
+
+					.col-1.text-right
+
+						span.order-item__remove
+
+							+svg('remove')
+
+			.order-item
+				.row.no-gutters.align-items-center
+
+					.col-3
+
+						.order-item__img
+							img.img--contain(src="img/order_2.jpg" alt="img")
+
+					.col-6
+
+						.order-item__description
+							a.order-item__link(href="shop-product.html") Delivery box big
+							.order-item__count 
+								span $16
+								span x 1
+
+					.col-2
+
+						span.order-item__price $16.00
+
+					.col-1.text-right
+
+						span.order-item__remove
+
+							+svg('remove')
+
+			.order-item
+				.row.no-gutters.align-items-center
+
+					.col-3
+
+						.order-item__img
+							img.img--contain(src="img/order_3.jpg" alt="img")
+
+					.col-6
+
+						.order-item__description
+							a.order-item__link(href="shop-product.html") Delivery box
+							.order-item__count 
+								span $18
+								span x 1
+
+					.col-2
+
+						span.order-item__price $18.00
+
+					.col-1.text-right
+
+						span.order-item__remove
+
+							+svg('remove')
+
+			.cart-totals.top-40
+
+				h6.cart__title Cart Totals
+
+				ul.cart-totals__list
+					li
+						span Subtotal:
+						span $68
+					li
+						span Sale:
+						span $0
+					li
+						span Total:
+						span $68
+
+				a.button.button--account(href="shop-checkout.html") #[span Proceed to checkout] #[+svg('arrow')]
+
+// checkout end

@@ -1,0 +1,126 @@
+/* service details start */
+
+.service-details
+	&__img
+		margin-bottom: 57px
+	&__title
+		margin-bottom: 10px
+	&__subtitle
+		margin-bottom: 20px
+
+.service-benefits
+	display: flex
+	align-items: center
+	justify-content: space-between
+	border: 1px solid #D9E2E0
+	padding: 30px 20px 30px 30px
+	margin-bottom: 30px
+
+.service-benefits
+	.icon
+		color: $bg-blue
+		font-size: 46px
+	&__title
+		margin-bottom: 0
+		width: calc(100% - 60px)
+
+/* other service */
+
+.other-service
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: space-between
+	color: $white
+	text-decoration: none
+	padding: 3px 30px 3px 30px
+	background: rgba(0, 61, 144, 0.15)
+	overflow: hidden
+	transition: background .8s
+
+.other-service:not(:last-of-type)
+	margin-bottom: 10px
+
+.other-service:hover
+	color: $white
+	background: rgba(0, 61, 144, 0.3)
+
+.other-service:hover
+	img
+		transform: scale(1.15)
+	.other-service__count
+		opacity: 0.7
+
+.other-service
+	&__title
+		margin-bottom: 0
+	&__count
+		font-size: 40px
+		font-weight: 700
+		opacity: 0.4
+		transition: opacity .8s
+	img
+		transform: translateZ(0)
+		transition: transform .8s
+
+/* document */
+
+.document
+	display: flex
+	justify-content: space-between
+
+.document:not(:last-of-type)
+	margin-bottom: 30px
+
+.document
+	&__img img
+		height: 50px
+		width: auto
+	&__title
+		font-size: 16px
+		margin-bottom: 0
+	&__title a
+		color: inherit
+		text-decoration: none
+		transition: color .3s
+	&__title a:hover
+		color: $green
+	&__details
+		width: calc(100% - 65px)
+	&__date
+		color: #A9AEB3
+
+.document--style-2
+	border: 1px solid #E2E2E2
+	align-items: center
+	padding: 24px 15px 25px 15px
+	margin-bottom: 40px
+	transition: transform .3s
+
++r576
+
+	.document--style-2
+		padding: 29px 30px 30px 30px
+
+.document--style-2
+	.document__details
+		width: calc(100% - 100px)
+	.document__icon
+		color: inherit
+		font-size: 20px
+		transition: color .3s
+	.document__icon:hover
+		color: $green
+	.document__title,
+	.document__date
+		transition: opacity .3s
+
+.document--style-2:hover
+	transform: translateY(-10px)
+
+.document--style-2:hover
+	.document__title,
+	.document__date
+		opacity: 0.7
+
+/* service details end */

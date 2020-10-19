@@ -1,0 +1,230 @@
+/* cart start */
+
+.cart
+	background: #FFF
+
+.cart
+	&__heading
+		border-bottom: 1px solid #D9E2E0
+		border-top: 1px solid #D9E2E0
+		padding: 23px 0px 15px 0px
+	&__lower
+		padding-top: 40px
+	.cart-totals
+		margin-top: 70px
+
+	+r768
+
+		.cart-totals
+			margin-top: 90px
+
+	+r992
+
+		.cart-totals
+			margin-top: 120px
+
+	+r1200
+
+		.cart-totals
+			margin-top: 140px
+
+.cart-item
+	font-size: 16px
+	font-weight: 700
+	padding: 20px 0px 30px 0
+	border-bottom: 1px solid #D9E2E0
+
++r992
+
+	.cart-item
+		padding: 30px 0
+
+.cart-item
+	&__count
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		height: 50px
+		width: 140px
+		margin: 15px auto
+		border: 1px solid #E2E2E2
+
+	+r992
+		&__count
+			margin: 0 auto
+	
+	&__input
+		color: #414A53
+		width: 50px
+		height: 50px
+		border: none
+		text-align: center
+		font-size: 14px
+		font-weight: 500
+		border: 1px solid #E2E2E2
+	input[type=number]::-webkit-outer-spin-button,
+	input[type=number]::-webkit-inner-spin-button
+		-webkit-appearance: none
+		margin: 0
+	input[type=number]
+		-moz-appearance: textfield
+	.cart-item__minus,
+	.cart-item__plus
+		cursor: pointer
+		position: relative
+		user-select: none
+		height: 50px
+		width: 50px
+		text-align: center
+	.cart-item__minus::before,
+	.cart-item__plus::before,
+	.cart-item__plus::after
+		content: ""
+		display: block
+		height: 2px
+		width: 12px
+		background: #414A53
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: background .3s
+	.cart-item__plus::after
+		width: 2px
+		height: 12px
+	.cart-item__minus:hover::before,
+	.cart-item__plus:hover::before,
+	.cart-item__plus:hover::after
+		background: $green
+	&__product
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		max-width: 300px
+		margin: 0 auto 15px auto
+
+	+r992
+
+		&__product
+			flex-direction: row
+			max-width: none
+			margin: 0
+
+	&__product-name
+		width: calc(100% - 146px)
+		text-align: center
+		margin-top: 15px
+
+	+r992
+
+		&__product-name
+			text-align: left
+			margin-top: 0
+
+	&__product-name a
+		color: inherit
+		text-decoration: none
+		transition: color .3s
+	&__product-name a:hover
+		color: $green
+	&__product-img
+		position: relative
+		height: 108px
+		width: 116px
+		border: 1px solid #E2E2E2
+	&__product-img img
+		z-index: 0
+		max-width: 80%
+		max-height: 80%
+	&__remove
+		display: inline-block
+		cursor: pointer
+		color: #414A53
+		font-size: 12px
+		margin-bottom: 10px
+		padding: 10px
+		transition: color .3s
+
+	+r992
+
+		&__remove
+			margin-bottom: 0
+
+	&__remove:hover
+		color: #D92828
+	&__price span,
+	&__summa span
+		display: inline-block
+		font-weight: 400
+	&__summa span
+		color: #003D90
+
+/* cart totals */
+
+.cart-totals
+	display: inline-block
+	width: 100%
+	max-width: 370px
+	text-align: left
+
+.cart-totals
+	&__list
+		padding: 0
+		margin: 30px 0 0 0
+		list-style: none
+	&__list li
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__list li:not(:last-of-type)
+		margin-bottom: 24px
+	&__list li span
+		display: inline-block
+
+	+r576
+
+		&__list li span:first-of-type	
+			width: 200px
+
+	.button
+		width: 100%
+		margin-top: 25px
+		color: #FFF
+		background: $green
+	.button:hover
+		background: #21BB9F
+		border-color: #21BB9F
+
+/* coupon form */
+
+.coupon-form
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	margin-bottom: 30px
+
++r576
+
+	.coupon-form
+		flex-direction: row
+		align-items: center
+
++r768
+
+	.coupon-form
+		margin-bottom: 0
+
+.coupon-form
+	.form__field
+		width: 210px
+		margin-right: 25px
+		margin-bottom: 15px
+
+	+r576
+
+		.form__field
+			margin-bottom: 0
+
+/* cart end */

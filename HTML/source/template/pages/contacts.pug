@@ -1,0 +1,163 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'contacts'
+
+	-var dest = 'pages'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/service-details.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/service-details.jpg' alt='img')
+
+		+hero-inner('Contact Us', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section.contacts.pb-0
+		img.contacts__bg(src="img/contacts-map.png", alt="map")
+
+		.container
+			.row
+
+				.col-md-6
+
+					h5.contacts__title Office United States
+
+					.contacts-item
+						.contacts-item__img
+							+svg('phone')
+						.contacts-item__details
+							a.contacts-item__link(href="tel:+22628908002") +2 262 890 8002
+							a.contacts-item__link(href="tel:+22628908002") +2 262 890 8002
+
+					.contacts-item
+						.contacts-item__img
+							+svg('mail')
+						.contacts-item__details
+							a.contacts-item__link(href="mailto:transporteriumus@gmail.com") transporteriumus@gmail.com
+
+					.contacts-item
+						.contacts-item__img
+							+svg('pin')
+						.contacts-item__details
+							span 2307  Brooklyn, New York, United States
+
+					.contacts-item
+						.contacts-item__img
+							+svg('share')
+						.contacts-item__details
+							ul.socials.socials--dark.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-md-6.top-50.top-md-0
+
+					h5.contacts__title Office Great Britain
+
+					.contacts-item
+						.contacts-item__img
+							+svg('phone')
+						.contacts-item__details
+							a.contacts-item__link(href="tel:+22628908002") +2 262 890 8002
+							a.contacts-item__link(href="tel:+22628908002") +2 262 890 8002
+
+					.contacts-item
+						.contacts-item__img
+							+svg('mail')
+						.contacts-item__details
+							a.contacts-item__link(href="mailto:transporteriumus@gmail.com") transporteriumus@gmail.com
+
+					.contacts-item
+						.contacts-item__img
+							+svg('pin')
+						.contacts-item__details
+							span 22 The Drive GALASHIELS TD85 9DS, England
+
+					.contacts-item
+						.contacts-item__img
+							+svg('share')
+						.contacts-item__details
+							ul.socials.socials--dark.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.flex-column-reverse.flex-lg-row
+
+				.col-lg-6
+
+					#map.contacts-map(data-api-key="AIzaSyD5ES8GFHrarPhIVpDhFDea6fPtga0Wy4Y" data-marker="img/placeholder.png")
+
+				.col-lg-6
+
+					form#ajax-form.form.contact-form(action="javascript:void(0);" method="post" autocomplete="off")
+
+						.row
+
+							.col-12
+
+								h5.contact-form__subtitle Send review
+
+							.col-md-6
+
+								input.form__field(type="text" name="name" placeholder="Your Name")
+
+							.col-md-6
+
+								input.form__field(type="email" name="email" placeholder="Your Email")
+
+							.col-md-6
+
+								input.form__field(type="tel" name="phone" placeholder="Your Phone")
+
+							.col-md-6
+
+								input.form__field(type="text" name="subject" placeholder="Subject")
+
+							.col-12
+
+								textarea.form__field.form__message.message--large(name="message" placeholder="Text")
+
+							.col-12
+
+								button.button.button--green(type="submit") #[span Send message] #[+svg('arrow')]
+
+							.col-12
+
+								.alert.alert--success.alert--filled
+									.alert__icon
+										+svg('check')
+									p.alert__text #[strong Well done!] Your form has been sent
+									span.alert__close
+										+svg('close')
+
+								.alert.alert--error.alert--filled
+									.alert__icon
+										+svg('close')
+									p.alert__text #[strong Oh snap!] Your form has not been sent
+									span.alert__close
+										+svg('close')
+
+	// section end

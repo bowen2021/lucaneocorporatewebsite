@@ -1,0 +1,30 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = '404'
+
+	-var dest = 'pages'
+
+block main
+
+	section.error-section
+		img.img--bg(src="img/404.jpg", alt="bg")
+
+		.align-container
+			.align-container__item
+
+				.container
+					.row.align-items-center.align-lg-end
+
+						.col-md-6.col-xl-5
+
+							.heading.heading--white
+								span.heading__pre-title Transporterium
+								h1.heading__title Ooops #[br]Page not found
+
+							+button--white('#', 'Homepage')
+
+						.d-none.d-md-block.col-md-6.col-xl-7.text-right
+
+							span.error-section__text 404

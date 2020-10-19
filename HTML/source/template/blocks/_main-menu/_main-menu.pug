@@ -1,0 +1,182 @@
+// main menu start
+
+ul.main-menu(class=(style === "white" ? "main-menu--white" : undefined))
+
+	li.main-menu__item.main-menu__item--has-child(class=(type === "front" ? "main-menu__item--active" : undefined))
+		a.main-menu__link(href="javascript:void(0);")
+			span Home
+
+		// sub menu start
+		ul.main-menu__sub-list
+			li(class=(page === "index" ? "item--active" : undefined))
+				a(href="index.html")
+					span Home
+			li(class=(page === "front_2" ? "item--active" : undefined))
+				a(href="front_2.html")
+					span Home 2
+			li(class=(page === "front_3" ? "item--active" : undefined))
+				a(href="front_3.html")
+					span Home 3
+			li(class=(page === "front_4" ? "item--active" : undefined))
+				a(href="front_4.html")
+					span Home 4
+			li(class=(page === "front_5" ? "item--active" : undefined))
+				a(href="front_5.html")
+					span Home 5
+			li(class=(page === "front_6" ? "item--active" : undefined))
+				a(href="front_6.html")
+					span Home 6
+		// sub menu end
+
+	li.main-menu__item.main-menu__item--has-child(class=(dest === "pages" ? "main-menu__item--active" : undefined))
+		a.main-menu__link(href="javascript:void(0);")
+			span Pages
+
+		// sub menu start
+
+		ul.main-menu__sub-list.sub-list--style-2
+			li(class=(page === "about" ? "item--active" : undefined))
+				a(href="about.html")
+					span About Us
+			li(class=(page === "team" ? "item--active" : undefined))
+				a(href="team.html")
+					span Team
+			li(class=(page === "services" ? "item--active" : undefined))
+				a(href="services.html")
+					span Services
+			li(class=(page === "service-details" ? "item--active" : undefined))
+				a(href="service-details.html")
+					span Service Details
+			li(class=(page === "careers" ? "item--active" : undefined))
+				a(href="careers.html")
+					span Careers
+			li(class=(page === "warehouse" ? "item--active" : undefined))
+				a(href="warehouse.html")
+					span Warehouse
+			li(class=(page === "request" ? "item--active" : undefined))
+				a(href="request.html")
+					span Request Quote
+			li(class=(page === "calculator" ? "item--active" : undefined))
+				a(href="calculator.html")
+					span Calculator
+			li(class=(page === "documents" ? "item--active" : undefined))
+				a(href="documents.html")
+					span Documents
+			li(class=(page === "trucks" ? "item--active" : undefined))
+				a(href="trucks.html")
+					span Trucks
+			li(class=(page === "locations" ? "item--active" : undefined))
+				a(href="locations.html")
+					span Locations
+			li(class=(page === "contacts" ? "item--active" : undefined))
+				a(href="contacts.html")
+					span Contacts
+			li(class=(page === "gallery" ? "item--active" : undefined))
+				a(href="gallery.html")
+					span Gallery Masonry
+			li(class=(page === "gallery_2" ? "item--active" : undefined))
+				a(href="gallery_2.html")
+					span Gallery Grid
+			li(class=(page === "blog" ? "item--active" : undefined))
+				a(href="blog.html")
+					span Blog
+			li(class=(page === "blog-post" ? "item--active" : undefined))
+				a(href="blog-post.html")
+					span Blog Post
+			li(class=(page === "faq" ? "item--active" : undefined))
+				a(href="faq.html")
+					span F.A.Q
+			li(class=(page === "404" ? "item--active" : undefined))
+				a(href="404.html")
+					span 404
+			li(class=(page === "typography" ? "item--active" : undefined))
+				a(href="typography.html")
+					span Typography
+
+		// sub menu end
+
+	li.main-menu__item.main-menu__item--has-child(class=(dest === "services" ? "main-menu__item--active" : undefined))
+		a.main-menu__link(href="javascript:void(0);")
+			span Services
+
+		// sub menu start
+
+		ul.main-menu__sub-list
+			li
+				a(href="service-details.html")
+					span Truck Freight
+			li
+				a(href="service-details.html")
+					span Ship Freight
+			li
+				a(href="service-details.html")
+					span Plane Freight
+			li
+				a(href="service-details.html")
+					span Train Freight
+
+		// sub menu end
+
+	li.main-menu__item.main-menu__item--has-child(class=(dest === "shop" ? "main-menu__item--active" : undefined))
+		a.main-menu__link(href="javascript:void(0);")
+			span Shop
+
+		// sub menu start
+		
+		ul.main-menu__sub-list
+			li(class=(page === "shop" ? "item--active" : undefined))
+				a(href="shop.html")
+					span Shop
+			li(class=(page === "shop-single" ? "item--active" : undefined))
+				a(href="shop-single.html")
+					span Shop Single
+			li(class=(page === "cart" ? "item--active" : undefined))
+				a(href="shop-cart.html")
+					span Shop Cart
+			li(class=(page === "checkout" ? "item--active" : undefined))
+				a(href="shop-checkout.html")
+					span Shop Checkout
+			li(class=(page === "account" ? "item--active" : undefined))
+				a(href="shop-account.html")
+					span Shop Account
+
+		// sub menu end
+
+	li.main-menu__item.main-menu__item--has-child(class=(dest === "elements" ? "main-menu__item--active" : undefined))
+		a.main-menu__link(href="javascript:void(0);")
+			span Elements
+
+		// sub menu start
+		
+		ul.main-menu__sub-list
+			li(class=(page === "accordion" ? "item--active" : undefined))
+				a(href="accordion.html")
+					span Accordion
+			li(class=(page === "alerts" ? "item--active" : undefined))
+				a(href="alerts.html")
+					span Alerts
+			li(class=(page === "counters" ? "item--active" : undefined))
+				a(href="counters.html")
+					span Counters
+			li(class=(page === "tabs" ? "item--active" : undefined))
+				a(href="tabs.html")
+					span Tabs
+			li(class=(page === "pricing" ? "item--active" : undefined))
+				a(href="pricing.html")
+					span Pricing Plan
+			li(class=(page === "tables" ? "item--active" : undefined))
+				a(href="tables.html")
+					span Tables
+			li(class=(page === "forms" ? "item--active" : undefined))
+				a(href="forms.html")
+					span Form
+			li(class=(page === "infos" ? "item--active" : undefined))
+				a(href="info-blocks.html")
+					span Info Blocks
+			li(class=(page === "icons" ? "item--active" : undefined))
+				a(href="icons.html")
+					span Icons
+
+		// sub menu end
+
+// main menu end

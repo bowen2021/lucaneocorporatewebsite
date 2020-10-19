@@ -1,0 +1,397 @@
+include ../mixins/_mixins
+
+<!DOCTYPE html>
+html(lang="en")
+
+	block variables
+
+	-var style = 'white'
+
+	head
+
+		include ../blocks/_head/_head
+
+	body
+
+		.page-wrapper
+
+
+			// menu dropdown start
+
+			.menu-dropdown.menu-dropdown--intro
+
+				.menu-dropdown__inner(data-value="start")
+
+					.screen.screen--start
+
+						.menu-dropdown__close
+							+svg('close')
+
+						.screen__item
+							a.js-scroll.screen__link(href="#demos") Demo
+						.screen__item
+							a.js-scroll.screen__link(href="#inner-pages") Inner Pages
+						.screen__item
+							a.js-scroll.screen__link(href="#features") Features
+						.screen__item
+							a.js-scroll.screen__link(href="#technologies") Used Technologies
+
+						.menu-dropdown__block.top-50
+							a.button.button--filled(href="https://themeforest.net/item/transx-transportation-logistics-html-template/27089510" target="_blank") Buy TransX
+
+			// menu dropdown end
+
+			header.intro-header
+				.row.no-gutters.align-items-center
+
+					.col-8.col-lg-3
+
+						.intro-header__logo.logo--white
+							a(href="index.html")
+								img(src="img/logo_white.png" alt="logo")
+
+						.intro-header__logo.logo--dark
+							a(href="index.html")
+								img(src="img/logo_black.png" alt="logo")
+
+					.col-lg-6.d-none.d-lg-block
+
+						ul.intro-menu.list--reset
+							li.intro-menu__item
+								a.js-scroll.intro-menu__link(href="#demos") Demo
+							li.intro-menu__item
+								a.js-scroll.intro-menu__link(href="#inner-pages") Inner pages
+							li.intro-menu__item
+								a.js-scroll.intro-menu__link(href="#features") Features
+							li.intro-menu__item
+								a.js-scroll.intro-menu__link(href="#technologies") Used technologies
+
+					.col-4.col-lg-3.text-right
+
+						a.button.button--filled(href="https://themeforest.net/item/transx-transportation-logistics-html-template/27089510" target="_blank") Buy TransX
+
+						// menu-trigger start
+
+						.hamburger.d-inline-block.d-lg-none(class=(style === "white" ? "hamburger--white" : undefined))
+							.hamburger-inner
+
+						// menu-trigger end
+
+			main.main
+
+				block main
+
+					// promo start
+
+					.intro-promo
+
+						picture
+							source(srcset='img/intro-promo.jpg' media='(min-width: 992px)')
+							img.img--bg(src='img/intro-promo.jpg' alt='img')
+
+						.align-container
+							.align-container__item
+
+								.container.container--lg
+									.row.align-items-center
+
+										.col-12
+
+											.intro-promo__inner
+
+												h2.intro-promo__title TransX | Transportation & Warehousing HTML Template
+													span.intro-promo__overlay TransX
+												p.intro-promo__subtitle This is TranspX a creative template for your logistics and delivery business goals. It can provide you magnificent opportunities with design and great functionality.
+												a.js-scroll.button.button--promo(href="#demos") #[span See demos] #[+svg('arrow')]
+
+					// promo end
+
+					// section start
+
+					section.section#demos
+						.container.container--xl
+							.row.bottom-50
+
+								.col-12
+
+									.heading.heading--center
+										span.heading__pre-title Demos
+										h3.heading__title Awesome 6 pre-built #[br] Home pages
+										span.heading__layout.intro--layout Demos
+
+							.row.offset-50
+
+								.col-lg-4.text-center.text-lg-left
+
+									.demo-item
+
+										.demo-item__img
+											img.img--bg(src="img/demo_1.jpg" alt="demo")
+											a.button.button--green(href="index.html" target="_blank") #[span See demo] #[+svg('arrow')]
+
+										h6.demo-item__title 01. Home page
+
+								.col-lg-4.text-center
+
+									.demo-item
+
+										.demo-item__img
+											img.img--bg(src="img/demo_2.jpg" alt="demo")
+											a.button.button--green(href="front_2.html" target="_blank") #[span See demo] #[+svg('arrow')]
+
+										h6.demo-item__title 02. Home page
+
+								.col-lg-4.text-center.text-lg-right
+
+									.demo-item
+
+										.demo-item__img
+											img.img--bg(src="img/demo_3.jpg" alt="demo")
+											a.button.button--green(href="front_3.html" target="_blank") #[span See demo] #[+svg('arrow')]
+
+										h6.demo-item__title 03. Home page
+
+								.col-lg-4.text-center.text-lg-left
+
+									.demo-item
+
+										.demo-item__img
+											img.img--bg(src="img/demo_4.jpg" alt="demo")
+											a.button.button--green(href="front_4.html" target="_blank") #[span See demo] #[+svg('arrow')]
+
+										h6.demo-item__title 04. Home page
+
+								.col-lg-4.text-center
+
+									.demo-item
+
+										.demo-item__img
+											img.img--bg(src="img/demo_5.jpg" alt="demo")
+											a.button.button--green(href="front_5.html" target="_blank") #[span See demo] #[+svg('arrow')]
+
+										h6.demo-item__title 05. Home page
+
+								.col-lg-4.text-center.text-lg-right
+
+									.demo-item
+
+										.demo-item__img
+											img.img--bg(src="img/demo_6.jpg" alt="demo")
+											a.button.button--green(href="front_6.html" target="_blank") #[span See demo] #[+svg('arrow')]
+
+										h6.demo-item__title 06. Home page
+
+					// section end
+
+					// section start
+
+					section.section.pt-0
+						.container
+							.row
+
+								.col-12
+
+									img(src="img/map-transx.png" alt="img")
+
+							.row.offset-50
+
+								.col-sm-6.col-lg-4.text-center
+
+									+counter--blue('6', 'pre-built', 'Home pages')
+
+								.col-sm-6.col-lg-4.text-center
+
+									+counter--blue('30', 'pages', 'Inner pages')
+
+								.col-sm-6.col-lg-4.text-center
+
+									+counter--blue('100', '+', 'Elements')
+
+					// section end
+
+					// section start
+
+					section.section.bg--dgray#inner-pages
+						.container.container--xl
+							.row.bottom-50
+
+								.col-12
+
+									.heading.heading--center.heading--white
+										span.heading__pre-title Inner pages
+										h3.heading__title Individual created inner pages
+
+							.row
+
+								.col-12
+
+									.pages-slider
+
+										.pages-slider__item
+											img.img--bg(src="img/page_1.jpg" alt="page")
+											a.button.button--green(href="about.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_2.jpg" alt="page")
+											a.button.button--green(href="team.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_3.jpg" alt="page")
+											a.button.button--green(href="services.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_4.jpg" alt="page")
+											a.button.button--green(href="warehouse.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_5.jpg" alt="page")
+											a.button.button--green(href="trucks.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_6.jpg" alt="page")
+											a.button.button--green(href="careers.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_7.jpg" alt="page")
+											a.button.button--green(href="service-details.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+										.pages-slider__item
+											img.img--bg(src="img/page_8.jpg" alt="page")
+											a.button.button--green(href="shop-single.html" target="_blank") #[span See page] #[+svg('arrow')]
+
+									.pages-slider__nav
+
+					// section end
+
+					// section start
+
+					section.section#features
+						.container.container--lg
+							.row.align-items-center
+
+								.col-md-6.bottom-10.bottom-sm-0
+
+									img.w-100(src="img/feat_1.jpg" alt="img")
+
+								.col-md-6.col-xl-5.offset-xl-1
+
+									.heading
+										span.heading__pre-title Shop
+										h3.heading__title Shop pre-built pages for your business necessaries
+										span.heading__layout Shop
+
+									p.top-30.bottom-40 We created and included shop pages for business necessary. You can use it for different purposes, as example for sale or rent your product online.
+
+									a.button.button--green(href="shop.html" target="_blank") #[span See all pages] #[+svg('arrow')]
+
+					// section end
+
+					// section start
+
+					section.section.bg--lgray
+						.container.container--lg
+							.row.align-items-center.flex-column-reverse.flex-md-row
+
+								.col-md-6.col-lg-5.col-lg-5
+
+									.heading
+										span.heading__pre-title Elements
+										h3.heading__title More than 100 great looking elements
+										span.heading__layout.layout--lgray Elements
+
+									p.top-30.bottom-40 Transporterium HTML Template pack includes more than 100 wonderful elements for building different creative pages and blocks for your website.
+
+									a.button.button--green(href="pricing.html" target="_blank") #[span See all pages] #[+svg('arrow')]
+
+								.col-md-6.offset-xl-1.bottom-10.bottom-sm-0
+
+									img.w-100(src="img/feat_2.jpg" alt="img")
+
+					// section end
+
+					// section start
+
+					section.section
+						.container.container--lg
+							.row.align-items-center
+
+								.col-md-6.bottom-10.bottom-sm-0
+
+									img.w-100(src="img/feat_3.jpg" alt="img")
+
+								.col-md-6.col-xl-5.offset-xl-1
+
+									.heading
+										span.heading__pre-title Icons
+										h3.heading__title Plus 100 awesome isometric and flat icons
+										span.heading__layout Icons
+
+									p.top-30.bottom-40 We collected for you more than 100 different modern icons, that you can use for your website, so you don’t have to waste time looking for them.
+
+									a.button.button--green(href="icons.html" target="_blank") #[span See all icons] #[+svg('arrow')]
+
+					// section end
+
+					// section start
+
+					section.section.bg--blue#technologies
+						.container
+							.row.bottom-50
+
+								.col-12
+
+									.heading.heading--white.heading--center
+										span.heading__pre-title Technology
+										h3.heading__title Technology that we use
+
+							.row.offset-30
+
+								.col-sm-6.col-lg-3
+
+									a.technologie-item(href="https://getbootstrap.com/" target="_blank")
+										.technologie-item__img
+											svg.icon.technologie-item__icon(style="font-size: 160px;")
+												use(xlink:href="#bootstrap")
+
+								.col-sm-6.col-lg-3
+
+									a.technologie-item(href="https://gulpjs.com/" target="_blank")
+										.technologie-item__img
+											svg.icon.technologie-item__icon(style="font-size: 90px;")
+												use(xlink:href="#gulp")
+
+								.col-sm-6.col-lg-3
+
+									a.technologie-item(href="https://jquery.com/" target="_blank")
+										.technologie-item__img
+											svg.icon.technologie-item__icon(style="font-size: 130px;")
+												use(xlink:href="#jquery")
+
+								.col-sm-6.col-lg-3
+
+									a.technologie-item(href="https://nodejs.org/" target="_blank")
+										.technologie-item__img
+											svg.icon.technologie-item__icon(style="font-size: 130px;")
+												use(xlink:href="#node")
+
+					// section end
+
+					// section start
+
+					section.purchase
+
+						img.img--bg(src="img/purchase_bg.jpg" alt="img")
+
+						.align-container
+							.align-container__item
+								.container
+									.row
+
+										.col-12.text-center
+
+											h3.purchase__title.bottom-30.color--white Purchase TransX HTML Template
+											a.button.button--green(href="https://themeforest.net/item/transx-transportation-logistics-html-template/27089510" target="_blank") #[span Purchase] #[+svg('arrow')]
+
+					// section end
+
+		include ../blocks/_scripts/_scripts

@@ -1,0 +1,348 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'pricing'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Pricing Plan', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.offset-50
+
+				.col-xl-4.bottom-70
+
+					.heading
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you
+						p.heading__text Pacific hake false trevally queen Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper! Owens pupfish large-eye
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--bordered
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Regular #[span.color--green pack]
+							.pricing-plan__price #[span 150] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments / month
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--blue
+					
+						img.pricing-plan__bg(src="img/price_background.png", alt="img")
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Premium pack
+							.pricing-plan__price #[span 255] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item 100 freight shipments / month
+							+button--white('#', 'Get started')
+
+	// section end
+
+	// section start
+
+	section.section.bg--dgray
+
+		img.section--bg.t50.r0(src="img/pricing-bg.png", alt="bg")
+
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center.heading--white
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you, #[span.color--green whoever] you are
+
+			.row.offset-50
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--bordered
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Starter pack
+							.pricing-plan__price #[span 100] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item.item--disabled Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments / month
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--bordered
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Regular #[span.color--green pack]
+							.pricing-plan__price #[span 150] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments / month
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-4
+
+					.pricing-plan.pricing-plan--blue
+
+						img.pricing-plan__bg(src="img/price_background.png", alt="img")
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Premium pack
+							.pricing-plan__price #[span 255] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item 100 freight shipments / month
+							+button--white('#', 'Get started')
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you, #[span.color--green whoever] you are
+
+			.row.offset-50
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--bordered.pricing-plan--small
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title One pack
+							.pricing-plan__price #[span 95] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item.item--disabled Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--bordered.pricing-plan--small
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Starter pack
+							.pricing-plan__price #[span 100] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item.item--disabled Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--bordered.pricing-plan--small
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Regular #[span.color--green pack]
+							.pricing-plan__price #[span 150] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item.item--disabled 100 freight shipments
+							+button--green('#', 'Get started')
+
+				.col-sm-9.col-md-6.col-xl-3
+
+					.pricing-plan.pricing-plan--blue.pricing-plan--small
+
+						img.pricing-plan__bg(src="img/price_background.png", alt="img")
+
+						.pricing-plan__inner
+
+							h5.pricing-plan__title Premium pack
+							.pricing-plan__price #[span 255] #[span usd]
+							ul.list.list--check.list--reset
+								li.list__item 1 warehouse
+								li.list__item Custom business rules
+								li.list__item Real-time rate shopping
+								li.list__item 100 freight shipments
+							+button--white('#', 'Get started')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you, #[span.color--green whoever] you are
+
+			.row
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title One Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse
+
+							.col-lg-2
+
+								.pricing-table__price #[span 95] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--green('#', 'Get started')
+
+				.col-12
+
+					.pricing-table.pricing-table--blue
+						.row.align-items-center
+
+							.col-lg-2
+
+								h5.pricing-table__title Starter Pack
+
+							.col-lg-5
+
+								span.pricing-table__text Custom business rules, 1 warehouse, Real-time rate 
+
+							.col-lg-2
+
+								.pricing-table__price #[span 100] #[span usd]
+
+							.col-lg-3.text-lg-right
+
+								+button--white('#', 'Get started')
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-50
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Pricing
+						h3.heading__title The right price for you, #[span.color--green whoever] you are
+
+			.row
+
+				.col-12
+
+					.table.table--pricing
+						.table__header
+							.table__row
+								.table__cell #[strong Elements]
+								.table__cell #[strong One pack]
+								.table__cell #[strong Starter pack]
+								.table__cell #[strong Premium pack]
+						.table__body
+							.table__row
+								.table__cell(data-label="Title") #[span Custom business rules]
+								.table__cell(data-label="One pack") #[span #[strong 95 USD]]
+								.table__cell(data-label="Starter pack") #[span #[strong 155 USD]]
+								.table__cell(data-label="Premium pack") #[span #[strong 255 USD]]
+							.table__row
+								.table__cell(data-label="Title") #[span Custom business rules, 1 warehouse]
+								.table__cell(data-label="One pack") #[span #[strong 95 USD]]
+								.table__cell(data-label="Starter pack") #[span #[strong 155 USD]]
+								.table__cell(data-label="Premium pack") #[span #[strong 10.00$]]
+							.table__row
+								.table__cell(data-label="Title") #[span Custom business rules, 1 warehouse, Real-time rate]
+								.table__cell(data-label="One pack") #[span #[strong 95 USD]]
+								.table__cell(data-label="Starter pack") #[span #[strong 155 USD]]
+								.table__cell(data-label="Premium pack") #[span #[strong 255 USD]]
+							.table__row
+								.table__cell(data-label="Title") #[span Custom business rules, 1 warehouse, 100 freight shipments]
+								.table__cell(data-label="One pack") #[span #[strong 95 USD]]
+								.table__cell(data-label="Starter pack") #[span #[strong 155 USD]]
+								.table__cell(data-label="Premium pack") #[span #[strong 255 USD]]
+							.table__row
+								.table__cell(data-label="Title") Custom business rules, 1 warehouse, 100 freight shipments
+								.table__cell(data-label="One pack") #[span #[strong 95 USD]]
+								.table__cell(data-label="Starter pack") #[span #[strong 155 USD]]
+								.table__cell(data-label="Premium pack") #[span #[strong 255 USD]]
+							.table__row
+								.table__cell(data-label="Title") Custom business rules, 1 warehouse, 100 freight shipments
+								.table__cell(data-label="One pack") #[span #[strong 95 USD]]
+								.table__cell(data-label="Starter pack") #[span #[strong 155 USD]]
+								.table__cell(data-label="Premium pack") #[span #[strong 255 USD]]
+
+	// section end

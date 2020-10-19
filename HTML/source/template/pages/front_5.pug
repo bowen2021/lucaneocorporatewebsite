@@ -1,0 +1,892 @@
+extends ../layouts/front_5.pug
+
+block variables
+
+	-var page = 'front_5'
+
+	-var type = 'front'
+
+	-var style = 'white'
+
+block main
+
+	// promo start
+
+	.front-promo.promo--f5
+
+		.front-promo__layout
+
+		picture
+			source(srcset='img/promo_5.jpg', media='(min-width: 992px)')
+			img.img--bg(src='img/promo_5.jpg', alt='img')
+
+		.align-container
+			.align-container__item
+
+				.container
+					.row.align-items-center
+
+						.col-xl-10.offset-xl-1.text-center
+
+							h2.front-promo__title Deliver Packages in Any Way
+								span.front-promo__overlay TransX
+							p.front-promo__subtitle Roach yellowfin cutthroat trout zebra pleco ocean sunfish temperate bass pikehead elephant fish. Long-finned char northern pike bluegill temperate ocean sunfish temperate bass pikehead trout zebra pleco ocean sunfish temperate
+							+button--promo('#', 'Explore more')
+
+		.promo-tabs.tabs.horizontal-tabs
+			ul.horizontal-tabs__header
+				li
+					a(href="#horizontal-tabs__item-1")
+						span For Business
+				li
+					a(href="#horizontal-tabs__item-2")
+						span For Private Person
+				li
+					a(href="#horizontal-tabs__item-3")
+						span For Public Sector
+
+			.horizontal-tabs__content
+				#horizontal-tabs__item-1.horizontal-tabs__item
+
+					form.form.promo-form.promo-form--f5(action="javascript:void(0);" autocomplete="off")
+						.row.offset-20
+
+							.col-sm-6
+
+								label
+									+svg('pin')
+									input.form__field(type="text" name="from" placeholder="From")
+
+							.col-sm-6
+
+								label
+									+svg('pin')
+									input.form__field(type="text" name="To" placeholder="To")
+
+							.col-md-6
+
+								select.form__select(name="transport")
+									option(data-display="Choose transport") Choose transport
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+
+							.col-sm-6.col-md-3
+
+								label
+									+svg('calendar_2')
+									input.form__field(data-toggle="datepicker" type="text" name="date" placeholder="Date")
+
+							.col-sm-6.col-md-3
+
+								button.button.button--green(type="submit") #[span Search] #[+svg('arrow')]
+
+				#horizontal-tabs__item-2.horizontal-tabs__item
+
+					form.form.promo-form.promo-form--f5(action="javascript:void(0);" autocomplete="off")
+						.row.offset-20
+
+							.col-sm-6
+
+								label
+									+svg('pin')
+									input.form__field(type="text" name="from" placeholder="From")
+
+							.col-sm-6
+
+								label
+									+svg('pin')
+									input.form__field(type="text" name="To" placeholder="To")
+
+							.col-md-6
+
+								select.form__select(name="transport")
+									option(data-display="Choose transport") Choose transport
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+
+							.col-sm-6.col-md-3
+
+								label
+									+svg('calendar_2')
+									input.form__field(data-toggle="datepicker" type="text" name="date" placeholder="Date")
+
+							.col-sm-6.col-md-3
+
+								button.button.button--green(type="submit") #[span Search] #[+svg('arrow')]
+
+				#horizontal-tabs__item-3.horizontal-tabs__item
+
+					form.form.promo-form.promo-form--f5(action="javascript:void(0);" autocomplete="off")
+						.row.offset-20
+
+							.col-sm-6
+
+								label
+									+svg('pin')
+									input.form__field(type="text" name="from" placeholder="From")
+
+							.col-sm-6
+
+								label
+									+svg('pin')
+									input.form__field(type="text" name="To" placeholder="To")
+
+							.col-md-6
+
+								select.form__select(name="transport")
+									option(data-display="Choose transport") Choose transport
+									option(value="value") Value 1
+									option(value="value2") Value 2
+									option(value="value3") Value 3
+									option(value="value3") Value 4
+									option(value="value3") Value 5
+
+							.col-sm-6.col-md-3
+
+								label
+									+svg('calendar_2')
+									input.form__field(data-toggle="datepicker" type="text" name="date" placeholder="Date")
+
+							.col-sm-6.col-md-3
+
+								button.button.button--green(type="submit") #[span Search] #[+svg('arrow')]
+
+	// promo end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-70
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title What we do
+						h3.heading__title We Provide Future of Delivery
+						span.heading__layout Services
+
+			.row.offset-70
+
+				.col-lg-4
+
+					.advantages-item.text-center
+						.advantages-item__img
+							img(src="img/pack_4/i8.svg", alt="icon")
+						h2.advantages-item__title 5 million
+						h6.advantages-item__subtitle Delivered packages
+						p.advantages-item__text Old World knifefish crestfish, jellynose fish; algaee eater swordtail, carp atka mackerel graess carped yellowfin
+
+				.col-lg-4
+
+					.advantages-item.text-center
+						.advantages-item__img
+							img(src="img/pack_4/i15.svg", alt="icon")
+						h2.advantages-item__title 12 million
+						h6.advantages-item__subtitle Miles driven
+						p.advantages-item__text Combfish armorhead catfish medaka-snubnose parasitic eel Black scabbardfish cownose ryolden shiner tunfir
+
+				.col-lg-4
+
+					.advantages-item.text-center
+						.advantages-item__img
+							img(src="img/pack_4/i12.svg", alt="icon")
+						h2.advantages-item__title 2 million
+						h6.advantages-item__subtitle Stored in stock
+						p.advantages-item__text Noodlefish, dwarf gourami lake whitefish Jack Dempsey yellow bass monkeyface prickleback Pacific viperfish
+
+	// section end
+
+	// section start
+
+	section.section.front-about.front-about--white
+
+		.front-about__bg
+			img.section--bg.t50.r0(src="img/testimonials-bg.png", alt="img")
+
+		.front-about__img
+			img.img--bg(src="img/about_img.jpg", alt="img")
+			a.js-video.front-about__video(href="https://www.youtube.com/watch?v=hSbVJ4y6I-8") #[+svg('play')] #[span Video presentation]
+
+		.container
+			.row
+
+				.col-xl-4.offset-xl-1.d-none.d-xl-flex.offset-50
+
+					+counter--filled('20', 'years', 'Experience in transportation')
+
+				.col-xl-7
+
+					.heading.heading--white
+						span.heading__pre-title About transx
+						h3.heading__title Transporterium is the biggest #[span.color--green transportation] company
+
+					p Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. 
+					p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black
+
+					+button--white('#', 'More about')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					img(src="img/map-transx.png", alt="img")
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('5', 'millions', 'Delivered packeges')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('2', 'million', 'Miles driven each of the year')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('50', 'years', 'Total warehouse area')
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.align-items-end.bottom-60
+
+				.col-lg-5.col-xl-4
+
+					.heading
+						span.heading__pre-title Features
+						h3.heading__title Powerfull Features of #[span.color--green TransX] company
+						span.heading__layout.layout--lgray Features
+
+			.row.offset-50
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('warehouse')
+
+						h6.icon-item__title Warehouse
+
+						p.icon-item__text Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('support')
+
+						h6.icon-item__title Support 24/7
+
+						p.icon-item__text Greenling sleeper; Owens pupfish large-eye bream kokanee sprat shrimpfish. Pacific hake false 
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('location')
+
+						h6.icon-item__title Online Tracking
+
+						p.icon-item__text Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish large-eye bream kokanee sprat 
+
+				.col-sm-6.col-lg-3
+
+					.icon-item
+
+						.icon-item__img
+							+svg('insurance')
+
+						h6.icon-item__title Cargo Insurance
+
+						p.icon-item__text Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a
+
+	// section end
+
+	// section start
+
+	section.section.qoute-section.pb-0
+
+		.quote-section__bg
+			img.img--bg(src="img/quote-bg.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-lg-5.d-flex.flex-column.justify-content-between
+
+					.heading.heading--white
+						span.heading__pre-title Quote
+						h3.heading__title Provide quick Tracking your cargo
+						p.heading__text.color--white Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver.
+						span.heading__layout.layout--white Quote
+
+					.contact-trigger.top-50.top-lg-0
+						img.contact-trigger__img(src="img/contact_background.png", alt="img")
+						h4.contact-trigger__title How we can help you!
+
+						+button--white('#', 'Contact us')
+
+				.col-lg-7.top-50.top-lg-0
+
+					.form-wrapper.is--bordered
+
+						form.form.quote-form(action="javascript:void(0);")
+
+							h6.quote-form__title Request a quote
+
+							.row
+
+								.col-sm-6
+
+									input.form__field(type="text" name="name" placeholder="Full name")
+
+								.col-sm-6
+
+									input.form__field(type="email" name="email" placeholder="Email")
+
+								.col-sm-6
+
+									input.form__field(type="tel" name="phone-number" placeholder="Phone")
+
+								.col-sm-6
+
+									input.form__field(type="text" name="subject" placeholder="Subject")
+
+								.col-sm-6
+
+									input.form__field(type="text" name="delivery" placeholder="Delivery city")
+
+								.col-sm-6
+
+									input.form__field(type="text" name="departure" placeholder="City of departure")
+
+								.col-sm-6
+
+									select.form__select(name="freight")
+										option(data-display="Freight type") Freight type
+										option(value="value") Value 1
+										option(value="value2") Value 2
+										option(value="value3") Value 3
+										option(value="value3") Value 4
+										option(value="value3") Value 5
+
+								.col-sm-6
+
+									select.form__select(name="incoterms")
+										option(data-display="Incoterms") Incoterms
+										option(value="value") Value 1
+										option(value="value2") Value 2
+										option(value="value3") Value 3
+										option(value="value3") Value 4
+										option(value="value3") Value 5
+
+								.col-6.col-sm-3
+
+									input.form__field(type="number" name="weight" placeholder="Weight")
+
+								.col-6.col-sm-3
+
+									input.form__field(type="number" name="height" placeholder="Height")
+
+								.col-6.col-sm-3
+
+									input.form__field(type="number" name="width" placeholder="Width")
+
+								.col-6.col-sm-3
+
+									input.form__field(type="number" name="lenght" placeholder="Lenght")
+
+								.col-12.offset-20
+
+									label.form__checkbox-label.bottom-20
+										span.form__label-text Fragile
+										input.form__input-checkbox(type="checkbox" name="size-select" value="Size L")
+										span.form__checkbox-mask
+
+									label.form__checkbox-label.bottom-20
+										span.form__label-text Express delivery
+										input.form__input-checkbox(type="checkbox" name="size-select" value="Size S")
+										span.form__checkbox-mask
+
+									label.form__radio-label.bottom-20
+										span.form__label-text Insurance
+										input.form__input-radio(type="radio" name="option-select" value="option-3" checked)
+										span.form__radio-mask
+
+									label.form__radio-label.bottom-20
+										span.form__label-text Packaging
+										input.form__input-radio(type="radio" name="option-select" value="option-4")
+										span.form__radio-mask
+
+								.col-12
+
+									button.quote-form__submit(type="submit") Request a quote
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.flex-column-reverse.flex-xl-row.align-items-end
+
+				.col-xl-6.top-50.top-xl-0
+
+					.heading.bottom-20
+						span.heading__pre-title Freightliner
+						h3.heading__title Cascadia  Evolution
+					
+					p.bottom-0 Southern flounder trench whiff quillback bluntnose knifefish smelt, Black mackerel oceanic whitetip shark. Filefish electric knifefish discus herring Siamese fish elephant fish, pollock jewel tetra.
+
+					.row.top-40
+
+						.col-sm-6.col-lg-5.col-xl-6
+
+							h6.bottom-20 Features
+
+							ul.list.list--check.list--reset
+								li.list__item Roll Over Stability Control
+								li.list__item Lane Departure Control
+								li.list__item Sirius/XM Enabled Additional
+								li.list__item Qualcomm Omnitracs
+
+						.col-sm-6.col-lg-5.col-xl-6.top-40.top-sm-0
+
+							h6.bottom-20 Truck info
+
+							ul.list.truck-list.list--reset
+								li.list__item #[strong Model:] #[span Cascadia]
+								li.list__item #[strong Engine:] #[span Detroit DD15]
+								li.list__item #[strong Sleeper:] #[span 72 full-size condo]
+								li.list__item #[strong Transmission:] #[span 12 Speed Auto]
+
+				.col-xl-6.text-center.text-xl-left
+
+					img.truck-img(src="img/car_1.png", alt="img")
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.align-items-end
+
+				.col-xl-6.text-center.text-xl-left
+
+					img.truck-img(src="img/car_2.png", alt="img")
+
+				.col-xl-6.top-50.top-xl-0
+
+					.heading.bottom-20
+						span.heading__pre-title Freightliner
+						h3.heading__title Cascadia  Evolution mid-roof
+					
+					p.bottom-0 Powen dottyback jewelfish jackfish Asiatic glassfish; yellow tang, "stonefish Pacific albacore needlefish spiderfish, devil ray." Tope deepwater cardinalfish tapetail southern smelt bream smelt-whiting amur.
+
+					.row.top-40
+
+						.col-sm-6.col-lg-5.col-xl-6
+
+							h6.bottom-20 Features
+
+							ul.list.list--check.list--reset
+								li.list__item Roll Over Stability Control
+								li.list__item Lane Departure Control
+								li.list__item Sirius/XM Enabled Additional
+								li.list__item Qualcomm Omnitracs
+
+						.col-sm-6.col-lg-5.col-xl-6.top-40.top-sm-0
+
+							h6.bottom-20 Truck info
+
+							ul.list.truck-list.list--reset
+								li.list__item #[strong Model:] #[span Cascadia]
+								li.list__item #[strong Engine:] #[span Detroit DD15]
+								li.list__item #[strong Sleeper:] #[span 72 full-size condo]
+								li.list__item #[strong Transmission:] #[span 12 Speed Auto]
+
+	// section end
+
+	// section start
+
+	section.section.info-block.color--white
+
+		img.img--bg(src="img/info-bg.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-lg-7
+
+					.heading.heading--white
+						h3.heading__title Give you complete control #[br] #[span.color--green of your] warehouse
+
+					p Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. 
+					p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black
+
+					+button--white('#', 'More about')
+
+				.col-lg-4.offset-lg-1.top-50.top-lg-0
+
+					.row.offset-50
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 3000
+									span.counter__subject m #[sup 2]
+								.counter__lower
+									span.counter__details.color--lgray Total warehouse area
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 1200
+									span.counter__subject
+								.counter__lower
+									span.counter__details.color--lgray Created Jobs
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-60
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Creatrive People
+						h3.heading__title Professional Master #[span.color--green Team]
+						span.heading__layout Team
+
+			.row.offset-50
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_1.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Ben Stiller
+							span.team-item__position Full-time loader
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_2.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Tanisha Weeder
+							span.team-item__position Manager of Westwood
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_3.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Claid Owen
+							span.team-item__position Company CEO
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_4.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Ginger Trap
+							span.team-item__position Service analytic
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_5.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Caroline Garcia
+							span.team-item__position Product manager
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_6.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Alex Time
+							span.team-item__position Manager Mehico
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_7.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Pier Woodman
+							span.team-item__position HR manager
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					.team-item
+						.team-item__img
+							img.img--bg(src="img/team_8.jpg", alt="team")
+						.team-item__description
+							h6.team-item__name Alex Morgan
+							span.team-item__position Content videomaker
+							ul.socials.socials--lblue.list--reset
+								li.socials__item
+									a.socials__link(href="#") #[+svg('facebook')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('twitter')]
+								li.socials__item
+									a.socials__link(href="#") #[+svg('linkedin')]
+
+	// section end
+
+	// section start
+
+	section.section.testimonials.bg--lgray
+		.testimonials__bg
+			img.section--bg.t50.r0(src="img/testimonials-bg.png", alt="img")
+
+		.container
+			.row
+
+				.col-lg-5
+
+					.heading.heading--white
+						span.heading__pre-title Testimonials
+						h3.heading__title Excellent company #[span.color--green quality] services
+						span.heading__layout.layout--dgray People
+
+					.testimonials__nav
+
+					img.testimonials__img(src="img/testimonials_img.png", alt="img")
+
+
+				.col-lg-6.offset-lg-1
+
+					.testimonials-slider
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+						.testimonials-slider__item
+
+							p “Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
+							p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda. Halibut: Blacksmelt”
+
+							.testimonials-slider__author
+								img(src="img/quotes.png", alt="img")
+								h6 Well Singer
+								span Manager of Westwood
+
+	// section end
+
+	// section start
+
+	section.section.bg--lgray
+		.container
+			.row.bottom-60
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Blog
+						h3.heading__title Latest Articles #[span.color--green Daily] Update
+						span.heading__layout.layout--lgray Blog
+
+			.row.offset-30
+
+				.col-lg-6.col-xl-8
+
+					.news-item.news-item--style-2.news-item--wide
+						img.img--bg(src="img/f2-blog_1.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") Changes to our trade credit policy
+							p New World rivuline forehead brooder topminnow ayu electric stargazer cowfish atka mackerel sand eel bigeye smelt-whiting vimba. Whale catfish yellowtail kingfish tidewater goby, torrent catfish ribbon eel ling cod; Norwegian Atlantic salmon garden eel ribbon sawtail fish eulachon green swordtail. Angelfish elephant fish riffle dace dorab, Mexican
+						.news-item__details
+							span.news-item__date 20 October, 2019
+							span 12 comments
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-1.news-item--small
+						.news-item__img
+							img.img--bg(src="img/f2-blog_2.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") Importers achieve cost savings
+							p Kokanee sprat shrimpfish. Pacific hake false trevally queen parrotfish Black prickleback humuhumunukunukuapua'a mosshead warbonnet sweeper!
+							.news-item__details
+								span.news-item__date 20 October, 2019
+								span 51 comment
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-1.news-item--small
+						.news-item__img
+							img.img--bg(src="img/f2-blog_3.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") What is 3D printing ?
+							p Yellowfin surgeonfish bonefish Australasian salmon tenuis, barreleye brook lamprey European chub ridgehead, sea catfish filefish sea chub
+							.news-item__details
+								span.news-item__date 20 October, 2019
+								span 51 comment
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-1.news-item--small
+						.news-item__img
+							img.img--bg(src="img/f2-blog_4.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") New subway line
+							p Bramble shark slickhead archerfish Black angelfish marblefish bigeye walleye fire bar danio silver driftfish pelagic cod. Wolf-herring spaghetti eel
+							.news-item__details
+								span.news-item__date 20 October, 2019
+								span 51 comment
+
+				.col-lg-6.col-xl-4
+
+					.news-item.news-item--style-2.news-item--small
+						img.img--bg(src="img/f2-blog_5.jpg" alt="img")
+						.news-item__content
+							h6.news-item__title
+								a(href="#") New additions to our trucks
+							p Yellowmargin triggerfish grideye rivuline surgeonfish golden dojo glowlight danio, rocket danio goby. Pufferfish duckbill eel tilapia fusilier fish
+						.news-item__details
+							span.news-item__date 20 October, 2019
+							span 12 comments
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-60
+
+				.col-12
+
+					.heading.heading--center
+						span.heading__pre-title Partners
+						h3.heading__title Companies who #[span.color--green Trust] us
+						span.heading__layout Partners
+
+			.row
+
+				.col-12
+
+					// logos slider start
+
+					.logos-slider.logos-slider--style-2
+
+						.logos-slider__item
+							img(src="img/logo_1.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_2.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_3.png" alt="logo")
+
+						.logos-slider__item
+							img(src="img/logo_4.png" alt="logo")
+
+					.logos-slider__dots
+
+					// logos slider end
+
+	// section end

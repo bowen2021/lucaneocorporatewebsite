@@ -1,0 +1,85 @@
+/* accordion start */
+
+.accordion
+	border-top: 1px solid #d9e2e0
+
+.accordion:last-of-type
+	border-bottom: 1px solid #d9e2e0
+
+.accordion
+	&__title-block
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 10px 0
+		cursor: pointer
+	&__title
+		font-size: 18px
+		margin-bottom: 0
+		width: calc(100% - 70px)
+		letter-spacing: 0
+
+	+r576
+
+		&__title
+			font-size: 20px
+
+	&__close
+		position: relative
+		cursor: pointer
+		height: 40px
+		width: 40px
+		border-radius: 50%
+		transition: background .3s
+
+	+r768
+
+		&__close
+			height: 52px
+			width: 52px
+
+	&__close::before,
+	&__close::after
+		content: ""
+		display: inline-block
+		background: $dgray
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: all .3s
+	&__close::before
+		height: 14px
+		width: 2px
+		transition: all .3s
+	&__close::after
+		width: 14px
+		height: 2px
+		transition: background .3s
+	&__close--active::before
+		opacity: 0
+	&__text-block
+		display: none
+
+	+r768
+
+		&__text-block
+			padding: 10px 0
+
+.accordion--style-2
+	.accordion__title-block
+		padding: 20px 0
+	.accordion__close
+		height: 30px
+		width: 30px
+		border: 2px solid $bg-blue
+	.accordion__close::before,
+	.accordion__close::after
+		background: $bg-blue
+	.accordion__close--active::after
+		background: $white
+	.accordion__close--active
+		background: $bg-blue
+
+/* accordion end */

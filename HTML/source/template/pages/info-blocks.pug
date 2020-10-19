@@ -1,0 +1,168 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'infos'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/info-block.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/info-block.jpg' alt='img')
+
+		+hero-inner('Info Blocks', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					img(src="img/map-transx_2.png", alt="img")
+
+			.row.offset-50
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('5', 'millions', 'Delivered packeges')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('2', 'million', 'Miles driven each of the year')
+
+				.col-md-6.col-lg-4.text-center
+
+					+counter--blue('50', 'years', 'Total warehouse area')
+
+	// section end
+
+	// section start
+
+	section.section.info-block.color--white
+
+		img.img--bg(src="img/info-bg.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-lg-7
+
+					.heading.heading--white
+						h3.heading__title Give you complete control #[br] #[span.color--green of your] warehouse
+
+					p Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish. 
+					p Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black
+
+					+button--white('#', 'More about')
+
+				.col-lg-4.offset-lg-1.top-50.top-lg-0
+
+					.row.offset-50
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 3000
+									span.counter__subject m #[sup 2]
+								.counter__lower
+									span.counter__details.color--lgray Total warehouse area
+
+						.col-md-6.col-lg-12
+
+							.counter.counter--white
+								.counter__top
+									span.js-counter.counter__count 1200
+									span.counter__subject
+								.counter__lower
+									span.counter__details.color--lgray Created Jobs
+
+	// section end
+
+	// section start
+
+	section.section.app-section
+		.container
+			.row
+
+				.col-lg-5.col-xl-4.offset-xl-1.d-none.d-lg-block
+
+					img(src="img/phone-img.png", alt="img")
+
+				.col-lg-6.offset-lg-1.col-xl-5
+
+					.heading.bottom-20
+						span.heading__pre-title Mobile
+						h3.heading__title Awesome app which works for you
+
+					p Ghost flathead coolie loach haddock duckbilled barracudina blackchin; dace European minnow dragon. Sauger Chinook salmon, inanga, milkfish whitefish.
+
+					.app-download
+						a.app-download__link(href="#")
+							img(src="img/mobile/apple.svg", alt="apple")
+						a.app-download__link(href="#")
+							img(src="img/mobile/google.svg", alt="google")
+
+	// section end
+
+	// section start
+
+	section.section.info-block.color--white
+
+		img.img--bg(src="img/info-bg_2.jpg", alt="bg")
+
+		.container
+			.row
+
+				.col-lg-9.col-xl-7
+
+					.heading.heading--white
+						h3.heading__title We work faster than you #[br]can even imagine
+
+					p Warbonnet North American darter European perch shell-ear mahi-mahi southern sandfish long-finned pike. Alaska blackfish deep sea bonefish thresher shark cod flathead luminous hake Oriental loach.
+
+					+button--white('#', 'More about')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row
+
+				.col-12
+
+					img(src="img/map-transx_3.png", alt="img")
+
+	// section end
+
+	// cta start
+
+	.cta-block.cta-block--style-2
+
+		img.img--bg(src="img/cta-bg_2.jpg", alt="bg")
+
+		.container
+			.row.align-items-center
+
+				.col-lg-8
+
+					.heading.heading--white
+						h3.heading__title We work faster than you #[br]can even imagine
+
+				.col-lg-4.text-lg-right
+
+					+button--white('#', "Get Started")
+
+	// cta end

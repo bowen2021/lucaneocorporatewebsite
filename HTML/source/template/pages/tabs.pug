@@ -1,0 +1,104 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'tabs'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Tabs', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-30
+
+				.col-xl-10.offset-xl-1
+
+					h3.bottom-0 Variant 1
+
+			.row
+
+				.col-xl-10.offset-xl-1
+
+					.tabs.horizontal-tabs
+						ul.horizontal-tabs__header
+							li
+								a(href="#horizontal-tabs__item-1")
+									span Description
+							li
+								a(href="#horizontal-tabs__item-2")
+									span Video
+							li
+								a(href="#horizontal-tabs__item-3")
+									span Gallery
+
+						.horizontal-tabs__content
+							#horizontal-tabs__item-1.horizontal-tabs__item
+								h5.tabs__title Description
+								p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+								p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+							#horizontal-tabs__item-2.horizontal-tabs__item
+								h5.tabs__title Video
+								p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+								p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+							#horizontal-tabs__item-3.horizontal-tabs__item
+								h5.tabs__title Gallery
+								p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+								p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-30
+
+				.col-xl-10.offset-xl-1
+
+					h3.bottom-0 Variant 2
+
+			.row
+
+				.col-xl-10.offset-xl-1
+
+					.tabs.vertical-tabs
+						ul.vertical-tabs__header
+							li
+								a(href="#vertical-tabs__item-1")
+									span Description
+							li
+								a(href="#vertical-tabs__item-2")
+									span Video
+							li
+								a(href="#vertical-tabs__item-3")
+									span Gallery
+						.vertical-tabs__content
+							#vertical-tabs__item-1.vertical-tabs__item
+								h5.tabs__title Description
+								p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+								p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+							#vertical-tabs__item-2.vertical-tabs__item
+								h5.tabs__title Video
+								p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+								p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+							#vertical-tabs__item-3.vertical-tabs__item
+								h5.tabs__title Gallery
+								p #[strong Trumpeter ropefish bonito roughy cobbler dogteeth tetra sturgeon pollock sea snail, saury woody sculpin southern sandfish blue.]
+								p Tench South American darter bobtail snipe eel armored searobin lumpsucker combfish flat loach tang píntano spiderfish gunnel. Skilfish, halosaur skilfish manefish, bonnetmouth alfonsino largenose fish moonfish aruana glowlight danio. Basking shark halibut, North Pacific daggertooth, bonnetmouth sand stargazer sand goby. Queen triggerfish sand dab hammerhead shark zebra trout pelican gulper, common tunny boarfish. Pleco riffle dace flier trunkfish
+
+	// section end

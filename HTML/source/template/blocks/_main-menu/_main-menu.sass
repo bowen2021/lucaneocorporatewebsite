@@ -1,0 +1,153 @@
+/* main menu start */
+
+.main-menu
+	display: inline-flex
+	padding: 0
+	margin: 0
+
+.main-menu
+	&__item
+		list-style: none
+		position: relative
+	&__item:not(:last-of-type)
+		margin-right: 30px
+
+	+r1200
+
+		&__item:not(:last-of-type)
+			margin-right: 35px
+
+	+r1366
+
+		&__item:not(:last-of-type)
+			margin-right: 40px
+
+	&__item &__link
+		position: relative
+		display: inline-block
+		color: #333
+		font-size: 13px
+		font-weight: 500
+		padding: 25px 0	20px 0
+		text-decoration: none
+		text-transform: uppercase
+		transition: color .3s
+
+	+r1366
+
+		&__item &__link
+			padding: 35px 0 30px 0
+
+	&__item:hover &__link
+		color: $green
+	&__item &__link::before
+		content: ""
+		display: block
+		height: 2px
+		width: 0%
+		background: $green
+		position: absolute
+		bottom: 3px
+		left: 0
+		transition: width .3s
+	&__item:hover &__link::before,
+	&__item &__link--highlighted::before
+		width: 100%
+	&__item--has-child &__link span
+		position: relative
+	&__item--active &__link
+		color: $green
+	&__item--active &__link::before
+		width: 100%
+	&__sub-list
+		margin: 0
+		position: absolute
+		top: 100%
+		left: -35px
+		width: 235px
+		padding: 30px 35px 30px 35px
+		background-color: $bg-dgray
+		transform: translateY(15px)
+		opacity: 0
+		visibility: hidden
+		z-index: 1
+		transition: all .3s
+	.sub-list--style-2
+		display: flex
+		flex-wrap: wrap
+		left: -100px
+		width: 330px
+	&__item--has-child:hover > &__sub-list
+		opacity: 1
+		transform: translateY(0)
+		visibility: visible
+	&__sub-list li
+		position: relative
+		list-style: none
+	.sub-list--style-2 li
+		width: 50%
+	&__sub-list li:not(:last-of-type)
+		margin-bottom: 10px	
+	&__sub-list li a
+		display: inline-block
+		color: #FFF
+		font-size: 14px
+		text-decoration: none
+		transition: color .3s
+	&__sub-list li a::after
+		content: ""
+		display: block
+		width: 0%
+		height: 2px
+		background-color: $green
+		margin-top: 4px
+		transition: width .3s
+	&__sub-list li.item--active a,
+	&__sub-list li a:hover
+		color: #8D9296
+	&__sub-list li.item--active a::after,
+	&__sub-list li a:hover::after
+		width: 40px
+	&__item--has-child > &__link > span::before,
+	&__item--has-child > &__link > span::after
+		content: ""
+		display: block
+		width: 6px
+		height: 2px
+		background: #333
+		position: absolute
+		pointer-events: none
+		transition: all .3s
+	&__item--has-child > &__link > span::before
+		right: -15px
+		top: 7px
+	&__item--has-child > &__link > span::after
+		right: -18px
+		top: 7px
+	&__item--has-child > &__link > span::before
+		transform: rotate(45deg)
+	&__item--has-child > &__link > span::after
+		transform: rotate(-45deg)
+	&__item--has-child:hover > &__link > span::after
+		transform: rotate(45deg)
+		background: $green
+	&__item--has-child:hover > &__link > span::before
+		transform: rotate(-45deg)
+		background: $green
+	&__item--active &__link > span::before,
+	&__item--active &__link > span::after,
+		background: #333
+
+/* menu white */
+
+.main-menu--white
+	.main-menu__item .main-menu__link
+		color: $white
+	.main-menu__item .main-menu__link::before,
+	.main-menu__item--active .main-menu__link > span::after,
+	.main-menu__item--active .main-menu__link > span::before,
+	.main-menu__item .main-menu__link > span::after,
+	.main-menu__item .main-menu__link > span::before
+		background: $white
+
+/* main menu end */

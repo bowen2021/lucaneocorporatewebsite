@@ -1,0 +1,109 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'accordion'
+
+	-var dest = 'elements'
+
+block main
+
+	// section start
+
+	section.hero-block
+
+		picture
+			source(srcset='img/accordion-bg.jpg' media='(min-width: 992px)')
+			img.img--bg(src='img/accordion-bg.jpg' alt='img')
+
+		+hero-inner('Accordion', 'TransX')
+
+	// section end
+
+	// section start
+
+	section.section
+		.container
+			.row.bottom-30
+
+				.col-xl-8.offset-xl-2
+
+					h3.bottom-0 Variant 1
+
+			.row
+
+				.col-xl-8.offset-xl-2
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Construction management
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title General contracting
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Verified professionals
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+					.accordion.accordion--primary
+						.accordion__title-block
+							h5.accordion__title Powered by knowledge
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+	// section end
+
+	// section start
+
+	section.section.pt-0
+		.container
+			.row.bottom-30
+
+				.col-xl-8.offset-xl-2
+
+					h3.bottom-0 Variant 2
+
+			.row
+
+				.col-xl-8.offset-xl-2
+
+					.accordion.accordion--style-2
+						.accordion__title-block
+							h5.accordion__title Construction management
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+					.accordion.accordion--style-2
+						.accordion__title-block
+							h5.accordion__title General contracting
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+					.accordion.accordion--style-2
+						.accordion__title-block
+							h5.accordion__title Verified professionals
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+					.accordion.accordion--style-2
+						.accordion__title-block
+							h5.accordion__title Powered by knowledge
+							span.accordion__close
+						.accordion__text-block
+							p Ronquil coho salmon red snapper duckbill Australian lungfish southern Dolly Varden? Black angelfish discus zebrafish thornyhead Antarctic cod; clownfish swordtail black dragonfish dogfish grunt sculpin European flounder. Flathead catfish sleeper shark, "piranha stoneroller minnow, flounder cownose ray dwarf loach."
+
+	// section end
